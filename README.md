@@ -1,8 +1,19 @@
 # Blank!
 
-![Blank! Logo](assets/readme-files/logo.png "Blank! Logo")
+<h1 align="center">
+  <a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/30YJYB8/logo.png" alt="Blank! logo"/></a>
+</h1>
+<h2 align="center">
+<a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/TWC9hFv/tagline.png" alt="Think you know your lyrics?"></a>
+</h2>
+
+<div align="center"> 
+
+[Blank!](https://github.com/rebeccatraceyt/WhatsThatBlank) is web-based interactive fill-in-the-blank game, designed to test your music knowledge. With a wide variety of music categories to choose from, the user can test their memory in their favorite music genre, using a fun and intuitive user interface. Features include lively graphics and sound effects, that the user can control for their own personal experience.
+<br>
 
 [View the live project here]()
+</div>
 
 ## Table of contents
 1. [Introduction](#Introduction)
