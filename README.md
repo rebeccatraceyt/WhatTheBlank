@@ -140,21 +140,35 @@ Wireframe mockups were created in a [Figma Workspace]() with providing a positiv
 
 **Main Page:**
 
+Welcome Modal:
+
 ![Welcome Modal](assets/readme-files/welcome.png "Welcome Modal Wireframe")
+
+Home Page:
 
 ![Home Page](assets/readme-files/home.png "Home Page Wireframe")
 
 **Game Mode:**
 
+Main Game Page:
+
 ![Main Game Page](assets/readme-files/game-mode.png "Game Mode Page Wireframe")
 
+Player Feedback for **correct** answer:
+
 ![Player Feedback for CORRECT answer](assets/readme-files/correct.png "Game Mode Player Feedback (Correct) Wireframe")
+
+Player Feedback for **incorrect** answer:
 
 ![Player Feedback for INCORRECT answer](assets/readme-files/incorrect.png "Game Mode Player Feedback (Incorrect) Wireframe")
 
 **Finished Page:**
 
+With High Score:
+
 ![With High Score](assets/readme-files/hs.png "Finished with High Score Wireframe")
+
+Without High Score:
 
 ![Without High Score](assets/readme-files/no-hs.png "Finished without High Score Wireframe")
 
@@ -167,12 +181,32 @@ Wireframe mockups were created in a [Figma Workspace]() with providing a positiv
 
 **Colour Scheme**
 
+The chosen colour scheme was specifically selected in order to define the tone of the application.
+
+As the theme of the game is music related, the colour scheme mirrors the atmospheric setting of a music venue.
+
+Drawing from research conducted on stage lights, two colour palettes were created for a day-to-night feature toggle.
+
+**Light (Day Mode):**
+
+![Light (Day Mode)](assets/readme-files/light-mode.png "Light Mode Colour Palette")
+
+**Dark (Night Mode):**
+
+![Dark (Night Mode)](assets/readme-files/dark-mode.png "DArk Mode Colour Palette")
+
 
 **Typography**
 
+The primary font chosen is [Roboto](https://fonts.google.com/specimen/Roboto?preview.text_type=custom&query=roboto). A sans-serif typeface, Roboto is geometrically shaped and is easily readable.
+
+The Secondary font (accent font) chosen is [Shadows into Light Two](https://fonts.google.com/specimen/Shadows+Into+Light+Two?preview.text_type=custom). A handwritten script typeface, it has rounded curves to emphasis a more playful and casual environment.
+
+The charismatic combination of the two typefaces compliments the artistic aesthetic and entertaining theme set by the colour palette.
 
 **Imagery**
 
+The imagery used was created by the developer using the application [Procreate](https://procreate.art/) in order to create a consistency of the elements while maintaining the look and feel of the application
 
 [Back to top ⇧](#blank)
 
