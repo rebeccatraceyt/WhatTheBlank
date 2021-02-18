@@ -1,6 +1,6 @@
 # Blank!
 
-![]()
+![Blank! Logo](assets/readme-files/logo.png "Blank! Logo")
 
 [View the live project here]()
 
