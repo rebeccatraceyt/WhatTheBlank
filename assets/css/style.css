@@ -29,15 +29,7 @@ body {
     font-weight: 300;
 }
 
-button {
-    height: 20vh;
-}
-
-.tv-cat {
-    background: url(../images/tv-button.png);
-    background-repeat: no-repeat;
-    width: 80%;
-}
+/*------------------------------------------------------- Section Divider */
 
 .menu-side {
     background-color: var(--light-blue);
@@ -54,3 +46,49 @@ button {
     height: 100vh;
     width: 60vw;
 }
+
+/*------------------------------------------------------- Category Buttons */
+.buttons{
+    padding-top: 1rem;
+}
+
+.cat-btn {
+    padding-top: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv-cat {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 20rem;
+    height: 8rem;
+}
+.chart-cat {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 20rem;
+    height: 8rem;
+}
+
+.tb-cat {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 20rem;
+    height: 8rem;
+}
+
+.movie-cat {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 20rem;
+    height: 8rem;
+}
+
+
+
