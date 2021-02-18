@@ -136,19 +136,32 @@ The information architecture was organized in a **hierarchial tree structure** i
 ![Site Map](assets/readme-files/site-map.png)
 
 #### Skeleton 
-Wireframe mockups were created in a [Figma Workspace](https://www.figma.com/file/pRD2Oi1aSuYxhFacqOmUfT/Kryan-Live?node-id=0%3A1) with providing a positive user experience in mind:
+Wireframe mockups were created in a [Figma Workspace]() with providing a positive user experience in mind:
 
-Home Page:
-![Home Page Wireframe](assets/readme-files/home.png "Home Page Wireframe")
+**Main Page:**
 
-Bio Page:
-![Bio Page Wireframe](assets/readme-files/bio.png "Bio Page Wireframe")
+![Welcome Modal](assets/readme-files/welcome.png "Welcome Modal Wireframe")
 
-Live Page:
-![Live Page Wireframe](assets/readme-files/live.png "Live Page Wireframe")
+![Home Page](assets/readme-files/home.png "Home Page Wireframe")
 
-Press Kit Page:
-![Press Kit Page Wireframe](assets/readme-files/epk.png "Press Kit Page Wireframe")
+**Game Mode:**
+
+![Main Game Page](assets/readme-files/game-mode.png "Game Mode Page Wireframe")
+
+![Player Feedback for CORRECT answer](assets/readme-files/correct.png "Game Mode Player Feedback (Correct) Wireframe")
+
+![Player Feedback for INCORRECT answer](assets/readme-files/incorrect.png "Game Mode Player Feedback (Incorrect) Wireframe")
+
+**Finished Page:**
+
+![With High Score](assets/readme-files/hs.png "Finished with High Score Wireframe")
+
+![Without High Score](assets/readme-files/no-hs.png "Finished without High Score Wireframe")
+
+**Form:**
+
+![Suggestions Form](assets/readme-files/form.png "Suggestions Form Wireframe")
+
 
 #### Surface
 
