@@ -34,13 +34,13 @@
 ***
 
 ## Introduction
+Blank! is a web-based interactive game, designed to test your music knowledge!
 
+This is the second of four Milestone Projects that the developer must complete during their Full Stack Web Development Program at The Code Institute. 
 
-This is the first of four Milestone Projects that the developer must complete during their Full Stack Web Development Program at The Code Institute. 
+The main requirements were to design, develop and implement a dynamic front-end web application using **HTML5**, **CSS3** and **JavaScript**.
 
-The main requirements were to make a responsive and static website with a minimum of three pages using primarily **HTML5** and **CSS3**.
-
-[Back to top ⇧](#Kryan-Live)
+[Back to top ⇧](#Blank!)
 
 ## UX 
 
@@ -63,33 +63,51 @@ The main requirements were to make a responsive and static website with a minimu
 
 ### Development Planes
 
-In order to create a comprehensive and informative website, the developer worked closely with the artist to distinguish the required functionality of the site and how it would answer the user stories, as described above.
+In order to design and create a web-based interactive game, the developer worked closely with the artist to distinguish the required functionality of the site and how it would answer the user stories, as described above.
 
 #### Strategy
 Broken into three categories, the website will focus on the following target audiences:
 - **Roles:**
-     - 
+     - New Players
+     - Current Players
+     - Returning Players
 
 - **Demographic:**
-     - 
+     - Music Lovers
+     - Aged 10 years and up
+     -Quiz Lovers
 
 - **Psychographics:**
      - Personality & Attitudes:
-          - 
+          - Extroverted
+          - Fun-driven
+          - Knowledgeable when it comes to music
      - Values:
-          - 
+          - Modern
+          - Nostalgic
+          - Friendship
      - Lifestyles:
-          - 
+          - Fun-seeking
+          - Music interest
+          - Competitiveness
 
 The website needs to enable the **user** to:
-- 
+- Play with easy, navigating without complications or instructions
+- Choose their preferred music category
+- Control sound settings
+- Control light/dark settings
+- See High Score
+- Provide suggestions and feedback to the developer
+- Connect with developer through social links
 
-The website needs to enable the **artist** to:
-- 
+The website needs to enable the **client** to:
+- Enjoy playing their own game
+- Allow for user feedback and suggestions
+- Communicate with users on social links
 
 With these goals in mind, a strategy table was created to determine the trade-off between importance and viability with the following results:
 
-![Strategy Table]()
+![Strategy Table](assets/readme-files/strategy-table.png)
 
 #### Scope
 A scope was defined in order to clearly identify what needed to be done in order to align features with the strategy previously defined. This was broken into two categories:
@@ -131,7 +149,7 @@ Press Kit Page:
 **Imagery**
 
 
-[Back to top ⇧](#Kryan-Live)
+[Back to top ⇧](#Blank!)
 
 ## Features
 
@@ -152,12 +170,12 @@ Press Kit Page:
 ### Features to Implement in the future
 - 
 
-[Back to top ⇧](#Kryan-Live)
+[Back to top ⇧](#Blank!)
 
 ## Issues and Bugs 
 
 
-[Back to top ⇧](#Kryan-Live)
+[Back to top ⇧](#Blank!)
 
 ## Technologies Used
 ### Main Languages Used
@@ -181,7 +199,7 @@ Press Kit Page:
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
 
-[Back to top ⇧](#Kryan-Live)
+[Back to top ⇧](#Blank!)
 
 ## Testing
 
@@ -236,7 +254,7 @@ git clone https://github.com/USERNAME/REPOSITORY
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository "Link to GitHub troubleshooting")
 
-[Back to top ⇧](#Kryan-Live)
+[Back to top ⇧](#Blank!)
 
 ## Credits 
 
@@ -253,11 +271,11 @@ The developer consulted multiple sites in order to better understand the code th
 - [Bootstrap](https://getbootstrap.com/ "Link to BootStrap page")
 - [JSfiddle](https://jsfiddle.net/ "Link to JSfiddle page")
 
-[Back to top ⇧](#Kryan-Live)
+[Back to top ⇧](#Blank!)
 
 ## Acknowledgements
 - 
 
-[Back to top ⇧](#Kryan-Live)
+[Back to top ⇧](#Blank!)
 
 ***
