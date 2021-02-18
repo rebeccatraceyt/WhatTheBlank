@@ -7,70 +7,78 @@
 <a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/KWRLxMf/tagline.png alt="Think you know your lyrics?"></a>
 </h2>
 
-<div align="center"> 
+<div align="center">
 
-[Blank!](https://github.com/rebeccatraceyt/WhatsThatBlank) is web-based interactive fill-in-the-blank game, designed to test your music knowledge. With a wide variety of music categories to choose from, the user can test their memory in their favorite music genre, using a fun and intuitive user interface. Features include lively graphics and sound effects, that the user can control for their own personal experience.
-<br>
+[Blank!](https://github.com/rebeccatraceyt/WhatsThatBlank) is web-based interactive fill-in-the-blank game, with a musical twist. With a wide variety of music categories to choose from, the user can test their memory in their favorite music genre, using a fun and intuitive user interface. Features include lively graphics and sound effects, that the user can control for their own personal experience.
 
 [View the live project here]()
+
 </div>
 
 ## Table of contents
-1. [Introduction](#Introduction)
-2. [UX](#UX)
-    1. [Ideal User Demographic](#Ideal-User-Demographic)
+1. [UX](#UX)
+    1. [Project Goals](#Project-Goals)
     2. [User Stories](#User-Stories)
     3. [Development Planes](#Development-Planes)
     4. [Design](#Design)
-3. [Features](#Features)
+2. [Features](#Features)
     1. [Design Features](#Design-Features) 
     2. [Existing Features](#Existing-Features)
     3. [Features to Implement in the future](#Features-to-Implement-in-the-future)
-4. [Issues and Bugs](#Issues-and-Bugs)
-5. [Technologies Used](#Technologies-Used)
+3. [Issues and Bugs](#Issues-and-Bugs)
+4. [Technologies Used](#Technologies-Used)
      1. [Main Languages Used](#Main-Languages-Used)
      2. [Additional Languages Used](#Additional-Languages-Used)
      3. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
-6. [Testing](#Testing)
+5. [Testing](#Testing)
      1. [Testing.md](TESTING.md)
-7. [Deployment](#Deployment)
+6. [Deployment](#Deployment)
      1. [Deploying on GitHub Pages](#Deploying-on-GitHub-Pages)
      2. [Forking the Repository](#Forking-the-Repository)
      3. [Creating a Clone](#Creating-a-Clone)
-8. [Credits](#Credits)
+7. [Credits](#Credits)
      1. [Content](#Content)
      2. [Media](#Media)
      3. [Code](#Code)
-9. [Acknowledgements](#Acknowledgements)
+8. [Acknowledgements](#Acknowledgements)
 ***
 
-## Introduction
-Blank! is a web-based interactive game, designed to test your music knowledge!
+## UX 
+### Project Goals
+The primary goal of Blank! is to provide a web-based interactive game, that is intuitive and entertaining, through a fill-in-the-blank game, designed to test the users music knowledge.
 
 This is the second of four Milestone Projects that the developer must complete during their Full Stack Web Development Program at The Code Institute. 
 
 The main requirements were to design, develop and implement a dynamic front-end web application using **HTML5**, **CSS3** and **JavaScript**.
 
-[Back to top ⇧](#blank)
+#### Player Goals
+The player is looking for:
+- A fun and entertaining game to play
+- Control over the page settings
+- An intuitive and vibrant interface, that needs little to no instructions
+- Visual and audio rewards during game mode
 
-## UX 
+#### Developer / Site Owner Goals
+The Developer is looking to:
+- Create fun and entertaining game that they would play themselves
+- Demonstrate their proficiency in a variety of software development skills, using newly learned languages and libraries and API's to achieve this goal
+- Deploy a project they are excited to have on their portfolio
 
-### Ideal User Demographic
-#### The ideal user of this website is:
--
 
 ### User Stories
-#### Goals:
-1. 
+As a player, I want:
 
-#### Goals:
-1. 
+1. Choose my own username, to personalize my game-playing experience.
+2. Intuitively navigate to game mode, to have an easy gaming experience.
+3. Have a clear score counter, to keep track of my score as I play.
+4. Get visual/audio feedback on answers I choose, to see whether they were correct.
+5. Have the ability to toggle sound effects on or off, to suit my preference.
+6. Have to ability to choose the game theme (Day vs. Night Mode), to suit my preference.
+7. View latest high score to see the competition.
+8. Have the option to replay the game once I have finished to start again.
+9. Provide suggestions to the developer to upgrade the game, enhancing my user experience.
+10. Connect with the developer on a social platform of my choosing to see their other projects.
 
-#### Goals:
-1. 
-
-#### Goals:
-1. 
 
 ### Development Planes
 
