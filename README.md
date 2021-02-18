@@ -40,7 +40,7 @@ This is the second of four Milestone Projects that the developer must complete d
 
 The main requirements were to design, develop and implement a dynamic front-end web application using **HTML5**, **CSS3** and **JavaScript**.
 
-[Back to top ⇧](#Blank!)
+[Back to top ⇧](#blank)
 
 ## UX 
 
@@ -149,7 +149,7 @@ Press Kit Page:
 **Imagery**
 
 
-[Back to top ⇧](#Blank!)
+[Back to top ⇧](#blank)
 
 ## Features
 
@@ -170,12 +170,12 @@ Press Kit Page:
 ### Features to Implement in the future
 - 
 
-[Back to top ⇧](#Blank!)
+[Back to top ⇧](#blank)
 
 ## Issues and Bugs 
 
 
-[Back to top ⇧](#Blank!)
+[Back to top ⇧](#blank)
 
 ## Technologies Used
 ### Main Languages Used
@@ -199,7 +199,7 @@ Press Kit Page:
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
 
-[Back to top ⇧](#Blank!)
+[Back to top ⇧](#blank)
 
 ## Testing
 
@@ -254,7 +254,7 @@ git clone https://github.com/USERNAME/REPOSITORY
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository "Link to GitHub troubleshooting")
 
-[Back to top ⇧](#Blank!)
+[Back to top ⇧](#blank)
 
 ## Credits 
 
@@ -271,11 +271,11 @@ The developer consulted multiple sites in order to better understand the code th
 - [Bootstrap](https://getbootstrap.com/ "Link to BootStrap page")
 - [JSfiddle](https://jsfiddle.net/ "Link to JSfiddle page")
 
-[Back to top ⇧](#Blank!)
+[Back to top ⇧](#blank)
 
 ## Acknowledgements
 - 
 
-[Back to top ⇧](#Blank!)
+[Back to top ⇧](#blank)
 
 ***
