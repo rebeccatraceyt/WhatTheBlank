@@ -66,7 +66,7 @@ The Developer is looking to:
 
 
 ### User Stories
-As a player, I want:
+**As a player, I want to:**
 
 1. Choose my own username, to personalize my game-playing experience.
 2. Intuitively navigate to game mode, to have an easy gaming experience.
@@ -157,73 +157,73 @@ The information architecture was organized in a **hierarchial tree structure** i
 #### Skeleton 
 Wireframe mockups were created in a [Figma Workspace]() with providing a positive user experience in mind:
 
-**Main Page:**
+Main Page:
 
-Welcome Modal:
+- Welcome Modal:
 
-![Welcome Modal](assets/readme-files/welcome.png "Welcome Modal Wireframe")
+     ![Welcome Modal](assets/readme-files/welcome.png "Welcome Modal Wireframe")
 
-Home Page:
+- Home Page:
 
-![Home Page](assets/readme-files/home.png "Home Page Wireframe")
+     ![Home Page](assets/readme-files/home.png "Home Page Wireframe")
 
-**Game Mode:**
+Game Mode:
 
-Main Game Page:
+- Main Game Page:
 
-![Main Game Page](assets/readme-files/game-mode.png "Game Mode Page Wireframe")
+     ![Main Game Page](assets/readme-files/game-mode.png "Game Mode Page Wireframe")
 
-Player Feedback for **correct** answer:
+- Player Feedback for **correct** answer:
 
-![Player Feedback for CORRECT answer](assets/readme-files/correct.png "Game Mode Player Feedback (Correct) Wireframe")
+     ![Player Feedback for CORRECT answer](assets/readme-files/correct.png "Game Mode Player Feedback (Correct) Wireframe")
 
-Player Feedback for **incorrect** answer:
+- Player Feedback for **incorrect** answer:
 
-![Player Feedback for INCORRECT answer](assets/readme-files/incorrect.png "Game Mode Player Feedback (Incorrect) Wireframe")
+     ![Player Feedback for INCORRECT answer](assets/readme-files/incorrect.png "Game Mode Player Feedback (Incorrect) Wireframe")
 
-**Finished Page:**
+Finished Page:
 
-With High Score:
+- With High Score:
 
-![With High Score](assets/readme-files/hs.png "Finished with High Score Wireframe")
+     ![With High Score](assets/readme-files/hs.png "Finished with High Score Wireframe")
 
-Without High Score:
+- Without High Score:
 
-![Without High Score](assets/readme-files/no-hs.png "Finished without High Score Wireframe")
+     ![Without High Score](assets/readme-files/no-hs.png "Finished without High Score Wireframe")
 
-**Form:**
+Form:
 
-![Suggestions Form](assets/readme-files/form.png "Suggestions Form Wireframe")
+- ![Suggestions Form](assets/readme-files/form.png "Suggestions Form Wireframe")
 
 
 #### Surface
 
-**Colour Scheme**
+Colour Scheme
 
-The chosen colour scheme was specifically selected in order to define the tone of the application.
+- The chosen colour scheme was specifically selected in order to define the tone of the application.
 
-As the theme of the game is music related, the colour scheme mirrors the atmospheric setting of a music venue.
+- As the theme of the game is music related, the colour scheme mirrors the atmospheric setting of a music venue.
 
-Drawing from research conducted on stage lights, two colour palettes were created for a day-to-night feature toggle.
+- Drawing from research conducted on stage lights, two colour palettes were created for a day-to-night feature toggle:
 
-**Light (Day Mode):**
+     - Light (Day Mode):
 
-![Light (Day Mode)](assets/readme-files/light-mode.png "Light Mode Colour Palette")
+          ![Light (Day Mode)](assets/readme-files/light-mode.png "Light Mode Colour Palette")
 
-**Dark (Night Mode):**
+     - Dark (Night Mode):
 
-![Dark (Night Mode)](assets/readme-files/dark-mode.png "DArk Mode Colour Palette")
+          ![Dark (Night Mode)](assets/readme-files/dark-mode.png "DArk Mode Colour Palette")
 
 
-**Typography**
+Typography
 
-The primary font chosen is [Roboto](https://fonts.google.com/specimen/Roboto?preview.text_type=custom&query=roboto). A sans-serif typeface, Roboto is geometrically shaped and is easily readable.
+- The primary font chosen is [Roboto](https://fonts.google.com/specimen/Roboto?preview.text_type=custom&query=roboto). A sans-serif typeface, Roboto is geometrically shaped and is easily readable.
 
-The Secondary font (accent font) chosen is [Shadows into Light Two](https://fonts.google.com/specimen/Shadows+Into+Light+Two?preview.text_type=custom). A handwritten script typeface, it has rounded curves to emphasis a more playful and casual environment.
+- The Secondary font (accent font) chosen is [Shadows into Light Two](https://fonts.google.com/specimen/Shadows+Into+Light+Two?preview.text_type=custom). A handwritten script typeface, it has rounded curves to emphasis a more playful and casual environment.
 
-The charismatic combination of the two typefaces compliments the artistic aesthetic and entertaining theme set by the colour palette.
+- The charismatic combination of the two typefaces compliments the artistic aesthetic and entertaining theme set by the colour palette.
 
-**Imagery**
+Imagery
 
 The imagery used was created by the developer using the application [Procreate](https://procreate.art/) in order to create a consistency of the elements while maintaining the look and feel of the application
 
