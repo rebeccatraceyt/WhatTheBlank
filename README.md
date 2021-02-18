@@ -4,7 +4,7 @@
   <a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/30YJYB8/logo.png" alt="Blank! logo"/></a>
 </h1>
 <h2 align="center">
-<a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/TWC9hFv/tagline.png" alt="Think you know your lyrics?"></a>
+<a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/KWRLxMf/tagline.png alt="Think you know your lyrics?"></a>
 </h2>
 
 <div align="center"> 
