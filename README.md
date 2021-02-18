@@ -113,15 +113,27 @@ With these goals in mind, a strategy table was created to determine the trade-of
 A scope was defined in order to clearly identify what needed to be done in order to align features with the strategy previously defined. This was broken into two categories:
 - **Content Requirements**
      - The user will be looking for:
-          - 
+          - Vibrant and engaging content
+          - Easy navigation throughout the game
+          - Easy play interface
+          - Control of sound settings
+          - High Scores
+          - Developer information
 - **Functionality Requirements**
      - The user will be able to:
-          - 
+          - Navigate to preferred music category
+          - Play with ease
+          - Toggle Day vs Night graphics
+          - See High Score
+          - Toggle sound effects on and off
+          - Reach out to the developer
+               - Suggestions
+               - Social links
 
 #### Structure
 The information architecture was organized in a **hierarchial tree structure** in order to ensure that users could navigate through the site with ease and efficiency, with the following results: 
 
-![Site Map]()
+![Site Map](assets/readme-files/site-map.png)
 
 #### Skeleton 
 Wireframe mockups were created in a [Figma Workspace](https://www.figma.com/file/pRD2Oi1aSuYxhFacqOmUfT/Kryan-Live?node-id=0%3A1) with providing a positive user experience in mind:
