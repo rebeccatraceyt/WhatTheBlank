@@ -35,7 +35,6 @@
 body {
     font-family: var(--bodyfont);
     font-weight: 300;
-    background-color: var(--blue);
 }
 
 /*------------------------------------------------------- Game Page */
@@ -65,11 +64,13 @@ body {
 /*--------------------------- Main Sections */
 /* Styling for Menu section on page */
 .menu-sec {
+    background-color: var(--blue);
     min-height: 40vh;
     padding-top: 5rem;
 }
+
 /* Styling for Game Play section on page */
-.game-side {
+.game-sec {
     background: url(../images/light.png) no-repeat ;
     background-size: cover;
     -webkit-background-size: cover;
@@ -79,7 +80,14 @@ body {
     min-height: 60vh;
     width: 100vw;
 }
-.game-side.dark-mode {
+.game-sec h1 {
+    font-family: var(--titlefont);
+    color: var(--yellow);
+    text-align: center;
+    margin: auto;
+}
+
+.game-sec.dark-mode {
     background: url(../images/dark.png) no-repeat ;
 }
 
@@ -132,23 +140,6 @@ body {
 @media (min-width: 991px){ 
     
     /*--------------------------------- Main Game Page */
-
-    .menu-side {
-        background-color: var(--blue);
-        height: 100vh;  
-    }
-
-    .game-side {
-        background: url(../images/light.png) no-repeat top;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-
-        height: 100vh;
-        width: 60vw;
-    }
-
 }
 
 
