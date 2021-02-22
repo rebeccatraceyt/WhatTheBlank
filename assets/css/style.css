@@ -38,8 +38,13 @@ body {
     background-color: var(--blue);
 }
 
-/*------------------------------------------------------- Main Game Page */
+body.dark-mode {
+    background: url(../images/dark.png) no-repeat ;
+}
 
+/*------------------------------------------------------- Game Page */
+
+/*--------------------------- Header */
 /* Styling for logo */
 .logo-sec {
     padding: 10px;
@@ -48,19 +53,22 @@ body {
     left: 0;
 }
 
-.menu-sec span {
+/* Styling for Toggle buttons */
+.toggle-sec span {
    padding: 20px;
    position: fixed;
    right: 0; 
 }
-.menu-sec span > button {
+.toggle-sec span > button {
     background-color: transparent;
     border: none;
     color: var(--yellow);
 }
 
+/*--------------------------- Main Section */
+
 .menu-side {
-    height: 40vh;  
+    height: 40vh;
 }
 .game-side {
     background: url(../images/light.png) no-repeat ;
@@ -73,9 +81,6 @@ body {
     width: 100vw;
 }
 
-.game-side.dark-mode {
-    background: url(../images/dark.png) no-repeat ;
-}
 
 /*--------------------------------- Heading */
 
