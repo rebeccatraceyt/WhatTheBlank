@@ -54,15 +54,13 @@ body {
     width: 100vw;
 }
 
+.game-side.dark-mode {
+    background: url(../images/dark.png) no-repeat ;
+}
+
 /*--------------------------------- Heading */
 
 /* Styling for logo on top of page */
-.top-sec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .top-sec img {
     width: 10rem;
     height: auto;
@@ -114,7 +112,7 @@ body {
     /*--------------------------------- Main Game Page */
 
     .menu-side {
-        background-color: var(--light-blue);
+        background-color: var(--blue);
         height: 100vh;  
     }
 
