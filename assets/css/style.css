@@ -41,14 +41,23 @@ body {
 /*------------------------------------------------------- Main Game Page */
 
 /* Styling for logo */
-.logo {
+.logo-sec {
     padding: 10px;
     position: fixed;
     width: 50vw;
     left: 0;
-    z-index: 100;
 }
 
+.menu-sec span {
+   padding: 20px;
+   position: fixed;
+   right: 0; 
+}
+.menu-sec span > button {
+    background-color: transparent;
+    border: none;
+    color: var(--yellow);
+}
 
 .menu-side {
     height: 40vh;  
