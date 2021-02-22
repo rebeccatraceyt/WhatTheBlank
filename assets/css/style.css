@@ -31,17 +31,27 @@
     --yellow: rgb(240, 230, 25);
 }
 
-/*------------------------------------------------------- Special Fonts */
+/*------------------------------------------------------- Special Styling */
 body {
     font-family: var(--bodyfont);
     font-weight: 300;
+    background-color: var(--blue);
 }
 
 /*------------------------------------------------------- Main Game Page */
 
+/* Styling for logo */
+.logo {
+    padding: 10px;
+    position: fixed;
+    width: 50vw;
+    left: 0;
+    z-index: 100;
+}
+
+
 .menu-side {
-    background-color: var(--blue);
-    height: 50vh;  
+    height: 40vh;  
 }
 .game-side {
     background: url(../images/light.png) no-repeat ;
@@ -50,7 +60,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
 
-    height: 50vh;
+    height: 60vh;
     width: 100vw;
 }
 
