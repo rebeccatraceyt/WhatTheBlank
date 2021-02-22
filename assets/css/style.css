@@ -2,25 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&family=Shadows+Into+Light+Two&display=swap');
 
 /*------------------------------------------------------- Root Variables */
-:root {
 
+/* General Root Variables */
+:root {
     /* Font variables */ 
     --bodyfont: 'Roboto', sans-serif;
     --titlefont: 'Shadows Into Light Two', cursive;
+}
 
-    /* Light Mode colour variables */
-    --light-blue: rgb(89, 147, 217);
-    --light-purple: rgb(148, 96, 190);
-    --light-pink: rgb(213, 133, 183);
-    --light-orange: rgb(216, 127, 111);
-    --light-yellow: rgb(245, 238, 102);
+/* The following code is to define and implement the colour palettes for the light/dark toggle function - for UX purposes.
+    Sourced from https://ryanfeigenbaum.com/dark-mode/#toggling-dark-light-mode-with-js */
 
-    /* Dark Mode colour variables */
-    --dark-blue: rgb(26, 67, 116);
-    --dark-purple: rgb(103, 57, 141);
-    --dark-pink: rgb(178, 61, 133);
-    --dark-orange: rgb(207, 100, 82);
-    --dark-yellow: rgb(240, 230, 25);
+/* Light Mode colour variables */
+:root[colour-mode="light"]{
+    --blue: rgb(89, 147, 217);
+    --purple: rgb(148, 96, 190);
+    --pink: rgb(213, 133, 183);
+    --orange: rgb(216, 127, 111);
+    --yellow: rgb(245, 238, 102);
+}  
+
+/* Dark Mode colour variables */
+:root[colour-mode="dark"]{
+    --blue: rgb(26, 67, 116);
+    --purple: rgb(103, 57, 141);
+    --pink: rgb(178, 61, 133);
+    --orange: rgb(207, 100, 82);
+    --yellow: rgb(240, 230, 25);
 }
 
 /*------------------------------------------------------- Special Fonts */
@@ -32,7 +40,7 @@ body {
 /*------------------------------------------------------- Main Game Page */
 
 .menu-side {
-    background-color: var(--light-blue);
+    background-color: var(--blue);
     height: 50vh;  
 }
 .game-side {
