@@ -76,15 +76,20 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     min-height: 60vh;
     width: 100vw;
 }
-.game-sec h1 {
+.game-sec span {
     font-family: var(--titlefont);
     color: var(--yellow);
     text-align: center;
-    margin: auto;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .game-sec.dark-mode {
@@ -100,8 +105,7 @@ body {
 /*--------------------------- Category Buttons */
 /* Styling for category section */
 .cat-sec {
-    margin: 10px 0;
-    padding: .6rem 0;
+    padding-bottom: .6rem;
 }
 
 /* Styling for button section */
@@ -116,7 +120,6 @@ body {
 .cat-btn button {
     background: transparent;
     border: none;
-    border-radius: 50px;
     padding: 0;
     width: 18rem;
     height: auto;
