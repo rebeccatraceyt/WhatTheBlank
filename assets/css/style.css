@@ -29,29 +29,46 @@ body {
     font-weight: 300;
 }
 
-/*------------------------------------------------------- Section Divider */
+/*------------------------------------------------------- Main Game Page */
 
 .menu-side {
     background-color: var(--light-blue);
-    height: 100vh;  
+    height: 50vh;  
 }
-
 .game-side {
-    background: url(../images/light.png) no-repeat top;
+    background: url(../images/light.png) no-repeat ;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 
-    height: 100vh;
-    width: 60vw;
+    height: 50vh;
+    width: 100vw;
 }
 
-/*------------------------------------------------------- Category Buttons */
-.buttons{
+/*--------------------------------- Heading */
+
+/* Styling for logo on top of page */
+.top-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-sec img {
+    width: 10rem;
+    height: auto;
+    
+}
+
+
+/*--------------------------------- Category Buttons */
+/* Styling for category section */
+.cat-sec{
     padding-top: 1rem;
 }
 
+/* Styling for button section */
 .cat-btn {
     padding-top: .8rem;
     display: flex;
@@ -59,35 +76,51 @@ body {
     align-items: center;
 }
 
-.tv-cat {
+/* Styling for buttons */
+.cat-btn button {
     background: transparent;
     border: none;
+    border-radius: 50px;
     padding: 0;
-    width: 20rem;
-    height: 8rem;
-}
-.chart-cat {
-    background: transparent;
-    border: none;
-    padding: 0;
-    width: 20rem;
-    height: 8rem;
+    width: 18rem;
+    height: auto;
 }
 
-.tb-cat {
-    background: transparent;
-    border: none;
-    padding: 0;
-    width: 20rem;
-    height: 8rem;
+
+
+
+
+
+
+/*------------------------------------------------------- Media Queries */
+
+/* Breakpoint to maintain structural integrity on a Tablet device */
+@media (min-width: 700px) and (max-width: 991px) {
 }
 
-.movie-cat {
-    background: transparent;
-    border: none;
-    padding: 0;
-    width: 20rem;
-    height: 8rem;
+
+
+/* Breakpoint to maintain structural integrity on a Laptop Screen */
+@media (min-width: 991px){ 
+    
+    /*--------------------------------- Main Game Page */
+
+    .menu-side {
+        background-color: var(--light-blue);
+        height: 100vh;  
+    }
+
+    .game-side {
+        background: url(../images/light.png) no-repeat top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+
+        height: 100vh;
+        width: 60vw;
+    }
+
 }
 
 
