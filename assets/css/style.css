@@ -38,10 +38,6 @@ body {
     background-color: var(--blue);
 }
 
-body.dark-mode {
-    background: url(../images/dark.png) no-repeat ;
-}
-
 /*------------------------------------------------------- Game Page */
 
 /*--------------------------- Header */
@@ -50,12 +46,13 @@ body.dark-mode {
     padding: 10px;
     position: fixed;
     width: 50vw;
+    height: auto;
     left: 0;
 }
 
 /* Styling for Toggle buttons */
 .toggle-sec span {
-   padding: 20px;
+   padding: 30px 20px 20px 20px;
    position: fixed;
    right: 0; 
 }
@@ -65,11 +62,13 @@ body.dark-mode {
     color: var(--yellow);
 }
 
-/*--------------------------- Main Section */
-
-.menu-side {
-    height: 40vh;
+/*--------------------------- Main Sections */
+/* Styling for Menu section on page */
+.menu-sec {
+    min-height: 40vh;
+    padding-top: 5rem;
 }
+/* Styling for Game Play section on page */
 .game-side {
     background: url(../images/light.png) no-repeat ;
     background-size: cover;
@@ -77,25 +76,24 @@ body.dark-mode {
     -moz-background-size: cover;
     -o-background-size: cover;
 
-    height: 60vh;
+    min-height: 60vh;
     width: 100vw;
 }
-
-
-/*--------------------------------- Heading */
-
-/* Styling for logo on top of page */
-.top-sec img {
-    width: 10rem;
-    height: auto;
-    
+.game-side.dark-mode {
+    background: url(../images/dark.png) no-repeat ;
 }
 
+/*--------------------------- High Score */
+.hs-sec p {
+    height: 1vh;
+    font-weight: 700;
+}
 
-/*--------------------------------- Category Buttons */
+/*--------------------------- Category Buttons */
 /* Styling for category section */
-.cat-sec{
-    padding-top: 1rem;
+.cat-sec {
+    margin: 10px 0;
+    padding: .6rem 0;
 }
 
 /* Styling for button section */
