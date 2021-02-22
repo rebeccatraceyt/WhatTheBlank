@@ -17,10 +17,12 @@
 	<body>
 
 		<!-- ================================= HEADER ================================= -->
+		<!-- ======= Logo ======= -->
 		<div class="logo-sec">
 			<img src="assets/images/logo.png" width="100%" height="100%" alt="Blank! Logo">
 		</div>
 		
+		<!-- ======= Toggle Buttons ======= -->
 		<div class="container-fluid toggle-sec">
 			
 			<!-- Sound effects toggle function -->
@@ -44,7 +46,7 @@
 			</span>
 		</div>
 
-		<!-- ================================= MAIN SECTION ================================= -->
+		<!-- ================================= MAIN ================================= -->
 		<section>
 
 			<!-- ======= Menu Section ======= -->
@@ -90,10 +92,29 @@
 
 		</section>
 
-		 <!-- ================================= Scripts  ================================= -->
-		 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<!-- ================================= FOOTER  ================================= -->
+		<!-- Toggles Sliding footer for mobile for UX 
+				sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ -->
+		<div id="footerContainer" class="d-block d-lg-none">
+			<div id="footerButton">
+				<i class="far fa-caret-square-up"></i>
+			</div>
+			<div id="footerContent">
+				<div id="footerText">
+					<div class="row">
+						<div class="col-12 col-md-7">
+							<span>Rebecca Tracey-Timoney <span id="currentYear"></span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				
+
+		 <!-- ================================= SCRIPTS  ================================= -->
+		 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> <!-- jQuery Import -->
 		 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		 <script src="assets/js/script.js"></script>
+		 <script src="assets/js/script.js"></script> <!-- script.js Import-->
 	</body>
 </html>
