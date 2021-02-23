@@ -21,7 +21,7 @@ document.getElementById("current-year").innerHTML = new Date().getFullYear();
 var open = false;
 $('#footer-button').click(function () {
     if(open === false) {
-        $('#footer-content').animate({ height: '50px' });
+        $('#footer-content').animate({ height: '60px' });
         $(this).css('backgroundPosition', 'bottom left');
         $("i", this).toggleClass("fa-caret-square-up fa-caret-square-down") // reference: https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle/15345885 
         open = true;

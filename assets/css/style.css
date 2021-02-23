@@ -200,10 +200,14 @@ input:checked + .toggle-slide:before {
     border: none;
     text-align: center;
 }
-#footer-content i {
+#footer-text {
+    padding: 5px;
+}
+#footer-icon i {
+    padding: 5px;
     color: var(--yellow);
-    font-size: 1rem;
-    padding: 2px;
+    font-size: 1.2rem;
+    letter-spacing: 10px;
 }
 
 /*------------------------------------------------------- Media Queries */
