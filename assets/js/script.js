@@ -3,6 +3,7 @@
 const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
+var open = false;
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
@@ -29,6 +30,7 @@ function switchMode(toggle) {
 }
 
 if (currentTheme) {
+    // Check for User Preference
     document.documentElement.setAttribute('data-theme', currentTheme);
 
     if (currentTheme === 'dark') {
@@ -44,7 +46,6 @@ document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
 // Implements sliding footer function
     // sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/     
-var open = false;
 $('#footer-button').click(function () {
     if(open === false) {
         $('#footer-content').animate({ height: '60px' });

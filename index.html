@@ -108,7 +108,7 @@
 							<a href="https://www.linkedin.com/in/rebeccatraceytimoney/" target="_blank" rel="noopener" aria-label="Linkedin - Rebecca Tracey-Timoney">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <i class="far fa-lightbulb" data-toggle="modal" data-target="#exampleModalCenter"></i>
+                            <i class="far fa-lightbulb" data-toggle="modal" data-target="#form-modal"></i>
 							<a href="https://github.com/rebeccatraceyt" target="_blank" rel="noopener" aria-label="Github - rebeccatraceyt">
 								<i class="fab fa-github-alt"></i>
 							</a>
@@ -120,21 +120,25 @@
 
 		<!-- Footer Modal -->
 			<!-- sourced and edited from https://getbootstrap.com/docs/4.3/components/modal/ -->
-		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="suggestion-form" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+				<div id="form-content" class="modal-content">
+					<div id="form-header" class="modal-header">
+						<span>
+                            <h4 class="modal-title" id="suggestion-form">Got a Suggestion?</h4>
+                            <p>Let the developer know!</p>
+                        </span> 
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
-					<div class="modal-body">
-						...
-					</div>
-					<div class="modal-footer">
-					    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>
+					<div id="form-body" class="modal-body">
+						<form action="">                                
+                            <input type="text" placeholder="Name" aria-label="Enter Name" required>
+                            <input type="email" placeholder="Email" aria-label="Enter Email" required>
+                            <textarea placeholder="Leave a message or suggestion" aria-label="Enter Message" rows="3" required></textarea>
+                            <button type="submit" class="btn" data-dismiss="modal">Send</button>
+                        </form>
 					</div>
 				</div>
 			</div>

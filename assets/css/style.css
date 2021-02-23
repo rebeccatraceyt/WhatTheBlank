@@ -7,9 +7,9 @@
 :root {
     /* Font variables */ 
     --bodyfont: 'Roboto', sans-serif;
-    --titlefont: 'Shadows Into Light Two', cursive;
+    --titlefont: 'Shadows Into Light Two', cursive;    
 
-    /* General colour variables */
+    /* Colour variables for toggle function */
     --toggle-ball: rgb(255, 255, 255);
     --toggle-off: rgb(165, 165, 165);
     --toggle-on: rgb(64, 121, 67);
@@ -173,6 +173,48 @@ input:checked + .toggle-slide:before {
 .toggle-slide.toggle-ball:before {
     border-radius: 50%;
 }
+
+/*------------------------------------------------------- Modal Styling */
+
+/*--------------------------- Suggestions Form Modal */
+/* Bootstrap code edited for UI purposes */
+#form-content {
+    background-color: var(--orange);
+    color: #fcfcfc;
+}
+#form-header {
+    border: none;
+    padding-bottom: 0;
+    font-family: var(--titlefont);
+    letter-spacing: 1px;
+}
+#form-header p {
+    margin-bottom: 0;
+}
+#form-body {
+    padding-top: 1rem;
+}
+/* Edited from W3Schools example to style contact form */
+#form-body input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 1px;
+    resize: none;
+}
+#form-body button {
+    float: right;
+    background-color: #ffffff;
+    color: var(--blue);
+}
+#form-body button:hover {
+    background-color: var(--blue);
+    color: #ffffff;
+}
+
+
 
 /*------------------------------------------------------- Sliding Footer */
 /* Footer slides from bottom on mobile and tablet devices for UX purposes 
