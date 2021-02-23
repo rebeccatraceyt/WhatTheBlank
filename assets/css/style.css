@@ -59,7 +59,9 @@ body {
     background-color: transparent;
     border: none;
     color: var(--yellow);
+    font-size: 1.5em;
 }
+
 
 /*--------------------------- Main Sections */
 /* Styling for Menu section on page */
@@ -155,12 +157,13 @@ body {
     height: 0px;
     background: var(--blue);
     color: var(--yellow);
-    font-size: 0.8em;
     border: none;
     text-align: center;
 }
 #footerContent i {
     color: var(--yellow);
+    font-size: 1rem;
+    padding: 2px;
 }
 
 /*------------------------------------------------------- Media Queries */
