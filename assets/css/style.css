@@ -41,55 +41,6 @@ body {
     font-weight: 300;
 }
 
-/*------------------------------------------------------- Light / Dark Mode Toggle */
-/* Light / Dark toggle function styling for UX purposes
-	sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
-.toggle-container {
-    display: flex;
-    align-items: center;
-}
-.toggle-switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-}
-.toggle-switch input {
-    display: none;
-}
-.toogle-slide {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-}
-.toggle-slide:before {
-    background-color: #fff;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 26px;
-}
-input:checked + .toggle-slide {
-    background-color: #66bb6a;
-}
-input:checked + .toggle-slide:before {
-    transform: translate(26px);
-}
-.toggle-slide.toggle-ball {
-    border-radius: 34px;
-}
-.toggle-slide.toggle-ball:before {
-    border-radius: 50%;
-}
-
 /*------------------------------------------------------- Game Page */
 
 /*--------------------------- Header */
@@ -104,16 +55,10 @@ input:checked + .toggle-slide:before {
 
 /* Styling for Toggle buttons */
 .toggle-sec span {
-   padding: 30px 20px 20px 20px;
+   padding: 20px 10px;
    position: fixed;
    right: 0; 
 }
-.toggle-sec span > button {
-    background-color: transparent;
-    border: none;
-    font-size: 1.5em;
-}
-
 
 /*--------------------------- Main Sections */
 /* Styling for Menu section on page */
@@ -178,6 +123,55 @@ input:checked + .toggle-slide:before {
     border-radius: 4px;
     box-shadow: 0px 3px;
 }
+
+/*------------------------------------------------------- Light / Dark Mode Toggle */
+/* Light / Dark toggle function styling for UX purposes
+	sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
+    .toggle-container {
+        display: flex;
+        align-items: center;
+    }
+    .toggle-switch {
+        display: inline-block;
+        height: 34px;
+        position: relative;
+        width: 60px;
+    }
+    .toggle-switch input {
+        display: none;
+    }
+    .toogle-slide {
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .4s;
+    }
+    .toggle-slide:before {
+        background-color: #fff;
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        transition: .4s;
+        width: 26px;
+    }
+    input:checked + .toggle-slide {
+        background-color: #66bb6a;
+    }
+    input:checked + .toggle-slide:before {
+        transform: translate(26px);
+    }
+    .toggle-slide.toggle-ball {
+        border-radius: 34px;
+    }
+    .toggle-slide.toggle-ball:before {
+        border-radius: 50%;
+    }
 
 /*------------------------------------------------------- Sliding Footer */
 /* Footer slides from bottom on mobile and tablet devices for UX purposes 
