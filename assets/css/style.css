@@ -20,6 +20,7 @@
     --pink: rgb(213, 133, 183);
     --orange: rgb(216, 127, 111);
     --yellow: rgb(245, 238, 102);
+    --game-bg: url(../images/light.png) no-repeat;
 }  
 
 /* Dark Mode colour variables */
@@ -29,6 +30,7 @@
     --pink: rgb(178, 61, 133);
     --orange: rgb(207, 100, 82);
     --yellow: rgb(240, 230, 25);
+    --game-bg: url(../images/dark.png) no-repeat;
 }
 
 /*------------------------------------------------------- Special Styling */
@@ -122,7 +124,7 @@ input:checked + .toggle-slide:before {
 
 /* Styling for Game Play section on page */
 .game-sec {
-    background: url(../images/light.png) no-repeat ;
+    background: var(--game-bg);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -142,10 +144,6 @@ input:checked + .toggle-slide:before {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-}
-
-.game-sec[data-theme="dark"]{
-    background: url(../images/dark.png) no-repeat ;
 }
 
 /*--------------------------- High Score */
