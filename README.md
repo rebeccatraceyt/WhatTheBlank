@@ -1,7 +1,7 @@
 # Blank!
 
 <h1 align="center">
-  <a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/fpLRnzz/logo.png" alt="Blank! logo"/></a>
+  <a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/g708ghM/logo.png" alt="Blank! logo"/></a>
 </h1>
 
 <h2 align="center">
