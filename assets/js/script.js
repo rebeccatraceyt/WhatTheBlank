@@ -1,9 +1,14 @@
+// --------------------------------------------------------- Variables
+
+const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
-const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
-
-function switchMode(e) {
-    if (e.target.checked) {
+/* Light / Dark toggle function styling for UX purposes
+	 Sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
+function switchMode(toggle) {
+    if (toggle.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
@@ -11,6 +16,27 @@ function switchMode(e) {
 }
 
 toggleSwitch.addEventListener('change', switchMode, false);
+
+function switchMode(toggle) {
+    // Store User Preference
+    if (toggle.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+
 
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
