@@ -83,9 +83,10 @@ The Developer is looking to:
 
 ### Development Planes
 
-In order to design and create a web-based interactive game, the developer worked closely with the artist to distinguish the required functionality of the site and how it would answer the user stories, as described above.
+In order to design and create a web-based interactive game, the developer distinguished the required functionality of the site and how it would answer the user stories, as described above. They then applied their research to the Five Development Planes:
 
-#### Strategy
+<strong>1. <u>Strategy</u></strong>
+
 Broken into three categories, the website will focus on the following target audiences:
 - **Roles:**
      - New Players
@@ -129,7 +130,8 @@ With these goals in mind, a strategy table was created to determine the trade-of
 
 ![Strategy Table](assets/readme-files/strategy-table.png)
 
-#### Scope
+<strong>2. <u>Scope</u></strong>
+
 A scope was defined in order to clearly identify what needed to be done in order to align features with the strategy previously defined. This was broken into two categories:
 - **Content Requirements**
      - The user will be looking for:
@@ -150,12 +152,14 @@ A scope was defined in order to clearly identify what needed to be done in order
                - Suggestions
                - Social links
 
-#### Structure
+<strong>3. <u>Structure</u></strong>
+
 The information architecture was organized in a **hierarchial tree structure** in order to ensure that users could navigate through the site with ease and efficiency, with the following results: 
 
 ![Site Map](assets/readme-files/site-map.png)
 
-#### Skeleton 
+<strong>4. <u>Skeleton</u></strong>
+
 Wireframe mockups were created in a [Figma Workspace]() with providing a positive user experience in mind:
 
 Main Page:
@@ -197,36 +201,37 @@ Form:
 - ![Suggestions Form](assets/readme-files/form.png "Suggestions Form Wireframe")
 
 
-#### Surface
-
-Colour Scheme
-
-- The chosen colour scheme was specifically selected in order to define the tone of the application.
-
-- As the theme of the game is music related, the colour scheme mirrors the atmospheric setting of a music venue.
-
-- Drawing from research conducted on stage lights, two colour palettes were created for a day-to-night feature toggle:
-
-     - Light (Day Mode):
-
-          ![Light (Day Mode)](assets/readme-files/light-mode.png "Light Mode Colour Palette")
-
-     - Dark (Night Mode):
-
-          ![Dark (Night Mode)](assets/readme-files/dark-mode.png "DArk Mode Colour Palette")
+<strong>5. <u>Surface</u></strong>
 
 
-Typography
+- <strong>Colour Scheme</strong>
 
-- The primary font chosen is [Roboto](https://fonts.google.com/specimen/Roboto?preview.text_type=custom&query=roboto). A sans-serif typeface, Roboto is geometrically shaped and is easily readable.
+     - The chosen colour scheme was specifically selected in order to define the tone of the application.
 
-- The Secondary font (accent font) chosen is [Shadows into Light Two](https://fonts.google.com/specimen/Shadows+Into+Light+Two?preview.text_type=custom). A handwritten script typeface, it has rounded curves to emphasis a more playful and casual environment.
+     - As the theme of the game is music related, the colour scheme mirrors the atmospheric setting of a music venue.
 
-- The charismatic combination of the two typefaces compliments the artistic aesthetic and entertaining theme set by the colour palette.
+     - Drawing from research conducted on stage lights, two colour palettes were created for a day-to-night feature toggle:
 
-Imagery
+          - Light (Day Mode):
 
-The imagery used was created by the developer using the application [Procreate](https://procreate.art/) in order to create a consistency of the elements while maintaining the look and feel of the application
+               ![Light (Day Mode)](assets/readme-files/light-mode.png "Light Mode Colour Palette")
+
+          - Dark (Night Mode):
+
+               ![Dark (Night Mode)](assets/readme-files/dark-mode.png "DArk Mode Colour Palette")
+
+
+- <strong>Typography</strong>
+
+     - The primary font chosen is [Roboto](https://fonts.google.com/specimen/Roboto?preview.text_type=custom&query=roboto). A sans-serif typeface, Roboto is geometrically shaped and is easily readable.
+
+     - The Secondary font (accent font) chosen is [Shadows into Light Two](https://fonts.google.com/specimen/Shadows+Into+Light+Two?preview.text_type=custom). A handwritten script typeface, it has rounded curves to emphasis a more playful and casual environment.
+
+     - The charismatic combination of the two typefaces compliments the artistic aesthetic and entertaining theme set by the colour palette.
+
+- <strong>Imagery</strong>
+
+     - The imagery used was created by the developer using the application [Procreate](https://procreate.art/) in order to create a consistency of the elements while maintaining the look and feel of the application
 
 [Back to top ⇧](#blank)
 
