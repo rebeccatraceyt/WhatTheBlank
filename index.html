@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" colour-mode="light">
+<html lang="en" >
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,18 +32,15 @@
 
 			<!-- Light/Dark mode toggle function -->
 			<span>
-				
-				<!-- Light Mode -->
-				<button class="mode-btn light-hidden" aria-label="Light Mode Toggler">
-					<i class="far fa-sun"></i>
-				</button>
-
-				<!-- Dark Mode -->
-				<button class="mode-btn dark-hidden" aria-label="Dark Mode Toggler">
-					<i class="far fa-moon"></i>
-				</button>
-
+				<!-- sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 -->
+				<div class="toggle-container">
+					<label class="toggle-switch" for="checkbox">
+						<input type="checkbox" id="checkbox">
+						<div class="toggle-slide toggle-ball"></div>
+					</label>
+				</div>
 			</span>
+			
 		</div>
 
 		<!-- ================================= MAIN ================================= -->
@@ -95,15 +92,15 @@
 		<!-- ================================= FOOTER  ================================= -->
 		<!-- Toggles Sliding footer for mobile for UX 
 				sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ -->
-		<div id="footerContainer" class="d-block d-lg-none">
-			<div id="footerButton">
+		<div id="footer-container" class="d-block d-lg-none">
+			<div id="footer-button">
 				<i class="far fa-caret-square-up" aria-hidden="true"></i>
 			</div>
-			<div id="footerContent">
-				<div id="footerText" class="container-fluid">
+			<div id="footer-content">
+				<div id="footer-text" class="container-fluid">
 					<div class="row">
 						<div class="col-12 col-md-7">
-							<span>Rebecca Tracey-Timoney <span id="currentYear"></span></span>
+							<span>Rebecca Tracey-Timoney <span id="current-year"></span></span>
 						</div>
 					</div>
 					<div class="row">
