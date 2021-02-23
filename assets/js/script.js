@@ -12,17 +12,6 @@ function switchMode(e) {
 
 toggleSwitch.addEventListener('change', switchMode, false);
 
-
-
-
-
-
-
-
-
-
-
-
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
 document.getElementById("current-year").innerHTML = new Date().getFullYear();

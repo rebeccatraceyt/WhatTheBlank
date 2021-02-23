@@ -8,6 +8,11 @@
     /* Font variables */ 
     --bodyfont: 'Roboto', sans-serif;
     --titlefont: 'Shadows Into Light Two', cursive;
+
+    /* General colour variables */
+    --toggle-ball: rgb(255, 255, 255);
+    --toggle-off: rgb(165, 165, 165);
+    --toggle-on: rgb(64, 121, 67);
 }
 
 /* The following code is to implement light/dark colour palettes that define the toggle function - for UX purposes.
@@ -21,6 +26,7 @@
     --orange: rgb(216, 127, 111);
     --yellow: rgb(245, 238, 102);
     --game-bg: url(../images/light.png) no-repeat;
+        /* reference: https://www.nikpro.com.au/css-custom-properties-for-image-backgrounds-explained/ */
 }  
 
 /* Dark Mode colour variables */
@@ -127,51 +133,46 @@ body {
 /*------------------------------------------------------- Light / Dark Mode Toggle */
 /* Light / Dark toggle function styling for UX purposes
 	sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
-    .toggle-container {
-        display: flex;
-        align-items: center;
-    }
-    .toggle-switch {
-        display: inline-block;
-        height: 34px;
-        position: relative;
-        width: 60px;
-    }
-    .toggle-switch input {
-        display: none;
-    }
-    .toogle-slide {
-        background-color: #ccc;
-        bottom: 0;
-        cursor: pointer;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transition: .4s;
-    }
-    .toggle-slide:before {
-        background-color: #fff;
-        bottom: 4px;
-        content: "";
-        height: 26px;
-        left: 4px;
-        position: absolute;
-        transition: .4s;
-        width: 26px;
-    }
-    input:checked + .toggle-slide {
-        background-color: #66bb6a;
-    }
-    input:checked + .toggle-slide:before {
-        transform: translate(26px);
-    }
-    .toggle-slide.toggle-ball {
-        border-radius: 34px;
-    }
-    .toggle-slide.toggle-ball:before {
-        border-radius: 50%;
-    }
+.toggle-switch {
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+.toggle-switch input {
+    display: none;
+}
+.toggle-slide {
+    background-color: var(--toggle-off);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+.toggle-slide:before {
+    background-color: var(--toggle-ball);
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+input:checked + .toggle-slide {
+    background-color: var(--toggle-on);
+}
+input:checked + .toggle-slide:before {
+    transform: translate(26px);
+}
+.toggle-slide.toggle-ball {
+    border-radius: 34px;
+}
+.toggle-slide.toggle-ball:before {
+    border-radius: 50%;
+}
 
 /*------------------------------------------------------- Sliding Footer */
 /* Footer slides from bottom on mobile and tablet devices for UX purposes 
