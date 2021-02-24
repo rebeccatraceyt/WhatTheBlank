@@ -261,6 +261,8 @@ The developer ran into a number of issues during the development of the websites
 
 **Sliding Footer Bug** - A bug was detected in the sliding footer feature when being implemented. As the developer sourced and edited the code from [JSFiddle](http://jsfiddle.net/nathanbweb/JHu7j/), the problem lay in integrating that code with the original. The sourced code was overriding the html within the code and, as such, created problems with the graphics that were to be used. In order to fix this, the developer instead toggled the necessary classes and elements. In their research, the developer found a similar problem on [Stack Overflow](https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle/15345885) where they then implemented this into their code, with success.
 
+**Welcome Modal Bug** - On page load, the welcome modal appears allowing users to enter a username of choice. The problem with the modal was that, by default, clicking outside the modal area would close the modal and, as the modal was full-screen, it was possible for the user to click anywhere on the modal to close it. With this, the player could bypass the username entry, rendering it null. In order to fix this, the developer researched a method to disable this default, finding a solution on [Stack Overflow](https://stackoverflow.com/questions/22207377/disable-click-outside-of-bootstrap-modal-area-to-close-modal), whereby the modal would only close on click of the submit button (after filling out the required field).
+
 [Back to top ⇧](#blank)
 
 ## Technologies Used
