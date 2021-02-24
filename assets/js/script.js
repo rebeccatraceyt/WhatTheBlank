@@ -7,24 +7,38 @@ var open = false;
 
 let userName = localStorage.getItem("userName");
 
-
-
 // --------------------------------------------------------- Modals
-// Welcome Modal - store user data
-$('#username-submit').submit(function() {
+// Welcome Modal
+    // Code accumulated through researching similar functions with the majority of credits to fellow CI students.
+function checkForUserData() {
+    if ((userName === null) || (userName === "Player") || (userName === "")) {
+        setTimeout(function() {
+            $("#welcomeModal").modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+        }, 500);
+    }
+    else {
+        userName = localStorage.getItem("userName");
+        return;
+    }
+}
+
+$('#username-submit').click(function() {
     userData();
 });
 
-function userData () {
+function userData() {
     userName = $('#username').val();
 
-    localStorage.setItem('userName', userName);
-    console.log('userName');
-
-    if ((userName) || ((userName != null) && (userName != "Player") && (userName != ""))){ 
-        $('#welcome-modal').modal('hide');
+    localStorage.setItem("userName", userName);
+    
+    if ((userName)|| ((((userName != null) && (userName != "Player") && (userName != ""))))) { 
+        $('#welcomeModal').modal('hide');
     }
 }
+
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
@@ -81,10 +95,6 @@ $('#footer-button').click(function () {
     }  
 });		
 
-// --------------------------------------------------------- Load Game
+// --------------------------------------------------------- On Page Load 
 // Initialize game on page load
-function startGame () {
-    $("#welcomeModal").modal('show');
-}
-
-$(document).ready(startGame);
+checkForUserData()
