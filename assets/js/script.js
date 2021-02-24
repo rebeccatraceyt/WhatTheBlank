@@ -8,7 +8,12 @@ var open = false;
 // --------------------------------------------------------- Load Game
 // Initialize game on page load
 function startGame () {
-    $("#welcome-modal").modal("show");
+    /* Ensures player presses submit button
+        reference: https://stackoverflow.com/questions/22207377/disable-click-outside-of-bootstrap-modal-area-to-close-modal */
+    $("#welcome-modal").modal({
+        backdrop: 'static',
+        keyboard: false
+    });
 }
 
 $(document).ready(startGame);
