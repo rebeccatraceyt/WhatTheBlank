@@ -5,6 +5,15 @@ const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme
 
 var open = false;
 
+// --------------------------------------------------------- Load Game
+// Initialize game on page load
+function startGame () {
+    $("#welcome-modal").modal("show");
+}
+
+$(document).ready(startGame);
+
+
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
 	 Sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
