@@ -191,10 +191,14 @@ input:checked + .toggle-slide:before {
 #form-header p {
     margin-bottom: 0;
 }
+#form-header i {
+    color: #fcfcfc;
+}
 #form-body {
     padding-top: 1rem;
 }
-/* Edited from W3Schools example to style contact form */
+/* Edited from W3School's example to style contact form 
+        reference: https://www.w3schools.com/howto/howto_css_contact_form.asp */
 #form-body input[type=text], input[type=email], textarea {
     width: 100%;
     padding: 7px;
@@ -204,6 +208,20 @@ input:checked + .toggle-slide:before {
     margin-bottom: 1px;
     resize: none;
 }
+
+/* Edited from W3School's CSS placeholder example for better readability and consistency 
+        reference: https://www.w3schools.com/howto/howto_css_placeholder.asp */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: var(--blue);;
+opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: var(--blue);;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+color: var(--blue);;
+}
+
 #form-body button {
     float: right;
     background-color: #ffffff;
