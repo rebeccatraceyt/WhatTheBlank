@@ -43,7 +43,7 @@
 
 		</div>
 
-		<!-- ================================= MAIN ================================= -->
+		<!-- ================================= GAME PAGE ================================= -->
 		<section>
 
 			<!-- ======= Menu Section ======= -->
@@ -92,7 +92,7 @@
 		<!-- ================================= FOOTER  ================================= -->
 		<!-- Toggles Sliding footer for mobile for UX 
 				sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ -->
-		<div id="footer-container" class="d-block d-lg-none">
+		<footer id="footer-container" class="d-block d-lg-none">
 			<div id="footer-button">
 				<i class="far fa-caret-square-up" aria-hidden="true"></i>
 			</div>
@@ -116,10 +116,40 @@
 					</div>
 				</div>
 			</div>
+		</footer>
+
+		<!-- ================================= MODALS  ================================= -->
+		
+		<!-- ======= Welcome Modal ======= -->
+		<!-- sourced and edited from https://getbootstrap.com/docs/4.3/components/modal/ -->
+		<div class="modal fade" id="welcome-modal" tabindex="-1" role="dialog" aria-labelledby="WelcomeModal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div id="welcome-content" class="modal-content">
+					<div id="welcome-body" class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12 text-center">
+									<img src="assets/images/logo.png" alt="Blank! Logo">
+								</div>
+								<div class="col-12 text-center">
+									<h3>Think you know your lyrics?</h3><br>
+									<h4>Fill in the blanks and test your Music knowledge!</h4>
+								</div>
+								<div class="col-12 text-center">
+									<form class="welcomeModal">
+										<input type="text" name="username" id="username" maxlength="10" placeholder="Enter Player Name" aria-label="Enter Player Name" required>
+										<button type="submit" class="btn" data-dismiss="modal" aria-label="Enter Button">Let's Go!</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<!-- Footer Modal -->
-			<!-- sourced and edited from https://getbootstrap.com/docs/4.3/components/modal/ -->
+		<!-- ======= Footer Modal ======= -->
+		<!-- sourced and edited from https://getbootstrap.com/docs/4.3/components/modal/ -->
 		<div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="suggestion-form" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div id="form-content" class="modal-content">
@@ -134,10 +164,10 @@
 					</div>
 					<div id="form-body" class="modal-body">
 						<form action="">                                
-                            <input type="text" placeholder="Name" aria-label="Enter Name" required>
-                            <input type="email" placeholder="Email" aria-label="Enter Email" required>
-                            <textarea placeholder="Leave a message or suggestion" aria-label="Enter Message" rows="3" required></textarea>
-                            <button type="submit" class="btn" data-dismiss="modal">Send</button>
+                            <input type="text" name="name" id="name" placeholder="Name" aria-label="Enter Name" required>
+                            <input type="email" name="email" id="email" placeholder="Email" aria-label="Enter Email" required>
+                            <textarea name="message" id="message" placeholder="Leave a message or suggestion" aria-label="Enter Message" rows="3" required></textarea>
+                            <button type="submit" class="btn" data-dismiss="modal" aria-label="Submit Button">Send</button>
                         </form>
 					</div>
 				</div>
