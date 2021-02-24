@@ -5,19 +5,26 @@ const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme
 
 var open = false;
 
-// --------------------------------------------------------- Load Game
-// Initialize game on page load
-function startGame () {
-    /* Ensures player presses submit button
-        reference: https://stackoverflow.com/questions/22207377/disable-click-outside-of-bootstrap-modal-area-to-close-modal */
-    $("#welcome-modal").modal({
-        backdrop: 'static',
-        keyboard: false
-    });
+let userName = localStorage.getItem("userName");
+
+
+
+// --------------------------------------------------------- Modals
+// Welcome Modal - store user data
+$('#username-submit').submit(function() {
+    userData();
+});
+
+function userData () {
+    userName = $('#username').val();
+
+    localStorage.setItem('userName', userName);
+    console.log('userName');
+
+    if ((userName) || ((userName != null) && (userName != "Player") && (userName != ""))){ 
+        $('#welcome-modal').modal('hide');
+    }
 }
-
-$(document).ready(startGame);
-
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
@@ -73,3 +80,11 @@ $('#footer-button').click(function () {
         open = false;
     }  
 });		
+
+// --------------------------------------------------------- Load Game
+// Initialize game on page load
+function startGame () {
+    $("#welcome-modal").modal('show');
+}
+
+$(document).ready(startGame);
