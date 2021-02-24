@@ -177,7 +177,7 @@ input:checked + .toggle-slide:before {
 /*------------------------------------------------------- Modal Styling */
 
 /*--------------------------- Welcome Modal */
-#welcome-modal .modal-dialog {
+#welcomeModal .modal-dialog {
     /* Makes Welcome Modal full screen
         sourced from https://stackoverflow.com/questions/18432394/how-to-make-twitter-bootstrap-modal-full-screen */
     width: 100%;

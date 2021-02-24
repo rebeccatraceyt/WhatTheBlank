@@ -71,12 +71,12 @@ $('#footer-button').click(function () {
     if(open === false) {
         $('#footer-content').animate({ height: '60px' });
         $(this).css('backgroundPosition', 'bottom left');
-        $("i", this).toggleClass("fa-caret-square-up fa-caret-square-down") // reference: https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle/15345885 
+        $("i", this).toggleClass("fa-caret-square-up fa-caret-square-down"); // reference: https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle/15345885 
         open = true;
     } else {
         $('#footer-content').animate({ height: '0px' });
         $(this).css('backgroundPosition', 'top left');
-        $("i", this).toggleClass("fa-caret-square-down fa-caret-square-up")
+        $("i", this).toggleClass("fa-caret-square-down fa-caret-square-up");
         open = false;
     }  
 });		
@@ -84,7 +84,7 @@ $('#footer-button').click(function () {
 // --------------------------------------------------------- Load Game
 // Initialize game on page load
 function startGame () {
-    $("#welcome-modal").modal('show');
+    $("#welcomeModal").modal('show');
 }
 
 $(document).ready(startGame);
