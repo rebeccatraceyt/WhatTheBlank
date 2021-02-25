@@ -96,6 +96,10 @@ body {
     font-size: 2rem;
     font-weight: bold;
 }
+#question, #question-btn  {
+    /* Questions do not display until called in JS */
+    display: none;
+}
 
 /*--------------------------- High Score */
 .hs-sec p {

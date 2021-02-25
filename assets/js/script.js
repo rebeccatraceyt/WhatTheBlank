@@ -4,12 +4,12 @@ let userName = localStorage.getItem("userName"); // Load username
 const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
 
-var footerOpen = false; // default for sliding footer
+const footerOpen = false; // default for sliding footer
 
 
 // --------------------------------------------------------- Modals
-// Welcome Modal
-    // Code accumulated through researching similar functions with the majority of credits to fellow CI students.
+/* Welcome Modal
+    Code accumulated through researching similar functions with the majority of credits to fellow CI students. */
 function checkForUserData() {
     if ((userName === null) || (userName === "Player") || (userName === "")) {
         setTimeout(function() {
@@ -39,26 +39,68 @@ function userData() {
     }
 }
 
-// --------------------------------------------------------- Category Functions
-// Music Category functions
+// --------------------------------------------------------- Game Functions
 $('#tv-cat').on('click', function() {
     $('#welcome-message').hide();
-    console.log('hello');
+    $('#question').show();
+    
+    const tvQuestions = [
+        {
+            question: "I'll be there for you, when the rain starts to _ _ _ _",
+            answers: {
+                a: 'fall',
+                b: 'pour',
+                c: 'rain'
+            },
+            correctAnswer: 'b'
+        },
+        {
+            question: "The license plate said fresh and it had _ _ _ _ in the mirror",
+            answers: {
+                a: 'dice',
+                b: 'mice',
+                c: 'rice'
+            },
+            correctAnswer: 'a'
+        },
+        {
+            question: "Hanging out down the _ _ _ _ _, the same old thing we did last week",
+            answers: {
+                a: 'beach',
+                b: 'street',
+                c: 'block'
+            },
+            correctAnswer: 'b'
+        }
+    ];
+    function shuffleTv(tvQuestions) {
+        /* shuffles the questions order
+            sourced and edited from https://javascript.info/task/shuffle */
+        for(let i = tvQuestions.length - 1; i > 0; i--) {
+            let tvIndex = Math.floor(Math.random() * (i + 1));
+            [tvQuestions[i], tvQuestions[tvIndex]] = [tvQuestions[tvIndex], tvQuestions[i]];
+        }
+    }
+    function resetTV() {
+
+    } 
 });
+
 $('#chart-cat').on('click', function() {
     $('#welcome-message').hide();
-    console.log('hello');
+    $('#question').show();
 });
 $('#tb-cat').on('click', function() {
     $('#welcome-message').hide();
-    console.log('hello');
+    $('#question').show();
 });
 $('#movie-cat').on('click', function() {
     $('#welcome-message').hide();
-    console.log('hello');
+    $('#question').show();
 });
 $('#logo-sec').on('click', function() {
     $('#welcome-message').show();
+    $('#question').hide();
 });
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
@@ -100,8 +142,8 @@ if (currentTheme) {
 // Sets the year to the current year
 document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
-// Implements sliding footer function
-    // sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/     
+/* Implements sliding footer function
+    sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ */
 $('#footer-button').on('click', function () {
     if(footerOpen === false) {
         $('#footer-content').animate({ height: '60px' });
