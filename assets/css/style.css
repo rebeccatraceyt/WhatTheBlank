@@ -51,7 +51,7 @@ body {
 
 /*--------------------------- Header */
 /* Styling for logo */
-.logo-sec {
+#logo-sec {
     padding: 10px;
     position: fixed;
     width: 50vw;
@@ -90,7 +90,7 @@ body {
     min-height: 60vh;
     width: 100vw;
 }
-.game-sec span {
+#welcome-message {
     font-family: var(--titlefont);
     text-align: center;
     font-size: 2rem;

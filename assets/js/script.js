@@ -1,11 +1,11 @@
 // --------------------------------------------------------- Variables
+let userName = localStorage.getItem("userName"); // Load username
 
-const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
 
-var open = false;
+var footerOpen = false; // default for sliding footer
 
-let userName = localStorage.getItem("userName");
 
 // --------------------------------------------------------- Modals
 // Welcome Modal
@@ -25,7 +25,7 @@ function checkForUserData() {
     }
 }
 
-$('#username-submit').click(function() {
+$('#username-submit').on('click', function() {
     userData();
 });
 
@@ -34,11 +34,32 @@ function userData() {
 
     localStorage.setItem("userName", userName);
     
-    if ((userName)|| ((((userName != null) && (userName != "Player") && (userName != ""))))) { 
+    if ((userName)|| ((((userName !== null) && (userName !== "Player") && (userName !== ""))))) { 
         $('#welcomeModal').modal('hide');
     }
 }
 
+// --------------------------------------------------------- Category Functions
+// Music Category functions
+$('#tv-cat').on('click', function() {
+    $('#welcome-message').hide();
+    console.log('hello');
+});
+$('#chart-cat').on('click', function() {
+    $('#welcome-message').hide();
+    console.log('hello');
+});
+$('#tb-cat').on('click', function() {
+    $('#welcome-message').hide();
+    console.log('hello');
+});
+$('#movie-cat').on('click', function() {
+    $('#welcome-message').hide();
+    console.log('hello');
+});
+$('#logo-sec').on('click', function() {
+    $('#welcome-message').show();
+});
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
@@ -81,20 +102,20 @@ document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
 // Implements sliding footer function
     // sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/     
-$('#footer-button').click(function () {
-    if(open === false) {
+$('#footer-button').on('click', function () {
+    if(footerOpen === false) {
         $('#footer-content').animate({ height: '60px' });
         $(this).css('backgroundPosition', 'bottom left');
         $("i", this).toggleClass("fa-caret-square-up fa-caret-square-down"); // reference: https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle/15345885 
-        open = true;
+        footerOpen = true;
     } else {
         $('#footer-content').animate({ height: '0px' });
         $(this).css('backgroundPosition', 'top left');
         $("i", this).toggleClass("fa-caret-square-down fa-caret-square-up");
-        open = false;
+        footerOpen = false;
     }  
 });		
 
 // --------------------------------------------------------- On Page Load 
 // Initialize game on page load
-checkForUserData()
+checkForUserData();
