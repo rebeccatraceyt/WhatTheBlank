@@ -15,7 +15,7 @@ const tvQuestions = [
         question: "I'll be there for you, when the rain starts to _ _ _ _",
         answer1: 'fall',
         answer2: 'pour',
-        answer3: 'rain',
+        answer3: 'lash',
         correctAnswer: 2
     },
     {

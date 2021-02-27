@@ -131,6 +131,9 @@ body {
     padding: 3px 10px;
     margin: 5px;
 }
+#answer-btns button:hover {
+    transform: translateY(-10px);
+}
 
 
 /*--------------------------- Category Buttons */
@@ -154,6 +157,9 @@ body {
     padding: 0;
     width: 18rem;
     height: auto;
+}
+.cat-btn button:hover {
+    transform: translateY(-10px);
 }
 .cat-btn button > img {
     border-radius: 4px;
