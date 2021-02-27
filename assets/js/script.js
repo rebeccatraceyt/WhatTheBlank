@@ -124,7 +124,7 @@ function userData() {
 $('#tv-cat').on('click', function() {
     $('#welcome-message').hide();
     $('#question').show();
-    $('#question-btn').show();
+    $('#answer-btns').show();
     
     
     function shuffleTv(tvQuestions) {
@@ -156,7 +156,7 @@ $('#movie-cat').on('click', function() {
 $('#logo-sec').on('click', function() {
     $('#welcome-message').show();
     $('#question').hide();
-    $('#question-btn').hide();
+    $('#answer-btns').hide();
 });
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
