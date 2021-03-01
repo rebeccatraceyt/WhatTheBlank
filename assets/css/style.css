@@ -95,16 +95,19 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     
-    padding-bottom: 50px; /* To accomodate sliding footer */
+    padding-bottom: 50px; /* To accommodate sliding footer */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 
     min-height: 60vh;
     width: 100vw;
 }
-
+#score-sec {
+    visibility: hidden;
+}
+.play-sec {
+    display: inline;
+}
 /* Styling for default text on Game Page */
 #welcome-message {
     font-family: var(--titlefont);

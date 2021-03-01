@@ -110,7 +110,7 @@ const maxQuestions = 3; // How many questions before end
 const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
 
-const footerOpen = false; // default for sliding footer
+let footerOpen = false; // default for sliding footer
 
 // --------------------------------------------------------- Game Functions
 
@@ -118,12 +118,15 @@ $('#logo-sec').on('click', function() {
     $('#welcome-message').show();
     $('#question').hide();
     $('#answer-btns').hide();
+    $('#score-sec').css('visibility', 'hidden');
+    
 });
 
 $('#tv-cat').on('click', function() {
     $('#welcome-message').hide();
     $('#question').show();
     $('#answer-btns').show();
+    $('#score-sec').css('visibility', 'visible');
     
     startGame = () => {
         questionCounter = 0;
@@ -180,6 +183,7 @@ $('#chart-cat').on('click', function() {
     $('#welcome-message').hide();
     $('#question').show();
     $('#answer-btns').show();
+    $('#score-sec').css('visibility', 'visible');
     
     startGame = () => {
         questionCounter = 0;
@@ -236,6 +240,7 @@ $('#tb-cat').on('click', function() {
     $('#welcome-message').hide();
     $('#question').show();
     $('#answer-btns').show();
+    $('#score-sec').css('visibility', 'visible');
     
     startGame = () => {
         questionCounter = 0;
@@ -292,6 +297,7 @@ $('#movie-cat').on('click', function() {
     $('#welcome-message').hide();
     $('#question').show();
     $('#answer-btns').show();
+    $('#score-sec').css('visibility', 'visible');
     
     startGame = () => {
         questionCounter = 0;
