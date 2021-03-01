@@ -11,6 +11,12 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+const incrementScore = num => {
+    // Add to score Counter
+    score += num;
+    scoreNumber.innerText = score;
+};
+
 // Declaring Questions
 const tvQuestions = [
     {
@@ -119,8 +125,8 @@ $('#logo-sec').on('click', function() {
     $('#welcome-message').show();
     $('#question').hide();
     $('#answer-btns').hide();
-    $('#score-sec').css('visibility', 'hidden');
-    
+    $('#score-sec').css('visibility', 'hidden');  
+    return window.location.assign("/index.html");
 });
 
 $('#tv-cat').on('click', function() {
@@ -129,7 +135,7 @@ $('#tv-cat').on('click', function() {
     $('#answer-btns').show();
     $('#score-sec').css('visibility', 'visible');
     
-    startGame = () => {
+    function startGame () {
         scoreNumber.innerText = '0';
         questionCounter = 0;
         score = 0;
@@ -137,11 +143,11 @@ $('#tv-cat').on('click', function() {
         getNewQuestion();
     }
     
-    getNewQuestion = () => {
+    function getNewQuestion () {
         if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
             // go to end page
-            return window.location.assign(finished.html);
-        };
+            return window.location.assign("/game-end.html");
+        }
     
         questionCounter++; // start game and increment to 1
         const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
@@ -149,14 +155,14 @@ $('#tv-cat').on('click', function() {
         question.innerText = currentQuestion.question;
     
         answers.forEach(answer => { // iterate through answers
-            const number = answer.dataset['number']; // get number from data set property - get data set and give me the number
+            const number = answer.dataset.number; // get number from data set property - get data set and give me the number
             answer.innerText = currentQuestion['answer' + number]; //grab answer property and data attribute associated to get the number
         });
     
         availableQuestions.splice(questionIndex, 1); // get rid of used question
     
         acceptingAnswers = true; // allow user to answer
-    };
+    }
     
     answers.forEach(answer => {
         answer.addEventListener('click', e => {
@@ -164,7 +170,7 @@ $('#tv-cat').on('click', function() {
     
             acceptingAnswers = false;
             const selectedChoice = e.target; // listen for answer clicked
-            const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
+            const selectedAnswer = selectedChoice.dataset.number; // reads the answer number in order to cross-match with correct answer
     
             const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
 
@@ -182,11 +188,6 @@ $('#tv-cat').on('click', function() {
         });
     }); 
 
-    incrementScore = num => {
-        // Add to score Counter
-        score += num;
-        scoreNumber.innerText = score;
-    }
     startGame();    
 });
 
@@ -197,7 +198,7 @@ $('#chart-cat').on('click', function() {
     $('#score-sec').css('visibility', 'visible');
     
     
-    startGame = () => {
+    function startGame () {
         scoreNumber.innerText = '0';
         questionCounter = 0;
         score = 0;
@@ -205,11 +206,11 @@ $('#chart-cat').on('click', function() {
         getNewQuestion();
     }
     
-    getNewQuestion = () => {
+    function getNewQuestion () {
         if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
             // go to end page
-            return window.location.assign(finished.html);
-        };
+            return window.location.assign("/game-end.html");
+        }
     
         questionCounter++; // start game and increment to 1
         const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
@@ -217,14 +218,14 @@ $('#chart-cat').on('click', function() {
         question.innerText = currentQuestion.question;
     
         answers.forEach(answer => { // iterate through answers
-            const number = answer.dataset['number']; // get number from data set property - get data set and give me the number
+            const number = answer.dataset.number; // get number from data set property - get data set and give me the number
             answer.innerText = currentQuestion['answer' + number]; //grab answer property and data attribute associated to get the number
         });
     
         availableQuestions.splice(questionIndex, 1); // get rid of used question
     
         acceptingAnswers = true; // allow user to answer
-    };
+    }
     
     answers.forEach(answer => {
         answer.addEventListener('click', e => {
@@ -232,10 +233,14 @@ $('#chart-cat').on('click', function() {
     
             acceptingAnswers = false;
             const selectedChoice = e.target; // listen for answer clicked
-            const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
+            const selectedAnswer = selectedChoice.dataset.number; // reads the answer number in order to cross-match with correct answer
     
             const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
     
+            if(checkedAnswer === 'correct') {
+                incrementScore(correctBonus);
+            }
+              
             selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
     
             setTimeout(() => {
@@ -246,11 +251,6 @@ $('#chart-cat').on('click', function() {
         });
     });  
 
-    incrementScore = num => {
-        // Add to score Counter
-        score += num;
-        scoreNumber.innerText = score;
-    }
     startGame();    
 });
 
@@ -260,7 +260,7 @@ $('#tb-cat').on('click', function() {
     $('#answer-btns').show();
     $('#score-sec').css('visibility', 'visible');
     
-    startGame = () => {
+    function startGame () {
         scoreNumber.innerText = '0';
         questionCounter = 0;
         score = 0;
@@ -268,11 +268,11 @@ $('#tb-cat').on('click', function() {
         getNewQuestion();
     }
     
-    getNewQuestion = () => {
+    function getNewQuestion () {
         if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
             // go to end page
-            return window.location.assign(finished.html);
-        };
+            return window.location.assign("/game-end.html");
+        }
     
         questionCounter++; // start game and increment to 1
         const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
@@ -280,14 +280,14 @@ $('#tb-cat').on('click', function() {
         question.innerText = currentQuestion.question;
     
         answers.forEach(answer => { // iterate through answers
-            const number = answer.dataset['number']; // get number from data set property - get data set and give me the number
+            const number = answer.dataset.number; // get number from data set property - get data set and give me the number
             answer.innerText = currentQuestion['answer' + number]; //grab answer property and data attribute associated to get the number
         });
     
         availableQuestions.splice(questionIndex, 1); // get rid of used question
     
         acceptingAnswers = true; // allow user to answer
-    };
+    }
     
     answers.forEach(answer => {
         answer.addEventListener('click', e => {
@@ -295,10 +295,14 @@ $('#tb-cat').on('click', function() {
     
             acceptingAnswers = false;
             const selectedChoice = e.target; // listen for answer clicked
-            const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
+            const selectedAnswer = selectedChoice.dataset.number; // reads the answer number in order to cross-match with correct answer
     
             const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
     
+            if(checkedAnswer === 'correct') {
+                incrementScore(correctBonus);
+            }  
+              
             selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
     
             setTimeout(() => {
@@ -309,11 +313,6 @@ $('#tb-cat').on('click', function() {
         });
     });  
 
-    incrementScore = num => {
-        // Add to score Counter
-        score += num;
-        scoreNumber.innerText = score;
-    }
     startGame();    
 });
 
@@ -323,7 +322,7 @@ $('#movie-cat').on('click', function() {
     $('#answer-btns').show();
     $('#score-sec').css('visibility', 'visible');
     
-    startGame = () => {
+    function startGame(){
         scoreNumber.innerText = '0';
         questionCounter = 0;
         score = 0;
@@ -331,11 +330,11 @@ $('#movie-cat').on('click', function() {
         getNewQuestion();
     }
     
-    getNewQuestion = () => {
+    function getNewQuestion () {
         if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
             // go to end page
-            return window.location.assign(finished.html);
-        };
+            return window.location.assign("/game-end.html");
+        }
     
         questionCounter++; // start game and increment to 1
         const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
@@ -343,14 +342,14 @@ $('#movie-cat').on('click', function() {
         question.innerText = currentQuestion.question;
     
         answers.forEach(answer => { // iterate through answers
-            const number = answer.dataset['number']; // get number from data set property - get data set and give me the number
+            const number = answer.dataset.number; // get number from data set property - get data set and give me the number
             answer.innerText = currentQuestion['answer' + number]; //grab answer property and data attribute associated to get the number
         });
     
         availableQuestions.splice(questionIndex, 1); // get rid of used question
     
         acceptingAnswers = true; // allow user to answer
-    };
+    }
     
     answers.forEach(answer => {
         answer.addEventListener('click', e => {
@@ -358,10 +357,14 @@ $('#movie-cat').on('click', function() {
     
             acceptingAnswers = false;
             const selectedChoice = e.target; // listen for answer clicked
-            const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
+            const selectedAnswer = selectedChoice.dataset.number; // reads the answer number in order to cross-match with correct answer
     
             const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
     
+            if(checkedAnswer === 'correct') {
+                incrementScore(correctBonus);
+            }  
+              
             selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
     
             setTimeout(() => {
@@ -371,11 +374,7 @@ $('#movie-cat').on('click', function() {
             }, 200);
         });
     });  
-    incrementScore = num => {
-        // Add to score Counter
-        score += num;
-        scoreNumber.innerText = score;
-    }
+
     startGame();    
 });
 
