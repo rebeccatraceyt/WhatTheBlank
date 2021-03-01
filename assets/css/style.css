@@ -13,15 +13,17 @@
     --white: rgb(252, 252, 252);
     --black: rgb(0, 0, 0);
     --btn-shadow: rgba(0,0,0,0.19);
-}
 
-/* Colour variables for toggle function */
-:root {
+    /* Colour variables for toggle function */
     --toggle-ball: rgb(255, 255, 255);
     --toggle-off: rgb(165, 165, 165);
     --toggle-on: rgb(64, 121, 67);
-}
 
+    /* Colour Variables for Game buttons */
+    --correct: rgb(0, 128, 0);
+    --incorrect: rgb(255, 0, 0);
+
+}
 /* The following code is to implement light/dark colour palettes that define the toggle function - for UX purposes.
     Sourced from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 
@@ -119,7 +121,10 @@ body {
     font-size: 1.3rem;
     font-weight: 500;
 }
-#answer-btns button {
+.answer-btn {
+    display: inline-block;
+}
+.answer-text {
     background-color: var(--blue);
     color: var(--white);
     font-size: 1.1rem;
@@ -131,8 +136,11 @@ body {
     padding: 3px 10px;
     margin: 5px;
 }
-#answer-btns button:hover {
-    transform: translateY(-10px);
+.correct button  {
+    background-color: var(--correct);
+}
+.incorrect button {
+    background-color: var(--incorrect);
 }
 
 

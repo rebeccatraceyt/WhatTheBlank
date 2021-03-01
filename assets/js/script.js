@@ -2,7 +2,7 @@
 let userName = localStorage.getItem("userName"); // Load username
 
 const question = document.getElementById('question');
-const answers = Array.from(document.getElementsByClassName('answer-btn'));
+const answers = Array.from(document.getElementsByClassName('answer-text'));
 
 let currentQuestion = {};
 let acceptingAnswers = false; // can't answer until everything loaded
@@ -10,23 +10,24 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+// Declaring Questions
 const tvQuestions = [
     {
-        question: "I'll be there for you, when the rain starts to _ _ _ _",
+        question: "I'll be there for you, when the rain starts to _____",
         answer1: 'fall',
         answer2: 'pour',
         answer3: 'lash',
         correctAnswer: 2
     },
     {
-        question: "The license plate said fresh and it had _ _ _ _ in the mirror",
+        question: "The license plate said fresh and it had _____ in the mirror",
         answer1: 'dice',
         answer2: 'mice',
         answer3: 'rice',
         correctAnswer: 1
     },
     {
-        question: "Hanging out down the _ _ _ _ _, the same old thing we did last week",
+        question: "Hanging out down the _____, the same old thing we did last week",
         answer1: 'beach',
         answer2: 'street',
         answer3: 'block',
@@ -47,8 +48,8 @@ startGame = () => {
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
         // go to end page
-        return window.location.assign(); // RETURN END PAGE
-    }
+        return window.location.assign(finished.html);
+    };
 
     questionCounter++; // start game and increment to 1
     const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
@@ -63,17 +64,25 @@ getNewQuestion = () => {
     availableQuestions.splice(questionIndex, 1); // get rid of used question
 
     acceptingAnswers = true; // allow user to answer
-}
+};
 
 answers.forEach(answer => {
     answer.addEventListener('click', e => {
         if(!acceptingAnswers) return; // ignore click if not ready
 
         acceptingAnswers = false;
-        const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        const selectedChoice = e.target; // listen for answer clicked
+        const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
 
-        getNewQuestion();
+        const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
+
+        selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
+
+        setTimeout(() => {
+            // removes class after .2 of a second, moving onto next question
+            selectedChoice.parentElement.classList.remove(checkedAnswer);
+            getNewQuestion();
+        }, 200);
     });
 });
 
