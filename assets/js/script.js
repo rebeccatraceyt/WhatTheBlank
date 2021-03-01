@@ -34,6 +34,75 @@ const tvQuestions = [
         correctAnswer: 2
     }
 ];
+const chartQuestions = [
+    {
+        question: "With the lights out, its less dangerous. Here we are now _____ us",
+        answer1: 'delight',
+        answer2: 'enlighten',
+        answer3: 'entertain',
+        correctAnswer: 3
+    },
+    {
+        question: "So you think you can _____ me and spit in my eye?",
+        answer1: 'own',
+        answer2: 'stone',
+        answer3: 'clone',
+        correctAnswer: 2
+    },
+    {
+        question: "Tonight's the night, let's live it up. I got my money, let's spend it _____",
+        answer1: 'up',
+        answer2: 'all',
+        answer3: 'now',
+        correctAnswer: 1
+    }
+];
+const tbQuestions = [
+    {
+        question: "But, if you're _____ about my baby, it don't matter if you're black or white",
+        answer1: 'thinking',
+        answer2: 'dreaming',
+        answer3: 'singing',
+        correctAnswer: 1
+    },
+    {
+        question: "Friday night and the lights are _____, looking out for a place to go",
+        answer1: 'dim',
+        answer2: 'on',
+        answer3: 'low',
+        correctAnswer: 3
+    },
+    {
+        question: "Hangin' out the passenger side of his best friend's ride, trying to _____ at me",
+        answer1: 'call',
+        answer2: 'holla',
+        answer3: 'yell',
+        correctAnswer: 2
+    }
+];
+const movieQuestions = [
+    {
+        question: "What can I say except, 'You're welcome', for the tides, the sun, the _____",
+        answer1: 'stars',
+        answer2: 'sky',
+        answer3: 'moon',
+        correctAnswer: 2
+    },
+    {
+        question: "Go Greased Lightnin', you're coasting through the _____ lap trial",
+        answer1: 'heat',
+        answer2: 'pre',
+        answer3: 'beat',
+        correctAnswer: 1
+    },
+    {
+        question: "You just remember what your old _____ said, you've got a friend in me",
+        answer1: 'bud',
+        answer2: 'friend',
+        answer3: 'pal',
+        correctAnswer: 3
+    }
+];
 
 const correctBonus = 10; // How much correct answer is correct
 const maxQuestions = 3; // How many questions before end
