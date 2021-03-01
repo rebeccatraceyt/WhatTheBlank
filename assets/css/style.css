@@ -118,7 +118,7 @@ body {
     display: none;  /* Questions do not display until called in JS */
 }
 #question {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .answer-btn {
@@ -127,14 +127,14 @@ body {
 .answer-text {
     background-color: var(--blue);
     color: var(--white);
-    font-size: 1.1rem;
+    font-size: .8rem;
 
     border-radius: 7px;
     border: 2px solid var(--white);
     box-shadow: 0 8px 16px 0 var(--btn-shadow), 0 6px 20px 0 var(--btn-shadow);
 
     padding: 3px 10px;
-    margin: 5px;
+    margin: 3px;
 }
 .correct button  {
     background-color: var(--correct);
