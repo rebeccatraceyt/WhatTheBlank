@@ -3,6 +3,7 @@ let userName = localStorage.getItem("userName"); // Load username
 
 const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answer-text'));
+const scoreNumber = document.getElementById('score');
 
 let currentQuestion = {};
 let acceptingAnswers = false; // can't answer until everything loaded
@@ -104,7 +105,7 @@ const movieQuestions = [
     }
 ];
 
-const correctBonus = 10; // How much correct answer is correct
+const correctBonus = 1; // How much correct answer is correct
 const maxQuestions = 3; // How many questions before end
 
 const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
@@ -129,9 +130,9 @@ $('#tv-cat').on('click', function() {
     $('#score-sec').css('visibility', 'visible');
     
     startGame = () => {
+        scoreNumber.innerText = '0';
         questionCounter = 0;
         score = 0;
-        
         availableQuestions = [...tvQuestions];
         getNewQuestion();
     }
@@ -166,6 +167,10 @@ $('#tv-cat').on('click', function() {
             const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
     
             const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
+
+            if(checkedAnswer === 'correct') {
+                incrementScore(correctBonus);
+            }
     
             selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
     
@@ -175,7 +180,13 @@ $('#tv-cat').on('click', function() {
                 getNewQuestion();
             }, 200);
         });
-    });  
+    }); 
+
+    incrementScore = num => {
+        // Add to score Counter
+        score += num;
+        scoreNumber.innerText = score;
+    }
     startGame();    
 });
 
@@ -185,10 +196,11 @@ $('#chart-cat').on('click', function() {
     $('#answer-btns').show();
     $('#score-sec').css('visibility', 'visible');
     
+    
     startGame = () => {
+        scoreNumber.innerText = '0';
         questionCounter = 0;
         score = 0;
-        
         availableQuestions = [...chartQuestions];
         getNewQuestion();
     }
@@ -233,6 +245,12 @@ $('#chart-cat').on('click', function() {
             }, 200);
         });
     });  
+
+    incrementScore = num => {
+        // Add to score Counter
+        score += num;
+        scoreNumber.innerText = score;
+    }
     startGame();    
 });
 
@@ -243,9 +261,9 @@ $('#tb-cat').on('click', function() {
     $('#score-sec').css('visibility', 'visible');
     
     startGame = () => {
+        scoreNumber.innerText = '0';
         questionCounter = 0;
         score = 0;
-        
         availableQuestions = [...tbQuestions];
         getNewQuestion();
     }
@@ -290,6 +308,12 @@ $('#tb-cat').on('click', function() {
             }, 200);
         });
     });  
+
+    incrementScore = num => {
+        // Add to score Counter
+        score += num;
+        scoreNumber.innerText = score;
+    }
     startGame();    
 });
 
@@ -300,9 +324,9 @@ $('#movie-cat').on('click', function() {
     $('#score-sec').css('visibility', 'visible');
     
     startGame = () => {
+        scoreNumber.innerText = '0';
         questionCounter = 0;
         score = 0;
-        
         availableQuestions = [...movieQuestions];
         getNewQuestion();
     }
@@ -347,6 +371,11 @@ $('#movie-cat').on('click', function() {
             }, 200);
         });
     });  
+    incrementScore = num => {
+        // Add to score Counter
+        score += num;
+        scoreNumber.innerText = score;
+    }
     startGame();    
 });
 
