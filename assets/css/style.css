@@ -95,10 +95,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     
+    padding-top: 12px;
     padding-bottom: 50px; /* To accommodate sliding footer */
-
-    
-
     min-height: 60vh;
     width: 100vw;
 }
@@ -108,6 +106,7 @@ body {
 .play-sec {
     display: inline;
 }
+
 /* Styling for default text on Game Page */
 #welcome-message {
     font-family: var(--titlefont);
@@ -115,7 +114,7 @@ body {
     font-weight: bold;
 }
 
-/* Styling for questions and answers in game mode */
+/* Styling for questions in game mode */
 #question, #answer-btns {
     padding: 10px;
     display: none;  /* Questions do not display until called in JS */
@@ -124,6 +123,8 @@ body {
     font-size: 1rem;
     font-weight: 500;
 }
+
+/* Styling for answers in game mode */
 .answer-btn {
     display: inline-block;
 }
@@ -146,6 +147,10 @@ body {
     background-color: var(--incorrect);
 }
 
+/* Styling for score in game mode */
+#score-text h1 {
+    font-size: 1.1rem;
+}
 
 /*--------------------------- Category Buttons */
 /* Styling for category section */
