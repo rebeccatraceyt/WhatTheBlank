@@ -126,7 +126,7 @@ $('#logo-sec').on('click', function() {
     $('#question').hide();
     $('#answer-btns').hide();
     $('#score-sec').css('visibility', 'hidden');  
-    return window.location.assign("/index.html");
+    return window.location.assign("index.html");
 });
 
 $('#tv-cat').on('click', function() {
@@ -379,7 +379,7 @@ $('#movie-cat').on('click', function() {
 });
 
 // --------------------------------------------------------- Modals
-/* Welcome Modal
+/* Welcome Modal allows user to enter name of choice - stored on local
     Code accumulated through researching similar functions with the majority of credits to fellow CI students. */
 function checkForUserData() {
     if ((userName === null) || (userName === "Player") || (userName === "")) {
@@ -409,6 +409,10 @@ function userData() {
         $('#welcomeModal').modal('hide');
     }
 }
+
+// --------------------------------------------------------- Game End Page
+document.getElementById('playerName').innerText = userName; // Display Username
+
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes

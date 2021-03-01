@@ -179,6 +179,46 @@ body {
     box-shadow: 0px 3px;
 }
 
+/*------------------------------------------------------- Game End Page */
+.game-end {
+    background: var(--game-bg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
+    padding-top: 12px;
+    padding-bottom: 50px; /* To accommodate sliding footer */
+    min-height: 60vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-text {
+    padding: 10px;
+}
+.game-end h3 {
+    font-family: var(--titlefont);
+}
+.game-end h5 {
+    font-weight: 500;
+}
+.game-end p {
+    /* Override of default CSS styling for UI purposes */
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 2px;
+}
+.game-end i {
+    border: 2px solid var(--yellow);
+    padding: 10px;
+    margin: 12px;
+    color: var(--yellow);
+    font-size: rem;
+}
+
 /*------------------------------------------------------- Light / Dark Mode Toggle */
 /* Light / Dark toggle function styling for UX purposes
 	sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
@@ -337,8 +377,6 @@ input:checked + .toggle-slide:before {
     background-color: var(--blue);
     color: var(--white);
 }
-
-
 
 /*------------------------------------------------------- Sliding Footer */
 /* Footer slides from bottom on mobile and tablet devices for UX purposes 
