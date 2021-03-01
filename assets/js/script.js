@@ -107,64 +107,242 @@ const movieQuestions = [
 const correctBonus = 10; // How much correct answer is correct
 const maxQuestions = 3; // How many questions before end
 
-startGame = () => {
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = [...tvQuestions]; // copy from array - spread operator: spread each item into new array
-    getNewQuestion();
-}
-
-getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
-        // go to end page
-        return window.location.assign(finished.html);
-    };
-
-    questionCounter++; // start game and increment to 1
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
-    currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
-
-    answers.forEach(answer => { // iterate through answers
-        const number = answer.dataset['number']; // get number from data set property - get data set and give me the number
-        answer.innerText = currentQuestion['answer' + number]; //grab answer property and data attribute associated to get the number
-    });
-
-    availableQuestions.splice(questionIndex, 1); // get rid of used question
-
-    acceptingAnswers = true; // allow user to answer
-};
-
-answers.forEach(answer => {
-    answer.addEventListener('click', e => {
-        if(!acceptingAnswers) return; // ignore click if not ready
-
-        acceptingAnswers = false;
-        const selectedChoice = e.target; // listen for answer clicked
-        const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
-
-        const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
-
-        selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
-
-        setTimeout(() => {
-            // removes class after .2 of a second, moving onto next question
-            selectedChoice.parentElement.classList.remove(checkedAnswer);
-            getNewQuestion();
-        }, 200);
-    });
-});
-
-startGame();
-
-
-
-
 const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
 
 const footerOpen = false; // default for sliding footer
 
+// --------------------------------------------------------- Game Functions
+
+$('#logo-sec').on('click', function() {
+    $('#welcome-message').show();
+    $('#question').hide();
+    $('#answer-btns').hide();
+});
+
+$('#tv-cat').on('click', function() {
+    $('#welcome-message').hide();
+    $('#question').show();
+    $('#answer-btns').show();
+    
+    startGame = () => {
+        questionCounter = 0;
+        score = 0;
+        
+        availableQuestions = [...tvQuestions];
+        getNewQuestion();
+    }
+    
+    getNewQuestion = () => {
+        if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
+            // go to end page
+            return window.location.assign(finished.html);
+        };
+    
+        questionCounter++; // start game and increment to 1
+        const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
+        currentQuestion = availableQuestions[questionIndex];
+        question.innerText = currentQuestion.question;
+    
+        answers.forEach(answer => { // iterate through answers
+            const number = answer.dataset['number']; // get number from data set property - get data set and give me the number
+            answer.innerText = currentQuestion['answer' + number]; //grab answer property and data attribute associated to get the number
+        });
+    
+        availableQuestions.splice(questionIndex, 1); // get rid of used question
+    
+        acceptingAnswers = true; // allow user to answer
+    };
+    
+    answers.forEach(answer => {
+        answer.addEventListener('click', e => {
+            if(!acceptingAnswers) return; // ignore click if not ready
+    
+            acceptingAnswers = false;
+            const selectedChoice = e.target; // listen for answer clicked
+            const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
+    
+            const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
+    
+            selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
+    
+            setTimeout(() => {
+                // removes class after .2 of a second, moving onto next question
+                selectedChoice.parentElement.classList.remove(checkedAnswer);
+                getNewQuestion();
+            }, 200);
+        });
+    });  
+    startGame();    
+});
+
+$('#chart-cat').on('click', function() {
+    $('#welcome-message').hide();
+    $('#question').show();
+    $('#answer-btns').show();
+    
+    startGame = () => {
+        questionCounter = 0;
+        score = 0;
+        
+        availableQuestions = [...chartQuestions];
+        getNewQuestion();
+    }
+    
+    getNewQuestion = () => {
+        if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
+            // go to end page
+            return window.location.assign(finished.html);
+        };
+    
+        questionCounter++; // start game and increment to 1
+        const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
+        currentQuestion = availableQuestions[questionIndex];
+        question.innerText = currentQuestion.question;
+    
+        answers.forEach(answer => { // iterate through answers
+            const number = answer.dataset['number']; // get number from data set property - get data set and give me the number
+            answer.innerText = currentQuestion['answer' + number]; //grab answer property and data attribute associated to get the number
+        });
+    
+        availableQuestions.splice(questionIndex, 1); // get rid of used question
+    
+        acceptingAnswers = true; // allow user to answer
+    };
+    
+    answers.forEach(answer => {
+        answer.addEventListener('click', e => {
+            if(!acceptingAnswers) return; // ignore click if not ready
+    
+            acceptingAnswers = false;
+            const selectedChoice = e.target; // listen for answer clicked
+            const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
+    
+            const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
+    
+            selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
+    
+            setTimeout(() => {
+                // removes class after .2 of a second, moving onto next question
+                selectedChoice.parentElement.classList.remove(checkedAnswer);
+                getNewQuestion();
+            }, 200);
+        });
+    });  
+    startGame();    
+});
+
+$('#tb-cat').on('click', function() {
+    $('#welcome-message').hide();
+    $('#question').show();
+    $('#answer-btns').show();
+    
+    startGame = () => {
+        questionCounter = 0;
+        score = 0;
+        
+        availableQuestions = [...tbQuestions];
+        getNewQuestion();
+    }
+    
+    getNewQuestion = () => {
+        if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
+            // go to end page
+            return window.location.assign(finished.html);
+        };
+    
+        questionCounter++; // start game and increment to 1
+        const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
+        currentQuestion = availableQuestions[questionIndex];
+        question.innerText = currentQuestion.question;
+    
+        answers.forEach(answer => { // iterate through answers
+            const number = answer.dataset['number']; // get number from data set property - get data set and give me the number
+            answer.innerText = currentQuestion['answer' + number]; //grab answer property and data attribute associated to get the number
+        });
+    
+        availableQuestions.splice(questionIndex, 1); // get rid of used question
+    
+        acceptingAnswers = true; // allow user to answer
+    };
+    
+    answers.forEach(answer => {
+        answer.addEventListener('click', e => {
+            if(!acceptingAnswers) return; // ignore click if not ready
+    
+            acceptingAnswers = false;
+            const selectedChoice = e.target; // listen for answer clicked
+            const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
+    
+            const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
+    
+            selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
+    
+            setTimeout(() => {
+                // removes class after .2 of a second, moving onto next question
+                selectedChoice.parentElement.classList.remove(checkedAnswer);
+                getNewQuestion();
+            }, 200);
+        });
+    });  
+    startGame();    
+});
+
+$('#movie-cat').on('click', function() {
+    $('#welcome-message').hide();
+    $('#question').show();
+    $('#answer-btns').show();
+    
+    startGame = () => {
+        questionCounter = 0;
+        score = 0;
+        
+        availableQuestions = [...movieQuestions];
+        getNewQuestion();
+    }
+    
+    getNewQuestion = () => {
+        if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
+            // go to end page
+            return window.location.assign(finished.html);
+        };
+    
+        questionCounter++; // start game and increment to 1
+        const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
+        currentQuestion = availableQuestions[questionIndex];
+        question.innerText = currentQuestion.question;
+    
+        answers.forEach(answer => { // iterate through answers
+            const number = answer.dataset['number']; // get number from data set property - get data set and give me the number
+            answer.innerText = currentQuestion['answer' + number]; //grab answer property and data attribute associated to get the number
+        });
+    
+        availableQuestions.splice(questionIndex, 1); // get rid of used question
+    
+        acceptingAnswers = true; // allow user to answer
+    };
+    
+    answers.forEach(answer => {
+        answer.addEventListener('click', e => {
+            if(!acceptingAnswers) return; // ignore click if not ready
+    
+            acceptingAnswers = false;
+            const selectedChoice = e.target; // listen for answer clicked
+            const selectedAnswer = selectedChoice.dataset['number']; // reads the answer number in order to cross-match with correct answer
+    
+            const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
+    
+            selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
+    
+            setTimeout(() => {
+                // removes class after .2 of a second, moving onto next question
+                selectedChoice.parentElement.classList.remove(checkedAnswer);
+                getNewQuestion();
+            }, 200);
+        });
+    });  
+    startGame();    
+});
 
 // --------------------------------------------------------- Modals
 /* Welcome Modal
@@ -198,45 +376,6 @@ function userData() {
     }
 }
 
-// --------------------------------------------------------- Game Functions
-$('#tv-cat').on('click', function() {
-    $('#welcome-message').hide();
-    $('#question').show();
-    $('#answer-btns').show();
-    
-    
-    function shuffleTv(tvQuestions) {
-        /* shuffles the questions order
-            sourced and edited from https://javascript.info/task/shuffle */
-        for(let i = tvQuestions.length - 1; i > 0; i--) {
-            let tvIndex = Math.floor(Math.random() * (i + 1));
-            [tvQuestions[i], tvQuestions[tvIndex]] = [tvQuestions[tvIndex], tvQuestions[i]];
-        }
-    }
-    function resetTV() {
-
-        }
-
-});
-
-$('#chart-cat').on('click', function() {
-    $('#welcome-message').hide();
-    $('#question').show();
-});
-$('#tb-cat').on('click', function() {
-    $('#welcome-message').hide();
-    $('#question').show();
-});
-$('#movie-cat').on('click', function() {
-    $('#welcome-message').hide();
-    $('#question').show();
-});
-$('#logo-sec').on('click', function() {
-    $('#welcome-message').show();
-    $('#question').hide();
-    $('#answer-btns').hide();
-});
-
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
 	 Sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
@@ -269,8 +408,6 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
-
-
 
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
