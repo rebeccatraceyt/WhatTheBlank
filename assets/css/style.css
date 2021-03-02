@@ -100,9 +100,6 @@ body {
     min-height: 60vh;
     width: 100vw;
 }
-#score-sec {
-    visibility: hidden;
-}
 .play-sec {
     display: inline;
 }
@@ -117,7 +114,6 @@ body {
 /* Styling for questions in game mode */
 #question, #answer-btns {
     padding: 10px;
-    display: none;  /* Questions do not display until called in JS */
 }
 #question {
     font-size: 1rem;
