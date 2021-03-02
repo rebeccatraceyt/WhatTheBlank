@@ -34,7 +34,7 @@ function startGame () {
 function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
         // set final player sore
-        localStorage.setItem("playerScore", score);
+        sessionStorage.setItem("playerScore", score);
         
         // go to Game End page
         return window.location.assign("game-end.html");

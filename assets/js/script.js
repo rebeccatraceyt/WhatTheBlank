@@ -1,6 +1,6 @@
 // --------------------------------------------------------- Variables
-let userName = localStorage.getItem("userName"); // Load username
-let playerScore = localStorage.getItem("playerScore"); // Load score
+let userName = sessionStorage.getItem("userName"); // Load username
+let playerScore = sessionStorage.getItem("playerScore"); // Load score
 
 const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answer-text'));
@@ -51,7 +51,7 @@ function checkForUserData() {
         }, 500);
     }
     else {
-        userName = localStorage.getItem("userName");
+        userName = sessionStorage.getItem("userName");
         return;
     }
     console.log(userName);
@@ -64,7 +64,7 @@ $('#username-submit').on('click', function() {
 function userData() {
     userName = $('#username').val();
 
-    localStorage.setItem("userName", userName);
+    sessionStorage.setItem("userName", userName);
     
     if ((userName)|| ((((userName !== null) && (userName !== "Player") && (userName !== ""))))) { 
         $('#welcomeModal').modal('hide');
