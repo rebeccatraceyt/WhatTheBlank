@@ -284,7 +284,7 @@ input:checked + .toggle-slide:before {
     margin: 0 auto;
 }
 #welcome-body {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -295,19 +295,19 @@ input:checked + .toggle-slide:before {
 #welcome-body h3 {
     color: var(--blue);
     padding: 10px 0;
-    font-size: 1.7em;
+    font-size: 1.2rem;
     font-family: var(--titlefont);
     text-shadow: 1px 1px var(--black);
     letter-spacing: 1px;
 }
 #welcome-body h4 {
     padding: 5px 0;
-    font-size: 1.5em;
-    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 #welcome-body input {
-    width: 50%;
-    padding: 7px;
+    min-width: 50%;
+    padding: 6px;
     border: 1px solid var(--white);
     border-radius: 5px;
     text-align: center;
