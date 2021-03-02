@@ -265,6 +265,8 @@ The developer ran into a number of issues during the development of the websites
 
 As well as this, there was an issue with the modal, whereby the modal would continue to refresh as the user entered their username. The reason for this was a conflict issue between the `data-dismiss` attribute and `localStorage`, where it would not register the name as a username, but dismiss the modal anyway. To rectify this, and to learn for future reference, the developer turned to [Slack](https://slack.com/intl/en-ie/) to get examples of previous methods. With this new knowledge, the developer was able to tackle the problem. They would like to extend their deepest gratitude to those fellow students.
 
+**Game Play Categories issues** - The original plan for the game was to use one page and iterate an array depending on the category button that the user clicked. This method created an overlapping issue within the JavaScript `script.js` file and the page would not function as designed. In order to save the functionality of the game, the developer decided to divide the categories into their own pages (both `.html` and `.js`), with each page executing their own functions during game-play.
+
 [Back to top ⇧](#blank)
 
 ## Technologies Used
