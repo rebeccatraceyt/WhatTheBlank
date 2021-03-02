@@ -109,6 +109,10 @@ body {
     font-family: var(--titlefont);
     font-size: 2rem;
     font-weight: bold;
+
+    display: initial; 
+    justify-content: center;
+    align-content: center;
 }
 
 /* Styling for questions in game mode */
