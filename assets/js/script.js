@@ -1,9 +1,11 @@
 // --------------------------------------------------------- Variables
 let userName = localStorage.getItem("userName"); // Load username
+let playerScore = localStorage.getItem("playerScore"); // Load score
 
 const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answer-text'));
 const scoreNumber = document.getElementById('score');
+
 
 let currentQuestion = {};
 let acceptingAnswers = false; // can't answer until everything loaded
@@ -145,7 +147,11 @@ $('#tv-cat').on('click', function() {
     
     function getNewQuestion () {
         if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
-            // go to end page
+            // set final player sore
+            localStorage.setItem("playerScore", score);
+            
+            
+            // go to Game End page
             return window.location.assign("/game-end.html");
         }
     
@@ -378,6 +384,11 @@ $('#movie-cat').on('click', function() {
     startGame();    
 });
 
+function playerInfo() {
+    $('#playerName').text(userName);
+    $('#final-score').text(playerScore);
+}
+
 // --------------------------------------------------------- Modals
 /* Welcome Modal allows user to enter name of choice - stored on local
     Code accumulated through researching similar functions with the majority of credits to fellow CI students. */
@@ -394,6 +405,7 @@ function checkForUserData() {
         userName = localStorage.getItem("userName");
         return;
     }
+    console.log(userName);
 }
 
 $('#username-submit').on('click', function() {
@@ -411,8 +423,8 @@ function userData() {
 }
 
 // --------------------------------------------------------- Game End Page
-document.getElementById('playerName').innerText = userName; // Display Username
-
+// document.getElementById('final-score').innerText = playerScore; // Display final score
+   
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
@@ -470,3 +482,4 @@ $('#footer-button').on('click', function () {
 // --------------------------------------------------------- On Page Load 
 // Initialize game on page load
 checkForUserData();
+playerInfo()
