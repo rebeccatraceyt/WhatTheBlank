@@ -11,6 +11,7 @@ const scoreNumber = document.getElementById('score');
 let currentQuestion = {};
 let acceptingAnswers = false; // can't answer until everything loaded
 let score = 0;
+let highScore = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
@@ -33,16 +34,15 @@ $('#logo-sec').click(function () {
     return window.location.assign("index.html");
 });
 
-function playerInfo() {
-    $('#playerName').text(userName);
-    $('#final-score').text(playerScore);
-}
 
-// --------------------------------------------------------- Modals
-/* Welcome Modal allows user to enter name of choice - stored on local
+
+// --------------------------------------------------------- Player Information
+/* Welcome Modal allows user to enter name of choice
     Code accumulated through researching similar functions with the majority of credits to fellow CI students. */
 function checkForUserData() {
+    // check if user already exists
     if ((userName === null) || (userName === "Player") || (userName === "")) {
+        localStorage.setItem("highScore", 0);
         setTimeout(function() {
             $("#welcomeModal").modal({
                 backdrop: 'static',
@@ -52,15 +52,13 @@ function checkForUserData() {
     }
     else {
         userName = sessionStorage.getItem("userName");
+        highScore = sessionStorage.getItem("highScore");
         return;
     }
-    console.log(userName);
 }
-
 $('#username-submit').on('click', function() {
     userData();
 });
-
 function userData() {
     userName = $('#username').val();
 
@@ -69,6 +67,24 @@ function userData() {
     if ((userName)|| ((((userName !== null) && (userName !== "Player") && (userName !== ""))))) { 
         $('#welcomeModal').modal('hide');
     }
+}
+
+function checkHighScore() {
+    // checks score
+    if (score > highScore){
+        highScore = score;
+        sessionStorage.setItem("highScore", highScore);
+        console.log("new high score");
+        return true;
+    } else {
+        return false;
+    }
+}
+function playerInfo() {
+    // Calls player information when needed
+    $('#playerName').text(userName);
+    $('#final-score').text(playerScore);
+    $('#high-score').text(highScore);
 }
 
 // --------------------------------------------------------- Game End Page

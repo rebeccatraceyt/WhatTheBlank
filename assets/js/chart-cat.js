@@ -27,6 +27,7 @@ function startGame () {
     scoreNumber.innerText = '0';
     questionCounter = 0;
     score = 0;
+    highScore = 0;
     availableQuestions = [...chartQuestions];
     getNewQuestion();
 }
@@ -35,6 +36,7 @@ function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
         // set final player sore
         sessionStorage.setItem("playerScore", score);
+        checkHighScore();
         
         // go to Game End page
         return window.location.assign("game-end.html");
