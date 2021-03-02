@@ -109,6 +109,8 @@ body {
     font-family: var(--titlefont);
     font-size: 2rem;
     font-weight: bold;
+
+    display: initial;
 }
 
 /* Styling for questions in game mode */
