@@ -267,6 +267,8 @@ As well as this, there was an issue with the modal, whereby the modal would cont
 
 **Game Play Categories issues** - The original plan for the game was to use one page and iterate an array depending on the category button that the user clicked. This method created an overlapping issue within the JavaScript `script.js` file and the page would not function as designed. In order to save the functionality of the game, the developer decided to divide the categories into their own pages (both `.html` and `.js`), with each page executing their own functions during game-play.
 
+**Game Ending Page issues** - In the original design, there was to be a separate page that players would be redirected to after answering all questions, thus completing the quiz. The page content would change, depending on which of the two probable outcomes of game play (*high score* or *no high score*) the user had. Straight away, the developer faced a similar problem to the **Game Play Categories** issue, where there became an overwhelming overlap in the `script.js` file. To over come this, the developer removed the ending page entirely, and directly applied the end of the game to each specific category. This allowed for a high score in each category as well as an accurate pointing system that was not possible with one page.
+
 [Back to top ⇧](#blank)
 
 ## Technologies Used
