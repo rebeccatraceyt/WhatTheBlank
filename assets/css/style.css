@@ -103,8 +103,15 @@ body {
 .play-sec {
     display: inline;
 }
+#tv-cat {
+    background: url(../images/tv-bg.png) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 
-/* Styling for default text on Game Page */
+/* Styling for text on Home Page */
 #welcome-message {
     font-family: var(--titlefont);
     font-size: 2rem;
