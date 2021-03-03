@@ -26,10 +26,13 @@ const maxQuestions = 3; // How many questions before end
 const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
 
+
+
 let footerOpen = false; // default for sliding footer
 
 // --------------------------------------------------------- Game Functions
-$('#logo-sec').click(function () {
+$('.logo-sec').click(function () {
+    // returns user back to home page
     return window.location.assign("index.html");
 });
 
@@ -61,10 +64,13 @@ function checkForUserData() {
         return;
     }
 }
+
 $('#username-submit').on('click', function() {
     userData();
 });
+
 function userData() {
+    // enters player information
     userName = $('#username').val();
 
     sessionStorage.setItem("userName", userName);
@@ -73,11 +79,6 @@ function userData() {
         $('#welcomeModal').modal('hide');
     }
 }
-
-function playerInfo() {
-    // Calls player information when needed
-    $('.playerName').text(userName);
-}   
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
@@ -112,6 +113,22 @@ if (currentTheme) {
     }
 }
 
+// --------------------------------------------------------- Audio
+$('.cat-btn').on('click', () => {
+        playButtonSound();
+    });
+$('.logo-sec').on('click', () => {
+        playButtonSound();
+    });
+
+function playButtonSound() {
+    console.log("sound played");
+    $('.btn-sound')[0].currentTime = 0;
+    $('.btn-sound')[0].play();
+    return true;
+}
+
+
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
 document.getElementById("current-year").innerHTML = new Date().getFullYear();
@@ -135,6 +152,5 @@ $('#footer-button').on('click', function () {
 // --------------------------------------------------------- On Page Load 
 // Initialize game on page load
 checkForUserData();
-playerInfo();
 
 

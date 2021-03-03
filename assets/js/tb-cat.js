@@ -59,9 +59,14 @@ function getNewQuestion () {
         // go to Game End
         $('.game-sec').hide();
         $('.end-text').show();
+        
         // set final player score
         $('.final-score').text(tbScore);
         $('.high-score').text(tbHighScore);
+
+        // Calls their Player Name
+        $('.playerName').text(userName);
+
         checkHighScore();
     }
 

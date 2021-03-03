@@ -58,7 +58,7 @@ body {
 
 /*--------------------------- Header */
 /* Styling for logo */
-#logo-sec {
+.logo-sec {
     padding: 10px;
     position: fixed;
     width: 50vw;
