@@ -26,20 +26,45 @@ const movieQuestions = [
 function startGame () {
     scoreNumber.innerText = '0';
     questionCounter = 0;
-    score = 0;
-    highScore = 0;
+    movieScore = 0;
     availableQuestions = [...movieQuestions];
     getNewQuestion();
 }
 
 function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
-        // set final player sore
-        sessionStorage.setItem("playerScore", score);
-        checkHighScore();
         
-        // go to Game End page
-        return window.location.assign("game-end.html");
+        function checkHighScore() {
+            // checks score
+            if ((movieScore == movieHighScore) || (movieScore > movieHighScore)){
+                movieHighScore = movieScore;
+                sessionStorage.setItem("movieHighScore", movieHighScore);
+                console.log("new high score - MOVIE");
+        
+                // Shows applicable text based on score
+                $('.hs-yes').show();
+                $('.hs-no').hide();
+                $('#high-score').text(movieHighScore);
+        
+                return true;
+            } else {
+                $('.hs-yes').hide();
+                $('.hs-no').show();
+                console.log("no high score - MOVIE");
+
+                return false;
+            }
+        }
+
+        // go to Game End
+        $('.game-sec').hide();
+        $('.end-text').show();
+        // set final player score
+        $('.final-score').text(movieScore);
+        $('.high-score').text(movieHighScore);
+        checkHighScore();
+
+        return true;
     }
 
     questionCounter++; // start game and increment to 1
@@ -80,5 +105,11 @@ answers.forEach(answer => {
         }, 200);
     });
 }); 
+
+const incrementScore = num => {
+    // Add to score Counter
+    movieScore += num;
+    scoreNumber.innerText = movieScore;
+};
 
 startGame(); 

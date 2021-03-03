@@ -26,20 +26,43 @@ const chartQuestions = [
 function startGame () {
     scoreNumber.innerText = '0';
     questionCounter = 0;
-    score = 0;
-    highScore = 0;
+    chartScore = 0;
     availableQuestions = [...chartQuestions];
     getNewQuestion();
 }
 
 function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
-        // set final player sore
-        sessionStorage.setItem("playerScore", score);
-        checkHighScore();
         
-        // go to Game End page
-        return window.location.assign("game-end.html");
+        function checkHighScore() {
+            // checks score
+            if ((chartScore == chartHighScore) || (chartScore > chartHighScore)){
+                chartHighScore = chartScore;
+                sessionStorage.setItem("chartHighScore", chartHighScore);
+                console.log("new high score - CHART");
+        
+                // Shows applicable text based on score
+                $('.hs-yes').show();
+                $('.hs-no').hide();
+                $('#high-score').text(chartHighScore);
+        
+                return true;
+            } else {
+                $('.hs-yes').hide();
+                $('.hs-no').show();
+                console.log("no high score - CHART");
+
+                return false;
+            }
+        }
+
+        // go to Game End
+        $('.game-sec').hide();
+        $('.end-text').show();
+        // set final player score
+        $('.final-score').text(chartScore);
+        $('.high-score').text(chartHighScore);
+        checkHighScore();
     }
 
     questionCounter++; // start game and increment to 1
@@ -80,5 +103,11 @@ answers.forEach(answer => {
         }, 200);
     });
 }); 
+
+const incrementScore = num => {
+    // Add to score Counter
+    chartScore += num;
+    scoreNumber.innerText = chartScore;
+};
 
 startGame(); 

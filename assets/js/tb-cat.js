@@ -26,20 +26,43 @@ const tbQuestions = [
 function startGame () {
     scoreNumber.innerText = '0';
     questionCounter = 0;
-    score = 0;
-    highScore = 0;
+    tbScore = 0;
     availableQuestions = [...tbQuestions];
     getNewQuestion();
 }
 
 function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
-        // set final player sore
-        sessionStorage.setItem("playerScore", score);
-        checkHighScore();
         
-        // go to Game End page
-        return window.location.assign("game-end.html");
+        function checkHighScore() {
+            // checks score
+            if ((tbScore == tbHighScore) || (tbScore > tbHighScore)){
+                tbHighScore = tbScore;
+                sessionStorage.setItem("tbHighScore", tbHighScore);
+                console.log("new high score - TB");
+        
+                // Shows applicable text based on score
+                $('.hs-yes').show();
+                $('.hs-no').hide();
+                $('#high-score').text(tbHighScore);
+        
+                return true;
+            } else {
+                $('.hs-yes').hide();
+                $('.hs-no').show();
+                console.log("no high score - TB");
+
+                return false;
+            }
+        }
+
+        // go to Game End
+        $('.game-sec').hide();
+        $('.end-text').show();
+        // set final player score
+        $('.final-score').text(tbScore);
+        $('.high-score').text(tbHighScore);
+        checkHighScore();
     }
 
     questionCounter++; // start game and increment to 1
@@ -80,5 +103,11 @@ answers.forEach(answer => {
         }, 200);
     });
 }); 
+
+const incrementScore = num => {
+    // Add to score Counter
+    tbScore += num;
+    scoreNumber.innerText = tbScore;
+};
 
 startGame(); 

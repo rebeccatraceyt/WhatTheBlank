@@ -212,7 +212,7 @@ body {
     padding: 10px;
     margin: 12px;
     color: var(--yellow);
-    font-size: rem;
+    font-size: 1rem;
 }
 
 /*------------------------------------------------------- Light / Dark Mode Toggle */

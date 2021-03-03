@@ -6,20 +6,20 @@ const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answer-text'));
 const scoreNumber = document.getElementById('score');
 
-
-
 let currentQuestion = {};
 let acceptingAnswers = false; // can't answer until everything loaded
-let score = 0;
-let highScore = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-const incrementScore = num => {
-    // Add to score Counter
-    score += num;
-    scoreNumber.innerText = score;
-};
+let tvScore = 0;
+let chartScore = 0;
+let tbScore = 0;
+let movieScore = 0;
+
+let tvHighScore = 0;
+let chartHighScore = 0;
+let tbHighScore = 0;
+let movieHighScore = 0;
 
 const correctBonus = 1; // How much correct answer is correct
 const maxQuestions = 3; // How many questions before end
@@ -34,15 +34,17 @@ $('#logo-sec').click(function () {
     return window.location.assign("index.html");
 });
 
-
-
 // --------------------------------------------------------- Player Information
 /* Welcome Modal allows user to enter name of choice
     Code accumulated through researching similar functions with the majority of credits to fellow CI students. */
 function checkForUserData() {
     // check if user already exists
     if ((userName === null) || (userName === "Player") || (userName === "")) {
-        localStorage.setItem("highScore", 0);
+        sessionStorage.setItem("tvHighScore", 0);
+        sessionStorage.setItem("chartHighScore", 0);
+        sessionStorage.setItem("tbHighScore", 0);
+        sessionStorage.setItem("movieHighScore", 0);
+
         setTimeout(function() {
             $("#welcomeModal").modal({
                 backdrop: 'static',
@@ -52,7 +54,11 @@ function checkForUserData() {
     }
     else {
         userName = sessionStorage.getItem("userName");
-        highScore = sessionStorage.getItem("highScore");
+        
+        tvHighScore = sessionStorage.getItem("tvHighScore");
+        chartHighScore = sessionStorage.getItem("chartHighScore");
+        tbHighScore = sessionStorage.getItem("tbHighScore");
+        movieHighScore = sessionStorage.getItem("movieHighScore");
         return;
     }
 }
@@ -69,22 +75,10 @@ function userData() {
     }
 }
 
-function checkHighScore() {
-    // checks score
-    if (score > highScore){
-        highScore = score;
-        sessionStorage.setItem("highScore", highScore);
-        console.log("new high score");
-        return true;
-    } else {
-        return false;
-    }
-}
 function playerInfo() {
     // Calls player information when needed
     $('#playerName').text(userName);
     $('#final-score').text(playerScore);
-    $('#high-score').text(highScore);
 }
 
 // --------------------------------------------------------- Game End Page

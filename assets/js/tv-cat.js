@@ -26,21 +26,43 @@ const tvQuestions = [
 function startGame () {
     scoreNumber.innerText = '0';
     questionCounter = 0;
-    score = 0;
-    highScore = 0;
+    tvScore = 0;
     availableQuestions = [...tvQuestions];
     getNewQuestion();
 }
 
 function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
-        // set final player sore
-        sessionStorage.setItem("playerScore", score);
-        checkHighScore();
         
+        function checkHighScore() {
+            // checks score
+            if ((tvScore == tvHighScore) || (tvScore > tvHighScore)){
+                tvHighScore = tvScore;
+                sessionStorage.setItem("tvHighScore", tvHighScore);
+                console.log("new high score - TV");
+        
+                // Shows applicable text based on score
+                $('.hs-yes').show();
+                $('.hs-no').hide();
+                $('#high-score').text(tvHighScore);
+        
+                return true;
+            } else {
+                $('.hs-yes').hide();
+                $('.hs-no').show();
+                console.log("no high score - TV");
+
+                return false;
+            }
+        }
+
         // go to Game End
         $('.game-sec').hide();
         $('.end-text').show();
+        // set final player score
+        $('.final-score').text(tvScore);
+        $('.high-score').text(tvHighScore);
+        checkHighScore();
     }
 
     questionCounter++; // start game and increment to 1
@@ -81,5 +103,11 @@ answers.forEach(answer => {
         }, 200);
     });
 }); 
+
+const incrementScore = num => {
+    // Add to score Counter
+    tvScore += num;
+    scoreNumber.innerText = tvScore;
+};
 
 startGame(); 
