@@ -6,3 +6,4 @@ __pycache__/
 *.py[cod]
 .theia
 
+.DS_Store
