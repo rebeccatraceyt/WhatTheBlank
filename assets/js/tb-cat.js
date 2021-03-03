@@ -95,12 +95,14 @@ answers.forEach(answer => {
         }
 
         selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
+        answers[currentQuestion.correctAnswer - 1].parentElement.classList.add('correct'); 
 
         setTimeout(() => {
             // removes class after .2 of a second, moving onto next question
             selectedChoice.parentElement.classList.remove(checkedAnswer);
+            answers[currentQuestion.correctAnswer - 1].parentElement.classList.remove('correct');
             getNewQuestion();
-        }, 200);
+        }, 500);
     });
 }); 
 
