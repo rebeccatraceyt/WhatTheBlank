@@ -1,6 +1,5 @@
 // --------------------------------------------------------- Variables
 let userName = sessionStorage.getItem("userName"); // Load username
-let playerScore = sessionStorage.getItem("playerScore"); // Load score
 
 const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answer-text'));
@@ -78,12 +77,7 @@ function userData() {
 function playerInfo() {
     // Calls player information when needed
     $('#playerName').text(userName);
-    $('#final-score').text(playerScore);
-}
-
-// --------------------------------------------------------- Game End Page
-// document.getElementById('final-score').innerText = playerScore; // Display final score
-   
+}   
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
