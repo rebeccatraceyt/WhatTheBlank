@@ -76,7 +76,7 @@ function userData() {
 
 function playerInfo() {
     // Calls player information when needed
-    $('#playerName').text(userName);
+    $('.playerName').text(userName);
 }   
 
 // --------------------------------------------------------- Light / Dark Mode Toggle
