@@ -98,8 +98,31 @@ body {
 .play-sec {
     display: inline;
 }
+
+/* Styling for each category background - for consistency purposes */
 .tv-bg {
     background: url(../images/tv-bg.png) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.chart-bg {
+    background: url(../images/chart-bg.png) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.tb-bg {
+    background: url(../images/tb-bg.png) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.movie-bg {
+    background: url(../images/movie-bg.png) no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
