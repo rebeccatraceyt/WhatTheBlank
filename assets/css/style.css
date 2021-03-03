@@ -49,7 +49,6 @@
 
 /*------------------------------------------------------- Special Styling */
 body {
-    background-color: var(--blue);
     color: var(--yellow);
     font-family: var(--bodyfont);
     font-weight: 300;
@@ -77,6 +76,7 @@ body {
 /*--------------------------- Menu Section */
 /* Styling for Menu section on page */
 .menu-sec {
+    background-color: var(--blue);
     min-height: 40vh;
     padding-top: 5rem;
 }
@@ -103,7 +103,7 @@ body {
 .play-sec {
     display: inline;
 }
-#tv-cat {
+.tv-bg {
     background: url(../images/tv-bg.png) no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -186,11 +186,7 @@ body {
 
 /*------------------------------------------------------- Game End Page */
 .game-end {
-    background: var(--game-bg);
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    display: none;
     
     padding-top: 12px;
     padding-bottom: 50px; /* To accommodate sliding footer */

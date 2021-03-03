@@ -38,8 +38,9 @@ function getNewQuestion () {
         sessionStorage.setItem("playerScore", score);
         checkHighScore();
         
-        // go to Game End page
-        return window.location.assign("game-end.html");
+        // go to Game End
+        $('.game-sec').hide();
+        $('.end-text').show();
     }
 
     questionCounter++; // start game and increment to 1
