@@ -80,11 +80,6 @@ body {
     min-height: 40vh;
     padding-top: 5rem;
 }
-/* Styling for high score */
-.hs-sec p {
-    height: 1vh;
-    font-weight: 700;
-}
 
 /*--------------------------- Game Play Section */
 /* Styling for Game Play section on page */
