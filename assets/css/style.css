@@ -79,6 +79,10 @@ body {
     background-color: var(--blue);
     min-height: 40vh;
     padding-top: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*--------------------------- Game Play Section */
@@ -96,7 +100,7 @@ body {
     width: 100vw;
 }
 .play-sec {
-    display: inline;
+    padding-top: 10vh;
 }
 
 /* Styling for each category background - for consistency purposes */
@@ -171,8 +175,9 @@ body {
 }
 
 /* Styling for score in game mode */
-#score-text h1 {
+.score-text {
     font-size: 1.1rem;
+    font-weight: 700;
 }
 
 /*--------------------------- Category Buttons */
@@ -203,23 +208,22 @@ body {
 }
 
 /*------------------------------------------------------- Game End Text */
-.end-text {
-    padding: 10px;
+.end-sec {
     display: none;
 }
-.end-text h3 {
+.end-sec h3 {
     font-family: var(--titlefont);
 }
-.end-text h5 {
+.end-sec h5 {
     font-weight: 500;
 }
-.end-text p {
+.end-sec p {
     /* Override of default CSS styling for UI purposes */
     margin-block-start: 0;
     margin-block-end: 0;
     padding: 2px;
 }
-.end-text i {
+.end-sec i {
     border: 2px solid var(--yellow);
     padding: 10px;
     margin: 12px;

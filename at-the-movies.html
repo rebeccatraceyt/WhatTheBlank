@@ -80,18 +80,18 @@
 			<!-- ======= Game Play Section ======= -->
 			<div class="container-fluid game-sec movie-bg">
 				<!-- Score Section -->
-				<div class="row" id="score-sec">
-					<div class="col-12" id="score-text">
-						<h1>Score: <span id="score">0</span></h1>
+				<div class="row" class="score-sec">
+					<div class="col-12">
+						<p class="score-text">Score: <span id="score">0</span></p>
 					</div>
 				</div>
 
-				<!-- Q&A Section -->
 				<div class="row text-center play-sec">
-					<div class="col-12">
+					<!-- Q&A Section -->
+					<div class="col-12 questions-sec">
 						<span id="question">Question</span>
 					</div>
-					<div class="col-12" id="answer-btns">
+					<div class="col-12 answers-sec" id="answer-btns">
 						<div class="answer-btn">
 							<button class="answer-text" data-number="1" value="">Answer 1</button>
 						</div>
@@ -102,32 +102,29 @@
 							<button class="answer-text" data-number="3" value="">Answer 3</button>
 						</div>
 					</div>
-				</div>
-
-				<!-- End Game Section -->
-				<div class="row end-text text-center">
-                    <div class="col-12">
+					<!-- End Game Section -->
+					<div class="col-12 end-sec">
                         <h3 class="hs-yes">New High Score!</h3>
 						<h3 class="hs-no">Well Done!</h3>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 end-sec">
                         <h5 class="hs-yes">Congratulations <span class="playerName"></span>!</h5>
 						<h5 class="hs-no">Nice Try <span class="playerName"></span>!</h5>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 end-sec">
                         <p>Your Score: <span class="final-score"></span></p>
 						<p class="hs-no">High Score: <span class="high-score"></span></p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 end-sec">
                         <p class="hs-yes">Play again?</p>
 						<p class="hs-no">Try again?</p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 end-sec">
                         <a href="index.html" rel="noopener" aria-label="Back to Home Page">
                             <i class="fas fa-redo btn-click"></i>
                         </a>
                     </div>
-                </div>
+				</div>
 			</div>
 		</section>
 

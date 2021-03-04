@@ -57,9 +57,10 @@ function getNewQuestion () {
         }
 
         // go to Game End
-        $('.score-sec').hide();
-        $('.play-sec').hide();
-        $('.end-text').show();
+        $('.score-text').hide();
+        $('.questions-sec').hide();
+        $('.answers-sec').hide();
+        $('.end-sec').show();
         
         // set final player score
         $('.final-score').text(movieScore);
