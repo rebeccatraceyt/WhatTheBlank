@@ -95,11 +95,19 @@ answers.forEach(answer => {
         const selectedChoice = e.target; // listen for answer clicked
         const selectedAnswer = selectedChoice.dataset.number; // reads the answer number in order to cross-match with correct answer
 
-        const checkedAnswer = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect'; // checking if answer is correct
-
-        if(checkedAnswer === 'correct') {
-            incrementScore(correctBonus);
-        }
+        let checkedAnswer = 'incorrect';
+            if (selectedAnswer == currentQuestion.correctAnswer) {
+                checkedAnswer = 'correct';
+                if (checkedAnswer === 'correct') {
+                    incrementScore(correctBonus);
+                    console.log('sound correct');
+                    $('.correct-sound')[0].currentTime = 0;
+                    $('.correct-sound')[0].play();
+                }
+            } else {
+                $('.incorrect-sound')[0].currentTime = 0;
+                $('.incorrect-sound')[0].play();
+            }
 
         selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
         answers[currentQuestion.correctAnswer - 1].parentElement.classList.add('correct'); 

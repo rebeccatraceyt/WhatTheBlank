@@ -122,10 +122,11 @@ $('.logo-sec').on('click', () => {
     });
 
 function playButtonSound() {
+    // reference: https://stackoverflow.com/questions/15888716/how-do-i-play-an-audio-file-with-jquery/38499527
     console.log("sound played");
     $('.btn-sound')[0].currentTime = 0;
     $('.btn-sound')[0].play();
-    return true;
+    return false;
 }
 
 
