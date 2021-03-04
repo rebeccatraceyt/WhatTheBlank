@@ -116,19 +116,14 @@ if (currentTheme) {
 // --------------------------------------------------------- Audio
 // General Buttons
 $('.cat-btn').on('click', () => {
-        playButtonSound();
-    });
-$('.logo-sec').on('click', () => {
-        playButtonSound();
-    });
-
-function playButtonSound() {
     // reference: https://stackoverflow.com/questions/15888716/how-do-i-play-an-audio-file-with-jquery/38499527
-    console.log("sound played");
     $('.btn-sound')[0].currentTime = 0;
     $('.btn-sound')[0].play();
-    return false;
-}
+});
+$('.logo-sec').on('click', () => {
+    $('.btn-sound')[0].currentTime = 0;
+    $('.btn-sound')[0].play();
+});
 
 // Toggle Button
 $('.toggle-slide').on('click', () => {
