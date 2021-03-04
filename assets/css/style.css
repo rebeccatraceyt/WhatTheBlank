@@ -57,6 +57,9 @@ body {
 /*------------------------------------------------------- Game Page */
 
 /*--------------------------- Header */
+.header-sec {
+    padding-bottom: 20%;
+}
 /* Styling for logo */
 .logo-sec {
     padding: 10px;
@@ -67,10 +70,13 @@ body {
 }
 
 /* Styling for Toggle buttons */
-.toggle-sec span {
-   padding: 20px 10px;
+.toggle-sec {
+   padding: 20px 20px;
    position: fixed;
    right: 0; 
+}
+.toggle-sec button {
+    justify-content: center;
 }
 
 /*--------------------------- Menu Section */
@@ -78,11 +84,6 @@ body {
 .menu-sec {
     background-color: var(--blue);
     min-height: 40vh;
-    padding-top: 4rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /*--------------------------- Game Play Section */
@@ -182,9 +183,7 @@ body {
 
 /*--------------------------- Category Buttons */
 /* Styling for category section */
-.cat-sec {
-    padding-bottom: .6rem;
-}
+
 
 /* Styling for button section */
 .cat-btns {
@@ -195,13 +194,6 @@ body {
 }
 
 /* Styling for buttons */
-.cat-btns button {
-    background: transparent;
-    border: none;
-    padding: 0;
-    width: 18rem;
-    height: auto;
-}
 .cat-btns a {
     border-radius: 3px;
     box-shadow: 2px 3px var(--black);

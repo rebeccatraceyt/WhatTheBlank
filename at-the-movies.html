@@ -25,34 +25,30 @@
 	<body>
 
 		<!-- ================================= HEADER ================================= -->
-		<!-- ======= Logo ======= -->
-		<div class="logo-sec">
-			<img class="btn-click" src="assets/images/logo.png" width="100%" height="100%" alt="Blank! Logo">
-		</div>
-		
-		<!-- ======= Toggle Buttons ======= -->
-		<div class="container-fluid toggle-sec">
-			<!-- Sound effects toggle function -->
-			<span>
-				
-			</span>
-
-			<!-- Light/Dark mode toggle function -->
-			<!-- sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 -->
-			<span>
-				<div>
-					<label class="toggle-switch" for="checkbox">
-						<input type="checkbox" id="checkbox">
-						<div class="toggle-slide toggle-ball"></div>
-					</label>
-				</div>
-			</span>
-		</div>
-
-		<!-- ================================= GAME PLAY ================================= -->
-		<section aria-label="Game Play Section">
-			<!-- ======= Menu Section ======= -->
+		<section aria-label="Header Section">
 			<div class="container-fluid menu-sec">
+				<div class="row header-sec">
+					<!-- ======= Logo ======= -->
+					<div class="col-6 logo-sec">
+						<img class="btn-click" src="assets/images/logo.png" width="100%" height="100%" alt="Blank! Logo">
+					</div>
+
+					<!-- ======= Toggle Buttons ======= -->
+					<div class="col-6 toggle-sec text-right">
+						<!-- Sound effects toggle function -->
+						<button>
+							<i class="fas fa-volume-up"></i>
+						</button>
+						<!-- Light/Dark mode toggle function -->
+						<!-- sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 -->
+						<label class="toggle-switch" for="checkbox">
+							<input type="checkbox" id="checkbox">
+							<div class="toggle-slide toggle-ball"></div>
+						</label>
+					</div>
+				</div>
+			
+				<!-- ======= Menu Section ======= -->
 				<div class="row cat-sec">
 					<div class="col-6 col-lg-12 cat-btns">
 						<a href="as-seen-on-tv.html">
@@ -76,7 +72,11 @@
 					</div>
 				</div>
 			</div>
+		</section>
 
+		<!-- ================================= GAME PLAY ================================= -->
+		<section aria-label="Game Play Section">
+			
 			<!-- ======= Game Play Section ======= -->
 			<div class="container-fluid game-sec movie-bg">
 				<!-- Score Section -->
