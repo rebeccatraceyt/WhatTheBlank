@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+
+		<!-- meta data -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="Description" content="Blank! - Interactive web-based game"/>
 		<meta name="author" content="Rebecca Tracey-Timoney">
+
+		<!-- favicon -->
         <link rel="shortcut icon" href="assets/images/icon.png" title="Blank! Thumbnail Image">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/> <!-- Bootstrap Import-->
+        
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/> <!-- Bootstrap Import-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"> <!-- Font Awesome Import-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" 
             integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous"/> <!-- Hover.css Import-->
         <link rel="stylesheet" href="assets/css/style.css"/> <!-- style.css import-->
+		
+		<!-- Page title -->
 		<title>Blank!</title>
 	</head>
 	<body>
@@ -24,7 +32,6 @@
 		
 		<!-- ======= Toggle Buttons ======= -->
 		<div class="container-fluid toggle-sec">
-			
 			<!-- Sound effects toggle function -->
 			<span>
 				
@@ -40,46 +47,33 @@
 					</label>
 				</div>
 			</span>
-
 		</div>
 
 		<!-- ================================= GAME PAGE ================================= -->
-		<section>
-
+		<section aria-label="Game Play Section">
 			<!-- ======= Menu Section ======= -->
 			<div class="container-fluid menu-sec">
-
-				<!-- Category buttons section -->
 				<div class="row cat-sec">
 					<div class="col-6 col-lg-12 cat-btns">
-						<button id="tv-cat" class="cat-btn btn-click" value="tvCategory">
-							<a href="as-seen-on-tv.html">
-								<img class="btn-click" src="assets/images/tv-button.png" alt="Category Button: As Seen on TV" width="100%" height="100%">
-							</a>
-						</button>
+						<a href="as-seen-on-tv.html">
+							<img class="btn-click" src="assets/images/tv-button.png" alt="Category Button: As Seen on TV" width="100%" height="100%">
+						</a>
 					</div>
 					<div class="col-6 col-lg-12 cat-btns">
-						<button id="chart-cat" class="cat-btn btn-click" value="chartCategory">
-							<a href="chart-toppers.html">
-								<img class="btn-click" src="assets/images/chart-button.png" alt="Category Button: Chart Toppers" width="100%" height="100%">
-							</a>
-						</button>
+						<a href="chart-toppers.html">
+							<img class="btn-click" src="assets/images/chart-button.png" alt="Category Button: Chart Toppers" width="100%" height="100%">
+						</a>
 					</div>
 					<div class="col-6 col-lg-12 cat-btns">
-						<button id="tb-cat" class="cat-btn btn-click" value="tbCategory">
-							<a href="throwback.html">
-								<img class="btn-click" src="assets/images/tb-button.png" alt="Category Button: Throwback" width="100%" height="100%">
-							</a>
-						</button>
+						<a href="throwback.html">
+							<img class="btn-click" src="assets/images/tb-button.png" alt="Category Button: Throwback" width="100%" height="100%">
+						</a>
 					</div>
 					<div class="col-6 col-lg-12 cat-btns">
-						<button id="movie-cat" class="cat-btn btn-click" value="movieCategory">
-							<a href="at-the-movies.html">
-                                <img class="btn-click" src="assets/images/movie-button.png" alt="Category Button: At The Movies" width="100%" height="100%">
-                            </a>
-                        </button>
+						<a href="at-the-movies.html">
+							<img  class="btn-click" src="assets/images/movie-button.png" alt="Category Button: At The Movies" width="100%" height="100%">
+						</a>
 					</div>
-
 				</div>
 			</div>
 
@@ -91,7 +85,6 @@
 					</div>
 				</div>
 			</div>
-
 		</section>
 
 		<!-- ================================= FOOTER  ================================= -->
@@ -123,7 +116,7 @@
 			</div>
 		</footer>
 
-		<!-- ================================= MODALS  ================================= -->
+		<!-- ================================= MODALS ================================= -->
 		
 		<!-- ======= Welcome Modal ======= -->
 		<!-- sourced and edited from https://getbootstrap.com/docs/4.3/components/modal/ -->
