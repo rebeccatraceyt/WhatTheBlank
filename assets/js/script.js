@@ -114,6 +114,7 @@ if (currentTheme) {
 }
 
 // --------------------------------------------------------- Audio
+// General Buttons
 $('.cat-btn').on('click', () => {
         playButtonSound();
     });
@@ -129,6 +130,11 @@ function playButtonSound() {
     return false;
 }
 
+// Toggle Button
+$('.toggle-slide').on('click', () => {
+    $('.toggle-sound')[0].currentTime = 0;
+    $('.toggle-sound')[0].play();
+});
 
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
