@@ -36,6 +36,21 @@ $('.logo-sec').click(function () {
     return window.location.assign("index.html");
 });
 
+// --------------------------------------------------------- Audio
+// General Buttons
+$('.btn-click').on('click', () => {
+    // reference: https://stackoverflow.com/questions/15888716/how-do-i-play-an-audio-file-with-jquery/38499527
+    console.log('sound played');
+    $('.btn-sound')[0].currentTime = 0;
+    $('.btn-sound')[0].play();
+});
+
+// Toggle Button
+$('.toggle-slide').on('click', () => {
+    $('.toggle-sound')[0].currentTime = 0;
+    $('.toggle-sound')[0].play();
+});
+
 // --------------------------------------------------------- Player Information
 /* Welcome Modal allows user to enter name of choice
     Code accumulated through researching similar functions with the majority of credits to fellow CI students. */
@@ -112,24 +127,6 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
-
-// --------------------------------------------------------- Audio
-// General Buttons
-$('.cat-btn').on('click', () => {
-    // reference: https://stackoverflow.com/questions/15888716/how-do-i-play-an-audio-file-with-jquery/38499527
-    $('.btn-sound')[0].currentTime = 0;
-    $('.btn-sound')[0].play();
-});
-$('.logo-sec').on('click', () => {
-    $('.btn-sound')[0].currentTime = 0;
-    $('.btn-sound')[0].play();
-});
-
-// Toggle Button
-$('.toggle-slide').on('click', () => {
-    $('.toggle-sound')[0].currentTime = 0;
-    $('.toggle-sound')[0].play();
-});
 
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
