@@ -67,6 +67,10 @@ function getNewQuestion () {
         // Calls their Player Name
         $('.playerName').text(userName);
 
+        // Play ending sound
+        $('.end-sound')[0].currentTime = 0;
+        $('.end-sound')[0].play();
+
         checkHighScore();
         return false;
     }

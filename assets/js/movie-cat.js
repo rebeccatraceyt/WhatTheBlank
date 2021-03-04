@@ -44,7 +44,7 @@ function getNewQuestion () {
                 // Shows applicable text based on score
                 $('.hs-yes').show();
                 $('.hs-no').hide();
-                $('#high-score').text(movieHighScore);
+                $('.high-score').text(movieHighScore);
         
                 return true;
             } else {
@@ -57,7 +57,8 @@ function getNewQuestion () {
         }
 
         // go to Game End
-        $('.game-sec').hide();
+        $('.score-sec').hide();
+        $('.play-sec').hide();
         $('.end-text').show();
         
         // set final player score
@@ -66,6 +67,10 @@ function getNewQuestion () {
 
         // Calls their Player Name
         $('.playerName').text(userName);
+
+        // Play ending sound
+        $('.end-sound')[0].currentTime = 0;
+        $('.end-sound')[0].play();
 
         checkHighScore();
 
