@@ -54,9 +54,7 @@ body {
     font-weight: 300;
 }
 
-/*------------------------------------------------------- Game Page */
-
-/*--------------------------- Header */
+/*------------------------------------------------------- Header */
 .header-sec {
     padding-bottom: 10vh;
     position: fixed;
@@ -89,14 +87,31 @@ body {
     position: absolute; 
  }
 
-/*--------------------------- Menu Section */
+/*------------------------------------------------------- Menu Section */
 /* Styling for Menu section on page */
 .menu-sec {
     background-color: var(--blue);
     min-height: 40vh;
 }
 
-/*--------------------------- Game Play Section */
+/* Styling for button section */
+.cat-sec {
+    padding-top: 25%;
+}
+.cat-btns {
+    padding-top: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for buttons */
+.cat-btns a {
+    border-radius: 3px;
+    box-shadow: 2px 3px var(--black);
+}
+
+/*------------------------------------------------------- Game Play Section */
 /* Styling for Game Play section on page */
 .game-sec {
     background: var(--game-bg);
@@ -109,9 +124,6 @@ body {
     padding-bottom: 50px; /* To accommodate sliding footer */
     min-height: 60vh;
     width: 100vw;
-}
-.play-sec {
-    padding-top: 10vh;
 }
 
 /* Styling for each category background - for consistency purposes */
@@ -153,6 +165,17 @@ body {
     display: initial;
 }
 
+/* Styling for Questions and Answers section */
+.play-sec {
+    padding-top: 12vh; /* Push questions down for better readability */
+}
+
+/* Styling for score in game mode */
+.score-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
 /* Styling for questions in game mode */
 #question, #answer-btns {
     padding: 10px;
@@ -178,6 +201,8 @@ body {
     padding: 3px 10px;
     margin: 3px;
 }
+
+/* Styling for conditional classes - when player is correct/incorrect */
 .correct button  {
     background-color: var(--correct);
 }
@@ -185,31 +210,8 @@ body {
     background-color: var(--incorrect);
 }
 
-/* Styling for score in game mode */
-.score-text {
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-/*--------------------------- Category Buttons */
-/* Styling for button section */
-.cat-sec {
-    padding-top: 25%;
-}
-.cat-btns {
-    padding-top: .8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Styling for buttons */
-.cat-btns a {
-    border-radius: 3px;
-    box-shadow: 2px 3px var(--black);
-}
-
 /*------------------------------------------------------- Game End Text */
+/* End text is not displayed by default, but called in JS on game end */
 .end-sec {
     display: none;
 }
