@@ -79,7 +79,7 @@ body {
 }
 
 /* Styling for Mute button */
-.toggle-sec button {
+.toggle-mute {
     background: transparent;
     border: none;
     color: var(--yellow);
@@ -89,10 +89,10 @@ body {
     right: 80px;
     position: absolute; 
  }
- .toggle-sec button:focus {
-     /* reference: https://github.com/react-bootstrap/react-bootstrap/issues/1300 */
+ /*.toggle-sec button:focus {
+     /* reference: https://github.com/react-bootstrap/react-bootstrap/issues/1300 
      outline: none;
- }
+ } */
 
 /*------------------------------------------------------- Menu Section */
 /* Styling for Menu section on page */
@@ -253,16 +253,23 @@ body {
     font-size: 1rem;
 }
 
-/*------------------------------------------------------- Light / Dark Mode Toggle */
+/*------------------------------------------------------- Toggle Switches */
+/* Styling for Toggle button section */
+.toggle-sec input {
+    display: none;
+}
+
+/* Mute toggle function styling */
+.toggle-mute {
+    cursor: pointer;
+}
+
 /* Light / Dark toggle function styling for UX purposes
 	sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 .toggle-switch {
     height: 34px;
     position: relative;
     width: 60px;
-}
-.toggle-switch input {
-    display: none;
 }
 .toggle-slide {
     background-color: var(--toggle-off);

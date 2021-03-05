@@ -26,7 +26,11 @@ const maxQuestions = 3; // How many questions before end
 const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
 
-let silence = false;
+const toggleSound = document.querySelector('.toggle-mute input[type="checkbox"]');
+const muteSetting = localStorage.getItem('sound') ? localStorage.getItem('sound') : null;
+let soundEffects = $('audio').prop('muted');
+
+//let muted = localStorage.getItem('muted');
 
 let footerOpen = false; // default for sliding footer
 
@@ -52,12 +56,75 @@ $('.toggle-slide').on('click', () => {
 });
 
 // Mute Button
+
+
+function muteSound(sfx) {
+    if (sfx.target.checked) {
+        // https://stackoverflow.com/questions/23409992/toggling-the-muted-attribute-of-html5-audio
+        $('audio').prop('muted', !soundEffects);
+        console.log('HELLO!!!!!');
+        $('.mute-btn i').toggleClass('fa-volume-mute fa-volume-up');
+        localStorage.setItem('sound', 'muted');
+    } else {
+        $('audio').prop('muted', soundEffects);
+        $('.mute-btn i').toggleClass('fa-volume-up');
+        localStorage.setItem('sound', 'unmuted');
+    }
+}
+
+toggleSound.addEventListener('change', muteSound, false);
+
+if (muteSetting) {
+    if (muteSetting === 'true') {
+        toggleSound.checked = true;
+    }
+}
+
+
+/*$('.mute-sound').on('click', function muteSound(){
+    $('audio').prop('muted', true);
+    $('.mute-sound i').toggleClass('fa-volume-mute fa-volume-up');
+    localStorage.setItem('muted', true);
+    console.log('muted');
+});*/
+
+/*$(document).ready(function() {
+    $('.mute-sound').on('click', function() {
+        // reference: https://css-tricks.com/forums/topic/mute-unmute-sounds-on-website/
+        let soundEffects = $('audio');
+
+        if (muted === 'true') {
+            for (let x = 0; x < soundEffects.length; x++) {
+                soundEffects[x].muted = false;
+            }
+            localStorage.setItem('muted', 'false');
+            console.log('unmuted'); 
+        } else {
+            for (let x = 0; x < soundEffects.length; x++) {
+                soundEffects[x].muted = true;
+            }
+            localStorage.setItem('muted', 'true');
+            $('.mute-sound i').toggleClass('fa-volume-mute fa-volume-up');
+        }
+        console.log('muted');
+    });
+});*/
+
+// reference: https://stackoverflow.com/questions/44046493/how-to-save-this-button-status-in-a-localstorage
+/* if (muteState === 'true'){
+    muteSound();
+    sessionStorage.setItem('muteState', true);
+} else {
+    sessionStorage.setItem('muteState', false);
+}
+
 $('.mute-sound').on('click', () => {
     muteSound();
 });
 
 function muteSound(){
-    // reference: https://css-tricks.com/forums/topic/mute-unmute-sounds-on-website/
+    
+    reference: https://css-tricks.com/forums/topic/mute-unmute-sounds-on-website/
     let soundEffects = $('audio');
 
     if (silence) {
@@ -65,16 +132,18 @@ function muteSound(){
             soundEffects[x].muted = false;
         }
         silence = false;
+        console.log('unmuted');
+        
     }
     else {
         for (let x = 0; x < soundEffects.length; x++) {
             soundEffects[x].muted = true;
         }
         silence = true;
+        $('.mute-sound i').toggleClass('fa-volume-mute fa-volume-up');
     }
     console.log('muted');
-    $('.mute-sound i').toggleClass('fa-volume-mute fa-volume-up');
-}
+}*/
 
 // --------------------------------------------------------- Player Information
 /* Welcome Modal allows user to enter name of choice
@@ -123,8 +192,8 @@ function userData() {
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
 	 Sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
-function switchMode(toggle) {
-    if (toggle.target.checked) {
+function switchMode(mode) {
+    if (mode.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
@@ -133,9 +202,9 @@ function switchMode(toggle) {
 
 toggleSwitch.addEventListener('change', switchMode, false);
 
-function switchMode(toggle) {
+function switchMode(mode) {
     // Store User Preference
-    if (toggle.target.checked) {
+    if (mode.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
     } else {
