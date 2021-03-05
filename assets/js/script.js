@@ -26,7 +26,7 @@ const maxQuestions = 3; // How many questions before end
 const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
 
-
+let silence = true;
 
 let footerOpen = false; // default for sliding footer
 
@@ -50,6 +50,33 @@ $('.toggle-slide').on('click', () => {
     $('.toggle-sound')[0].currentTime = 0;
     $('.toggle-sound')[0].play();
 });
+
+// Mute Button
+$('.mute-sound').click(function() {
+    muteSound();
+});
+
+function muteSound(){
+    // reference: https://css-tricks.com/forums/topic/mute-unmute-sounds-on-website/
+    let soundEffects = $('audio');
+
+    if (silence) {
+        for (let x = 0; x < soundEffects.length; x++) {
+            soundEffects[x].muted = false;
+        }
+        silence = false;
+    }
+    else {
+        for (let x = 0; x < soundEffects.length; x++) {
+            soundEffects[x].muted = true;
+        }
+        silence = true;
+    }
+    console.log('muted');
+    $('.mute-sound i').toggleClass('fa-volume-off');
+}
+
+
 
 // --------------------------------------------------------- Player Information
 /* Welcome Modal allows user to enter name of choice
