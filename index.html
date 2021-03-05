@@ -25,63 +25,71 @@
 	<body>
 
 		<!-- ================================= HEADER ================================= -->
-		<!-- ======= Logo ======= -->
-		<div class="logo-sec">
-			<img class="btn-click" src="assets/images/logo.png" width="100%" height="100%" alt="Blank! Logo">
-		</div>
-		
-		<!-- ======= Toggle Buttons ======= -->
-		<div class="container-fluid toggle-sec">
-			<!-- Sound effects toggle function -->
-			<span>
-				
-			</span>
+		<section aria-label="Header Section">
+			<div class="container-fluid header-sec">
+				<div class="row">
+					<!-- ======= Logo ======= -->
+					<div class="col-8 logo-sec">
+						<img class="btn-click" src="assets/images/logo.png" width="100%" height="100%" alt="Blank! Logo">
+					</div>
 
-			<!-- Light/Dark mode toggle function -->
-			<span>
-				<!-- sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 -->
-				<div>
-					<label class="toggle-switch" for="checkbox">
-						<input type="checkbox" id="checkbox">
-						<div class="toggle-slide toggle-ball"></div>
-					</label>
-				</div>
-			</span>
-		</div>
+					<!-- ======= Toggle Buttons ======= -->
+					<div class="col-4 toggle-sec text-right">
+							<!-- Sound effects toggle function -->
+							<button class="mute-sound">
+								<i class="fas fa-volume-up"></i>
+							</button>
 
-		<!-- ================================= GAME PAGE ================================= -->
-		<section aria-label="Game Play Section">
-			<!-- ======= Menu Section ======= -->
-			<div class="container-fluid menu-sec">
-				<div class="row cat-sec">
-					<div class="col-6 col-lg-12 cat-btns">
-						<a href="as-seen-on-tv.html">
-							<img class="btn-click" src="assets/images/tv-button.png" alt="Category Button: As Seen on TV" width="100%" height="100%">
-						</a>
-					</div>
-					<div class="col-6 col-lg-12 cat-btns">
-						<a href="chart-toppers.html">
-							<img class="btn-click" src="assets/images/chart-button.png" alt="Category Button: Chart Toppers" width="100%" height="100%">
-						</a>
-					</div>
-					<div class="col-6 col-lg-12 cat-btns">
-						<a href="throwback.html">
-							<img class="btn-click" src="assets/images/tb-button.png" alt="Category Button: Throwback" width="100%" height="100%">
-						</a>
-					</div>
-					<div class="col-6 col-lg-12 cat-btns">
-						<a href="at-the-movies.html">
-							<img  class="btn-click" src="assets/images/movie-button.png" alt="Category Button: At The Movies" width="100%" height="100%">
-						</a>
+							<!-- Light/Dark mode toggle function -->
+							<!-- sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 -->
+							<label class="toggle-switch" for="checkbox">
+								<input type="checkbox" id="checkbox">
+								<div class="toggle-slide toggle-ball"></div>
+							</label>
 					</div>
 				</div>
 			</div>
+		</section>
 
-			<!-- ======= Game Play Section ======= -->
-			<div class="container-fluid game-sec">
-				<div id="welcome-message" class="row text-center">
-					<div class="col-12">
-						<h1>Choose your category!</h1>
+		<!-- ================================= GAME PAGE ================================= -->
+		<section aria-label="Game Play Section">
+			<div class="container-fluid">
+				<!-- ======= Menu Section ======= -->
+				<div class="row menu-sec">
+					<div class="col-12 col-lg-3">
+						<div class="row cat-sec">
+							<div class="col-6 col-lg-12 cat-btns">
+								<a href="as-seen-on-tv.html">
+									<img class="btn-click" src="assets/images/tv-button.png" alt="Category Button: As Seen on TV" width="100%" height="100%">
+								</a>
+							</div>
+							<div class="col-6 col-lg-12 cat-btns">
+								<a href="chart-toppers.html">
+									<img class="btn-click" src="assets/images/chart-button.png" alt="Category Button: Chart Toppers" width="100%" height="100%">
+								</a>
+							</div>
+							<div class="col-6 col-lg-12 cat-btns">
+								<a href="throwback.html">
+									<img class="btn-click" src="assets/images/tb-button.png" alt="Category Button: Throwback" width="100%" height="100%">
+								</a>
+							</div>
+							<div class="col-6 col-lg-12 cat-btns">
+								<a href="at-the-movies.html">
+									<img  class="btn-click" src="assets/images/movie-button.png" alt="Category Button: At The Movies" width="100%" height="100%">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- ======= Game Play Section ======= -->
+				<div class="row game-sec">
+					<div class="col-12 col-lg-9">
+						<div id="welcome-message" class="row text-center">
+							<div class="col-12">
+								<h1>Choose your category!</h1>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
