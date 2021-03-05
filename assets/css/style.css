@@ -54,7 +54,7 @@ body {
     font-weight: 300;
 }
 
-/*------------------------------------------------------- Header */
+/*------------------------------------------------------- Header Section */
 .header-sec {
     padding-bottom: 10vh;
     position: fixed;
@@ -94,11 +94,13 @@ body {
     min-height: 40vh;
 }
 
-/* Styling for button section */
+/* Styling for Category section */
 .cat-sec {
     padding-top: 25%;
+    padding-bottom: 20px;
 }
 .cat-btns {
+    width: 80%;
     padding-top: .8rem;
     display: flex;
     justify-content: center;
@@ -434,20 +436,42 @@ input:checked + .toggle-slide:before {
 
 /* Breakpoint to maintain structural integrity on a Tablet device */
 @media (min-width: 700px) and (max-width: 991px) {
+
+    /*--------------------------------- Header Section */
+    /* Styling for Header section on page on a medium screen */
+    .header-sec {
+        padding-bottom: 1vh;
+    }
+
+    /*--------------------------------- Menu Section */
+    /* Styling for Menu section on page on a medium screen */
+    .menu-sec {
+        min-height: 40vh;
+    }
+    .cat-sec {
+        padding-top: 15vh;
+    }
+
+    /*--------------------------------- Game Play Section */
+    /* Styling for Menu section on page on a medium screen */
+    .game-sec {
+        max-height: 60vh;
+    }
 }
-
-
 
 /* Breakpoint to maintain structural integrity on a Laptop Screen */
 @media (min-width: 991px){ 
     
-    /*--------------------------------- Main Game Page */
+    /*--------------------------------- Menu Section */
+    /* Styling for Menu section on page on a larger screen */
     .menu-sec {
         min-height: 100vh;
         max-width: 40vw;
         float: left;
     }
 
+    /*--------------------------------- Game Play Section */
+    /* Styling for Menu section on page on a larger screen */
     .game-sec {
         min-height: 100vh;
         max-width: 60vw;
