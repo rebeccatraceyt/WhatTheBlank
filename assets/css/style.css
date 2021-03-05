@@ -56,8 +56,8 @@ body {
 
 /*------------------------------------------------------- Header Section */
 .header-sec {
-    padding-bottom: 10vh;
     position: fixed;
+    z-index: 100;
 }
 /* Styling for logo */
 .logo-sec {
@@ -66,6 +66,9 @@ body {
     width: 50vw;
     height: auto;
     left: 0;
+}
+.logo-sec img {
+    width: 100%;
 }
 
 /* Styling for Toggle buttons */
@@ -86,25 +89,31 @@ body {
     right: 80px;
     position: absolute; 
  }
+ .toggle-sec button:focus {
+     /* reference: https://github.com/react-bootstrap/react-bootstrap/issues/1300 */
+     outline: none;
+ }
 
 /*------------------------------------------------------- Menu Section */
 /* Styling for Menu section on page */
 .menu-sec {
     background-color: var(--blue);
     min-height: 40vh;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 /* Styling for Category section */
 .cat-sec {
-    padding-top: 25%;
-    padding-bottom: 20px;
+    padding-top: 20%;
+    padding-bottom: 2%;
 }
 .cat-btns {
-    width: 80%;
     padding-top: .8rem;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 /* Styling for buttons */
@@ -116,16 +125,25 @@ body {
 /*------------------------------------------------------- Game Play Section */
 /* Styling for Game Play section on page */
 .game-sec {
+    padding-top: 12px;
+    padding-bottom: 50px; /* To accommodate sliding footer */
+
+    min-height: 60vh;
+    width: 100vw;
+}
+.home-sec {
     background: var(--game-bg);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    
-    padding-top: 12px;
-    padding-bottom: 50px; /* To accommodate sliding footer */
+
     min-height: 60vh;
     width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 /* Styling for each category background - for consistency purposes */
@@ -163,9 +181,7 @@ body {
     font-family: var(--titlefont);
     font-size: 2rem;
     font-weight: bold;
-
-    display: initial;
-}
+}   
 
 /* Styling for Questions and Answers section */
 .play-sec {
@@ -437,19 +453,17 @@ input:checked + .toggle-slide:before {
 /* Breakpoint to maintain structural integrity on a Tablet device */
 @media (min-width: 700px) and (max-width: 991px) {
 
-    /*--------------------------------- Header Section */
-    /* Styling for Header section on page on a medium screen */
-    .header-sec {
-        padding-bottom: 1vh;
-    }
-
     /*--------------------------------- Menu Section */
     /* Styling for Menu section on page on a medium screen */
     .menu-sec {
         min-height: 40vh;
     }
     .cat-sec {
+        max-height: 60vh;
         padding-top: 15vh;
+    }
+    .cat-btns a {
+        width: 70%;
     }
 
     /*--------------------------------- Game Play Section */
@@ -462,19 +476,34 @@ input:checked + .toggle-slide:before {
 /* Breakpoint to maintain structural integrity on a Laptop Screen */
 @media (min-width: 991px){ 
     
+    /*--------------------------------- Header Section */
+    /* Styling for Header section on page on a larger screen */    
+    .logo-sec img {
+        width: 55%;
+    }
+
     /*--------------------------------- Menu Section */
     /* Styling for Menu section on page on a larger screen */
     .menu-sec {
+        padding-top: 2%;
         min-height: 100vh;
-        max-width: 40vw;
+        max-width: 30vw;
         float: left;
+
+        justify-content: normal;
+    }
+    .cat-btns {
+        min-width: 30vw;
+    }
+    .cat-btns a {
+        width: 60%;
     }
 
     /*--------------------------------- Game Play Section */
     /* Styling for Menu section on page on a larger screen */
-    .game-sec {
+    .game-sec, .home-sec {
         min-height: 100vh;
-        max-width: 60vw;
+        max-width: 70vw;
         float: right;
     }
 }
