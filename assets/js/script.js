@@ -26,7 +26,7 @@ const maxQuestions = 3; // How many questions before end
 const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
 
-let silence = true;
+let silence = false;
 
 let footerOpen = false; // default for sliding footer
 
@@ -52,7 +52,7 @@ $('.toggle-slide').on('click', () => {
 });
 
 // Mute Button
-$('.mute-sound').click(function() {
+$('.mute-sound').on('click', () => {
     muteSound();
 });
 
@@ -73,10 +73,8 @@ function muteSound(){
         silence = true;
     }
     console.log('muted');
-    $('.mute-sound i').toggleClass('fa-volume-off');
+    $('.mute-sound i').toggleClass('fa-volume-mute fa-volume-up');
 }
-
-
 
 // --------------------------------------------------------- Player Information
 /* Welcome Modal allows user to enter name of choice
