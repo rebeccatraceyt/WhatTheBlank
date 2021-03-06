@@ -53,11 +53,6 @@ incorrectSound.setAttribute('src', 'assets/audio/incorrect.mp3');
 
 let footerOpen = false; // default for sliding footer
 
-// --------------------------------------------------------- Game Functions
-$('.logo-sec').click(function () {
-    // returns user back to home page
-    return window.location.assign("index.html");
-});
 
 // --------------------------------------------------------- Audio
 // General Buttons
