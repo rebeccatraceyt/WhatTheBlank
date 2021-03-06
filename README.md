@@ -269,6 +269,8 @@ As well as this, there was an issue with the modal, whereby the modal would cont
 
 **Game Ending Page issues** - In the original design, there was to be a separate page that players would be redirected to after answering all questions, thus completing the quiz. The page content would change, depending on which of the two probable outcomes of game play (*high score* or *no high score*) the user had. Straight away, the developer faced a similar problem to the **Game Play Categories** issue, where there became an overwhelming overlap in the `script.js` file. To over come this, the developer removed the ending page entirely, and directly applied the end of the game to each specific category. This allowed for a high score in each category as well as an accurate pointing system that was not possible with one page.
 
+**Mute Button Bug** - One of the biggest challenges the developer met in the developmental process was the *mute button* feature. The feature allows users to manage the audio setting of the game, toggling the sound effects on and off. In implementing it, the developer's knowledge was challenged to the fullest in ensuring that the preference the user set on one page would carry through to the next page. In their learning, the developer was able to create the necessary functions and conditions that allowed the feature to work, storing the preference for the next page. Although it tested their knowledge, the reward of successfully implementing it was worth it. 
+
 [Back to top ⇧](#blank)
 
 ## Technologies Used
