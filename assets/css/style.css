@@ -130,6 +130,10 @@ body {
 
     min-height: 60vh;
     width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .home-sec {
     background: var(--game-bg);
@@ -177,18 +181,17 @@ body {
 }
 
 /* Styling for text on Home Page */
-#welcome-message {
+#welcome-message h1 {
     font-family: var(--titlefont);
     font-size: 2rem;
-    font-weight: bold;
 }   
 
 /* Styling for Questions and Answers section */
-.play-sec {
-    padding-top: 12vh; /* Push questions down for better readability */
-}
-
 /* Styling for score in game mode */
+.score-sec {
+    left: 0;
+    top: 0;
+}
 .score-text {
     font-size: 1.1rem;
     font-weight: 700;
@@ -502,12 +505,19 @@ input:checked + .toggle-slide:before {
     }
 
     /*--------------------------------- Game Play Section */
-    /* Styling for Menu section on page on a larger screen */
+    /* Styling for Game Play section on page on a larger screen */
     .game-sec, .home-sec {
         min-height: 100vh;
         max-width: 70vw;
         float: right;
     }
+
+    /* Styling for text on Home Page */
+    #welcome-message h1{
+        font-size: 5rem;
+        font-weight: normal;
+    }
+
 }
 
 
