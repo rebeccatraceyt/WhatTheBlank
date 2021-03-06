@@ -28,7 +28,26 @@ const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme
 
 const toggleSound = document.querySelector('.toggle-mute input[type="checkbox"]');
 const muteSetting = localStorage.getItem('sound') ? localStorage.getItem('sound') : null;
-let soundEffects = $('audio').prop('muted');
+// let soundEffects = document.getElementsByTagName('audio');
+// let muteBtn = document.getElementsByClassName('mute-btn');
+
+/* Audio Variables */
+const btnSound = document.createElement('audio');
+btnSound.setAttribute('src', 'assets/audio/btn-click.mp3');
+
+const slideSound = document.createElement('audio');
+slideSound.setAttribute('src', 'assets/audio/toggle.mp3');
+
+const endSound = document.createElement('audio');
+endSound.setAttribute('src', 'assets/audio/game-end.mp3');
+
+const correctSound = document.createElement('audio');
+correctSound.setAttribute('src', 'assets/audio/correct.mp3');
+
+const incorrectSound = document.createElement('audio');
+incorrectSound.setAttribute('src', 'assets/audio/incorrect.mp3');
+
+// let soundEffects = $('audio').prop('muted');
 
 //let muted = localStorage.getItem('muted');
 
@@ -45,40 +64,54 @@ $('.logo-sec').click(function () {
 $('.btn-click').on('click', () => {
     // reference: https://stackoverflow.com/questions/15888716/how-do-i-play-an-audio-file-with-jquery/38499527
     console.log('sound played');
-    $('.btn-sound')[0].currentTime = 0;
-    $('.btn-sound')[0].play();
+    btnSound.currentTime = 0;
+    btnSound.play();
 });
 
 // Toggle Button
 $('.toggle-slide').on('click', () => {
-    $('.toggle-sound')[0].currentTime = 0;
-    $('.toggle-sound')[0].play();
+    slideSound.currentTime = 0;
+    slideSound.play();
 });
 
 // Mute Button
 
 
-function muteSound(sfx) {
-    if (sfx.target.checked) {
-        // https://stackoverflow.com/questions/23409992/toggling-the-muted-attribute-of-html5-audio
-        $('audio').prop('muted', !soundEffects);
-        console.log('HELLO!!!!!');
-        $('.mute-btn i').toggleClass('fa-volume-mute fa-volume-up');
-        localStorage.setItem('sound', 'muted');
-    } else {
-        $('audio').prop('muted', soundEffects);
-        $('.mute-btn i').toggleClass('fa-volume-up');
-        localStorage.setItem('sound', 'unmuted');
-    }
-}
-
-toggleSound.addEventListener('change', muteSound, false);
-
-if (muteSetting) {
-    if (muteSetting === 'true') {
+/*if (muteSetting) {
+    
+    if (muteSetting == 'muted') {
         toggleSound.checked = true;
     }
 }
+
+function muteSound(sfx) {
+    if (sfx.target.checked) {
+        btnSound.muted = true;
+        slideSound.muted = true;
+        endSound.muted = true;
+        correctSound.muted = true;
+        incorrectSound = true;
+
+        https://forums.tumult.com/t/master-sound-on-off-function/4045/13
+        for (let i = 0; i < soundEffects.length; ++i) {
+            soundEffects[i].muted = true;
+        }
+        localStorage.setItem('sound', 'muted');
+        $('.mute-btn i').toggleClass('fa-volume-mute fa-volume-up');
+
+        https://stackoverflow.com/questions/23409992/toggling-the-muted-attribute-of-html5-audio
+        $('audio').muted = true; 
+    
+    } else {
+        /*for (i = 0; i < soundEffects.length; i++) {
+            soundEffects[i].muted = false;
+        }
+        localStorage.setItem('sound', 'unmuted');
+        $('.mute-btn i').toggleClass('fa-volume-up fa-volume-mute');
+    }
+} 
+
+toggleSound.addEventListener('change', muteSound, false); */
 
 
 /*$('.mute-sound').on('click', function muteSound(){
@@ -192,15 +225,14 @@ function userData() {
 // --------------------------------------------------------- Light / Dark Mode Toggle
 /* Light / Dark toggle function styling for UX purposes
 	 Sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
-function switchMode(mode) {
-    if (mode.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-        document.documentElement.setAttribute('data-theme', 'light');
+if (currentTheme) {
+// Check for User Preference
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
     }
 }
-
-toggleSwitch.addEventListener('change', switchMode, false);
 
 function switchMode(mode) {
     // Store User Preference
@@ -213,14 +245,7 @@ function switchMode(mode) {
     }
 }
 
-if (currentTheme) {
-    // Check for User Preference
-    document.documentElement.setAttribute('data-theme', currentTheme);
-
-    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
-    }
-}
+toggleSwitch.addEventListener('change', switchMode, false);
 
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
@@ -245,5 +270,6 @@ $('#footer-button').on('click', function () {
 // --------------------------------------------------------- On Page Load 
 // Initialize game on page load
 checkForUserData();
+muteSound();
 
 

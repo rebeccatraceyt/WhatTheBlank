@@ -70,8 +70,8 @@ function getNewQuestion () {
         $('.playerName').text(userName);
 
         // Play ending sound
-        $('.end-sound')[0].currentTime = 0;
-        $('.end-sound')[0].play();
+        endSound.currentTime = 0;
+        endSound.play();
 
         checkHighScore();
     }
@@ -105,12 +105,12 @@ answers.forEach(answer => {
                 if (checkedAnswer === 'correct') {
                     incrementScore(correctBonus);
                     console.log('sound correct');
-                    $('.correct-sound')[0].currentTime = 0;
-                    $('.correct-sound')[0].play();
+                    correctSound.currentTime = 0;
+                    correctSound.play();
                 }
             } else {
-                $('.incorrect-sound')[0].currentTime = 0;
-                $('.incorrect-sound')[0].play();
+                incorrectSound.currentTime = 0;
+                incorrectSound.play();
             }
 
         selectedChoice.parentElement.classList.add(checkedAnswer); // adds class if correct
