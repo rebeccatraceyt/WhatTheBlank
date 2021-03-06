@@ -79,7 +79,7 @@ body {
 }
 
 /* Styling for Mute button */
-.toggle-mute {
+.mute-btn {
     background: transparent;
     border: none;
     color: var(--yellow);
@@ -89,10 +89,10 @@ body {
     right: 80px;
     position: absolute; 
  }
- /*.toggle-sec button:focus {
-     /* reference: https://github.com/react-bootstrap/react-bootstrap/issues/1300 
+ .toggle-sec button:focus {
+     /* reference: https://github.com/react-bootstrap/react-bootstrap/issues/1300 */
      outline: none;
- } */
+ }
 
 /*------------------------------------------------------- Menu Section */
 /* Styling for Menu section on page */
@@ -257,11 +257,6 @@ body {
 /* Styling for Toggle button section */
 .toggle-sec input {
     display: none;
-}
-
-/* Mute toggle function styling */
-.toggle-mute {
-    cursor: pointer;
 }
 
 /* Light / Dark toggle function styling for UX purposes

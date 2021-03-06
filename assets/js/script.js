@@ -1,6 +1,13 @@
 // --------------------------------------------------------- Variables
+/* Storage Variables */
 let userName = sessionStorage.getItem("userName"); // Load username
 
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
+const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
+
+const soundSetting = sessionStorage.getItem("sound") ? sessionStorage.getItem("sound") : null; // gets users sound effects preference
+
+/* Game Function Variables */
 const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answer-text'));
 const scoreNumber = document.getElementById('score');
@@ -23,36 +30,15 @@ let movieHighScore = 0;
 const correctBonus = 1; // How much correct answer is correct
 const maxQuestions = 3; // How many questions before end
 
-const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]'); // toggles light/dark function 
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
-
-const toggleSound = document.querySelector('.toggle-mute input[type="checkbox"]');
-const muteSetting = localStorage.getItem('sound') ? localStorage.getItem('sound') : null;
-// let soundEffects = document.getElementsByTagName('audio');
-// let muteBtn = document.getElementsByClassName('mute-btn');
-
 /* Audio Variables */
-const btnSound = document.createElement('audio');
-btnSound.setAttribute('src', 'assets/audio/btn-click.mp3');
+const btnSound = new Audio('assets/audio/btn-click.mp3');
+const slideSound = new Audio('assets/audio/toggle.mp3');
+const endSound = new Audio('assets/audio/game-end.mp3');
+const correctSound = new Audio('assets/audio/correct.mp3');
+const incorrectSound = new Audio('assets/audio/incorrect.mp3');
 
-const slideSound = document.createElement('audio');
-slideSound.setAttribute('src', 'assets/audio/toggle.mp3');
-
-const endSound = document.createElement('audio');
-endSound.setAttribute('src', 'assets/audio/game-end.mp3');
-
-const correctSound = document.createElement('audio');
-correctSound.setAttribute('src', 'assets/audio/correct.mp3');
-
-const incorrectSound = document.createElement('audio');
-incorrectSound.setAttribute('src', 'assets/audio/incorrect.mp3');
-
-// let soundEffects = $('audio').prop('muted');
-
-//let muted = localStorage.getItem('muted');
-
+/* Misc Variables */
 let footerOpen = false; // default for sliding footer
-
 
 // --------------------------------------------------------- Audio
 // General Buttons
@@ -69,109 +55,47 @@ $('.toggle-slide').on('click', () => {
     slideSound.play();
 });
 
-// Mute Button
-
-
-/*if (muteSetting) {
+// Mute Button - toggles mute for ALL pages
+$('.mute-btn').on('click', () => {
     
-    if (muteSetting == 'muted') {
-        toggleSound.checked = true;
-    }
-}
-
-function muteSound(sfx) {
-    if (sfx.target.checked) {
-        btnSound.muted = true;
-        slideSound.muted = true;
-        endSound.muted = true;
-        correctSound.muted = true;
-        incorrectSound = true;
-
-        https://forums.tumult.com/t/master-sound-on-off-function/4045/13
-        for (let i = 0; i < soundEffects.length; ++i) {
-            soundEffects[i].muted = true;
-        }
-        localStorage.setItem('sound', 'muted');
-        $('.mute-btn i').toggleClass('fa-volume-mute fa-volume-up');
-
-        https://stackoverflow.com/questions/23409992/toggling-the-muted-attribute-of-html5-audio
-        $('audio').muted = true; 
+    if($('.mute-btn i').hasClass('fa-volume-up')) {
+        muteOn();        
+        sessionStorage.setItem("sound", 'off');
+    } 
     
-    } else {
-        /*for (i = 0; i < soundEffects.length; i++) {
-            soundEffects[i].muted = false;
-        }
-        localStorage.setItem('sound', 'unmuted');
-        $('.mute-btn i').toggleClass('fa-volume-up fa-volume-mute');
+    else if ($('.mute-btn i').hasClass('fa-volume-mute')) {
+        muteOff();
+        sessionStorage.setItem("sound", "on");
     }
-} 
-
-toggleSound.addEventListener('change', muteSound, false); */
-
-
-/*$('.mute-sound').on('click', function muteSound(){
-    $('audio').prop('muted', true);
-    $('.mute-sound i').toggleClass('fa-volume-mute fa-volume-up');
-    localStorage.setItem('muted', true);
-    console.log('muted');
-});*/
-
-/*$(document).ready(function() {
-    $('.mute-sound').on('click', function() {
-        // reference: https://css-tricks.com/forums/topic/mute-unmute-sounds-on-website/
-        let soundEffects = $('audio');
-
-        if (muted === 'true') {
-            for (let x = 0; x < soundEffects.length; x++) {
-                soundEffects[x].muted = false;
-            }
-            localStorage.setItem('muted', 'false');
-            console.log('unmuted'); 
-        } else {
-            for (let x = 0; x < soundEffects.length; x++) {
-                soundEffects[x].muted = true;
-            }
-            localStorage.setItem('muted', 'true');
-            $('.mute-sound i').toggleClass('fa-volume-mute fa-volume-up');
-        }
-        console.log('muted');
-    });
-});*/
-
-// reference: https://stackoverflow.com/questions/44046493/how-to-save-this-button-status-in-a-localstorage
-/* if (muteState === 'true'){
-    muteSound();
-    sessionStorage.setItem('muteState', true);
-} else {
-    sessionStorage.setItem('muteState', false);
-}
-
-$('.mute-sound').on('click', () => {
-    muteSound();
 });
 
-function muteSound(){
-    
-    reference: https://css-tricks.com/forums/topic/mute-unmute-sounds-on-website/
-    let soundEffects = $('audio');
+function muteOn() {
+    $('.mute-btn i').toggleClass('fa-volume-mute fa-volume-up');
 
-    if (silence) {
-        for (let x = 0; x < soundEffects.length; x++) {
-            soundEffects[x].muted = false;
-        }
-        silence = false;
-        console.log('unmuted');
-        
+    // reference: https://stackoverflow.com/questions/23409992/toggling-the-muted-attribute-of-html5-audio
+    btnSound.muted = true;
+    slideSound.muted = true;
+    endSound.muted = true;
+    correctSound.muted = true;
+    incorrectSound.muted = true;
+}
+
+function muteOff() {
+    $('.mute-btn i').toggleClass('fa-volume-mute fa-volume-up');
+
+    btnSound.muted = false;
+    slideSound.muted = false;
+    endSound.muted = false;
+    correctSound.muted = false;
+    incorrectSound.muted = false;
+}
+
+if (soundSetting) {
+    // Checks Users preference - based off similar conditional for toggle function
+    if (soundSetting === "off") {
+        muteOn();
     }
-    else {
-        for (let x = 0; x < soundEffects.length; x++) {
-            soundEffects[x].muted = true;
-        }
-        silence = true;
-        $('.mute-sound i').toggleClass('fa-volume-mute fa-volume-up');
-    }
-    console.log('muted');
-}*/
+}
 
 // --------------------------------------------------------- Player Information
 /* Welcome Modal allows user to enter name of choice
@@ -265,6 +189,3 @@ $('#footer-button').on('click', function () {
 // --------------------------------------------------------- On Page Load 
 // Initialize game on page load
 checkForUserData();
-muteSound();
-
-
