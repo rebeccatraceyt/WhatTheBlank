@@ -575,6 +575,27 @@ input:checked + .toggle-slide:before {
 
 /* Breakpoint to maintain structural integrity on a Laptop Screen */
 @media (min-width: 991px){ 
+
+    /*--------------------------------- Welcome Modal */
+    /* Styling for Welcome Modal */
+     /* Styling for Welcome Modal */
+     .welcome-text img {
+        max-width: 60%;
+    }
+    .welcome-text h3 {
+        font-size: 3rem;
+    }
+    .welcome-text h4 {
+        font-size: 1.7rem;
+    }
+    .welcome-text input {
+        font-size: 1.2rem;
+        min-width: 10%;
+        max-width: 15%;
+    }
+    .welcome-text button {
+        font-size: 1.2rem;
+    }
     
     /*--------------------------------- Header Section */
     /* Styling for Header section on page on a larger screen */    
