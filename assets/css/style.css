@@ -72,6 +72,10 @@ button:focus {
     color: var(--blue);;
 }
 
+.btn-click {
+    cursor: pointer;
+}
+
 /*------------------------------------------------------- Welcome Modal */
 #welcomeModal .modal-dialog {
     /* Makes Welcome Modal full screen
@@ -402,7 +406,6 @@ input:checked + .toggle-slide:before {
 	width:20px;
 	height:50px;
     border: none;
-    cursor: pointer;
 }
 .footer-content {
     width: 100%;
@@ -415,13 +418,12 @@ input:checked + .toggle-slide:before {
 .footer-text {
     padding: 5px;
 }
-.footer-icon li {
+.footer-text li {
     display: inline;
 }
 .footer-icon i {
     padding: 5px;
     color: var(--yellow);
-    letter-spacing: 10px;
 }
 
 /*------------------------------------------------------- Form Modal */
@@ -660,13 +662,17 @@ input:checked + .toggle-slide:before {
     /*--------------------------------- Footer */
     /* Footer for larger devices only */
     .footer-lg {
-        padding: 0px 20px 0px 0px;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
-    .footer-icon span {
-        padding-right: 10px;
+    .footer-lg ul {
+        min-width: 30vw;
+        padding-left: 0px;
+        margin-bottom: 3px;
+    }
+    .footer-icon a, .footer-icon i {
+        width: 15px;
     }
     .footer-icon i {
-        letter-spacing: 1px;
+        padding: 10px;
     }
 }
