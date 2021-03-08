@@ -54,6 +54,11 @@ body {
     font-weight: 300;
 }
 
+button:focus {
+    /* reference: https://github.com/react-bootstrap/react-bootstrap/issues/1300 */
+    outline: none;
+}
+
 /*------------------------------------------------------- Header Section */
 .header-sec {
     position: fixed;
@@ -77,22 +82,6 @@ body {
    position: fixed;
    right: 0; 
 }
-
-/* Styling for Mute button */
-.mute-btn {
-    background: transparent;
-    border: none;
-    color: var(--yellow);
-
-    font-size: 1.5rem;
-    top: 10px;
-    right: 80px;
-    position: absolute; 
- }
- .toggle-sec button:focus {
-     /* reference: https://github.com/react-bootstrap/react-bootstrap/issues/1300 */
-     outline: none;
- }
 
 /*------------------------------------------------------- Menu Section */
 /* Styling for Menu section on page */
@@ -125,17 +114,14 @@ body {
 /*------------------------------------------------------- Game Play Section */
 /* Styling for Game Play section on page */
 .game-sec {
-    padding-top: 12px;
-    padding-bottom: 50px; /* To accommodate sliding footer */
+    padding: 12px 5px 50px 5px;
 
     min-height: 60vh;
+    max-height: 60vh;
     width: 100vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .home-sec {
+    padding: 12px 5px 50px 5px;
     background: var(--game-bg);
     background-size: cover;
     -webkit-background-size: cover;
@@ -148,6 +134,9 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+.play-sec {
+    padding-top: 10vh;
 }
 
 /* Styling for each category background - for consistency purposes */
@@ -183,7 +172,7 @@ body {
 /* Styling for text on Home Page */
 #welcome-message h1 {
     font-family: var(--titlefont);
-    font-size: 2rem;
+    font-size: 3rem;
 }   
 
 /* Styling for Questions and Answers section */
@@ -193,27 +182,28 @@ body {
     top: 0;
 }
 .score-text {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
 /* Styling for questions in game mode */
-#question, #answer-btns {
+.questions-sec, .answers-sec {
     padding: 10px;
 }
-#question {
-    font-size: 1rem;
+.questions-sec {
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 /* Styling for answers in game mode */
 .answer-btn {
     display: inline-block;
+    padding: 3px;
 }
 .answer-text {
+    font-size: 1.2rem;
     background-color: var(--blue);
     color: var(--white);
-    font-size: .8rem;
 
     border-radius: 7px;
     border: 2px solid var(--white);
@@ -261,6 +251,18 @@ body {
 .toggle-sec input {
     display: none;
 }
+
+/* Styling for Mute button */
+.mute-btn {
+    background: transparent;
+    border: none;
+    color: var(--yellow);
+
+    font-size: 1.5rem;
+    top: 10px;
+    right: 80px;
+    position: absolute; 
+ }
 
 /* Light / Dark toggle function styling for UX purposes
 	sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
@@ -476,6 +478,26 @@ input:checked + .toggle-slide:before {
     .game-sec {
         max-height: 60vh;
     }
+    .play-sec {
+        padding-top: 10vh;
+    }
+    #welcome-message h1 {
+        font-size: 4rem;
+    }
+    .score-text {
+        font-size: 1.8rem;
+    }
+    .questions-sec, .answers-sec {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .questions-sec {
+        font-size: 2rem;
+    }
+    .answer-text {
+        font-size: 1.5rem;
+    }
+
 
     /*--------------------------------- Sliding Footer */
     /* Styling for Sliding Footer on a medium screen */
