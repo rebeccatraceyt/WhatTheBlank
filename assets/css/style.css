@@ -59,6 +59,84 @@ button:focus {
     outline: none;
 }
 
+/* Edited from W3School's CSS placeholder example for better readability and consistency 
+    reference: https://www.w3schools.com/howto/howto_css_placeholder.asp */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--blue);;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--blue);;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--blue);;
+}
+
+/*------------------------------------------------------- Welcome Modal */
+#welcomeModal .modal-dialog {
+    /* Makes Welcome Modal full screen
+        sourced from https://stackoverflow.com/questions/18432394/how-to-make-twitter-bootstrap-modal-full-screen */
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#welcome-content {
+    background: var(--game-bg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    margin: 0 auto;
+}
+#welcome-body {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-text {
+    padding-bottom: 5px;
+}
+.welcome-text img {
+    max-width: 100%;
+    height: auto;
+}
+.welcome-text h3 {
+    color: var(--blue);
+    padding: 10px 0;
+    font-size: 1.4rem;
+    font-family: var(--titlefont);
+    text-shadow: 1px 1px var(--black);
+    letter-spacing: 1px;
+}
+.welcome-text h4 {
+    padding: 5px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.welcome-text input {
+    font-size: 1.2rem;
+    min-width: 50%;
+    padding: 6px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    text-align: center;
+}
+.welcome-text button {
+    font-size: 1.2rem;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.welcome-text button:hover  {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
 /*------------------------------------------------------- Header Section */
 .header-sec {
     position: fixed;
@@ -307,126 +385,6 @@ input:checked + .toggle-slide:before {
     font-size: 1.6rem;
 }
 
-/*------------------------------------------------------- Modal Styling */
-
-/*--------------------------- Welcome Modal */
-#welcomeModal .modal-dialog {
-    /* Makes Welcome Modal full screen
-        sourced from https://stackoverflow.com/questions/18432394/how-to-make-twitter-bootstrap-modal-full-screen */
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-#welcome-content {
-    background: var(--game-bg);
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-
-    height: auto;
-    min-height: 100%;
-    border-radius: 0;
-    margin: 0 auto;
-}
-#welcome-body {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-.welcome-text {
-    padding-bottom: 5px;
-}
-.welcome-text img {
-    max-width: 100%;
-    height: auto;
-}
-.welcome-text h3 {
-    color: var(--blue);
-    padding: 10px 0;
-    font-size: 1.4rem;
-    font-family: var(--titlefont);
-    text-shadow: 1px 1px var(--black);
-    letter-spacing: 1px;
-}
-.welcome-text h4 {
-    padding: 5px 0;
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-.welcome-text input {
-    font-size: 1.2rem;
-    min-width: 50%;
-    padding: 6px;
-    border: 1px solid var(--white);
-    border-radius: 5px;
-    text-align: center;
-}
-.welcome-text button {
-    font-size: 1.2rem;
-    background-color: var(--blue);
-    color: var(--white);
-}
-.welcome-text button:hover  {
-    background-color: var(--white);
-    color: var(--blue);
-}
-/* Edited from W3School's CSS placeholder example for better readability and consistency 
-    reference: https://www.w3schools.com/howto/howto_css_placeholder.asp */
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--blue);;
-    opacity: 1; /* Firefox */
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: var(--blue);;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: var(--blue);;
-}
-
-/*--------------------------- Suggestions Form Modal */
-#form-content {
-    background-color: var(--orange);
-    color: var(--white);
-}
-#form-header {
-    border: none;
-    padding-bottom: 0;
-    font-family: var(--titlefont);
-    letter-spacing: 1px;
-}
-#form-header p {
-    margin-bottom: 0;
-}
-#form-header i {
-    color: var(--white);
-}
-#form-body {
-    padding-top: 1rem;
-}
-/* Edited from W3School's example to style contact form 
-        reference: https://www.w3schools.com/howto/howto_css_contact_form.asp */
-#form-body input[type=text], input[type=email], textarea {
-    width: 100%;
-    padding: 7px;
-    border: 1px solid var(--white);
-    border-radius: 4px;
-    margin-top: 6px;
-    margin-bottom: 1px;
-    resize: none;
-}
-#form-body button {
-    float: right;
-    background-color: var(--white);
-    color: var(--blue);
-}
-#form-body button:hover {
-    background-color: var(--blue);
-    color: var(--white);
-}
-
 /*------------------------------------------------------- Sliding Footer */
 /* Footer slides from bottom on mobile and tablet devices for UX purposes 
     sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ */
@@ -457,10 +415,54 @@ input:checked + .toggle-slide:before {
 .footer-text {
     padding: 5px;
 }
+.footer-icon li {
+    display: inline;
+}
 .footer-icon i {
     padding: 5px;
     color: var(--yellow);
     letter-spacing: 10px;
+}
+
+/*------------------------------------------------------- Form Modal */
+.form-content {
+    background-color: var(--orange);
+    color: var(--white);
+}
+.form-header {
+    border: none;
+    padding-bottom: 0;
+    font-family: var(--titlefont);
+    letter-spacing: 1px;
+}
+.form-header p {
+    margin-bottom: 0;
+}
+.form-header i {
+    color: var(--white);
+}
+.form-body {
+    padding-top: 1rem;
+}
+/* Edited from W3School's example to style contact form 
+        reference: https://www.w3schools.com/howto/howto_css_contact_form.asp */
+.form-body input, textarea {
+    width: 100%;
+    padding: 7px;
+    border: 2px solid var(--white);
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 1px;
+    resize: none;
+}
+.form-body button {
+    float: right;
+    background-color: var(--white);
+    color: var(--blue);
+}
+.form-body button:hover {
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 /*------------------------------------------------------- Media Queries */
@@ -468,6 +470,26 @@ input:checked + .toggle-slide:before {
 /* Breakpoint to maintain structural integrity on a Tablet device */
 @media (min-width: 700px) and (max-width: 991px) {
 
+    /*--------------------------------- Welcome Modal */
+    /* Styling for Welcome Modal */
+    .welcome-text img {
+        max-width: 80%;
+    }
+    .welcome-text h3 {
+        font-size: 2.5rem;
+    }
+    .welcome-text h4 {
+        font-size: 1.7rem;
+    }
+    .welcome-text input {
+        font-size: 1.5rem;
+        min-width: 30%;
+        max-width: 40%;
+    }
+    .welcome-text button {
+        font-size: 1.5rem;
+    }
+    
     /*--------------------------------- Menu Section */
     /* Styling for Menu section on page on a medium screen */
     .menu-sec {
@@ -524,26 +546,6 @@ input:checked + .toggle-slide:before {
         font-size: 2.5rem;
     }
 
-    /*--------------------------------- Modal Styling */
-    /* Styling for Welcome Modal */
-    .welcome-text img {
-        max-width: 80%;
-    }
-    .welcome-text h3 {
-        font-size: 2.5rem;
-    }
-    .welcome-text h4 {
-        font-size: 1.7rem;
-    }
-    .welcome-text input {
-        font-size: 1.5rem;
-        min-width: 30%;
-        max-width: 40%;
-    }
-    .welcome-text button {
-        font-size: 1.5rem;
-    }
-
 
     /*--------------------------------- Sliding Footer */
     /* Styling for Sliding Footer on a medium screen */
@@ -554,6 +556,20 @@ input:checked + .toggle-slide:before {
     } 
     .footer-content {
         font-size: 1.5rem;
+    }
+
+    /*--------------------------------- Form Modal */
+    .form-header h4 {
+        font-size: 2rem;
+    }
+    .form-header p {
+        font-size: 1.6rem;
+    }
+    .form-body input, textarea {
+        font-size: 1.2rem;
+    }
+    .form-body button {
+        font-size: 1.3rem;
     }
 }
 

@@ -152,15 +152,23 @@
 							<span><i class="far fa-copyright"></i> Rebecca Tracey-Timoney <span id="current-year"></span></span>
 						</div>
 					</div>
-					<div class="footer-icon row">
+					<div class="row">
 						<div class="col-12">
-							<a href="https://www.linkedin.com/in/rebeccatraceytimoney/" target="_blank" rel="noopener" aria-label="Linkedin - Rebecca Tracey-Timoney">
-								<i class="fab fa-linkedin-in btn-click"></i>
-							</a>
-							<i class="far fa-lightbulb" data-toggle="modal" data-target="#form-modal"></i>
-							<a href="https://github.com/rebeccatraceyt" target="_blank" rel="noopener" aria-label="Github - rebeccatraceyt">
-								<i class="fab fa-github-alt btn-click"></i>
-							</a>
+							<ul class="footer-icon">
+								<li>
+									<a href="https://www.linkedin.com/in/rebeccatraceytimoney/" target="_blank" rel="noopener" aria-label="Linkedin - Rebecca Tracey-Timoney">
+										<i class="fab fa-linkedin-in btn-click"></i>
+									</a>
+								</li>
+								<li>
+									<i class="far fa-lightbulb btn-click" data-toggle="modal" data-target="#form-modal"></i>
+								</li>
+								<li>
+									<a href="https://github.com/rebeccatraceyt" target="_blank" rel="noopener" aria-label="Github - rebeccatraceyt">
+										<i class="fab fa-github-alt btn-click"></i>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -172,8 +180,8 @@
 		<!-- sourced and edited from https://getbootstrap.com/docs/4.3/components/modal/ -->
 		<div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="suggestion-form" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div id="form-content" class="modal-content">
-					<div id="form-header" class="modal-header">
+				<div class="modal-content form-content">
+					<div class="modal-header form-header">
 						<span>
                             <h4 class="modal-title" id="suggestion-form">Got a Suggestion?</h4>
                             <p>Let the developer know!</p>
@@ -182,11 +190,11 @@
 							<span><i class="fas fa-times btn-click"></i></span>
 						</button>
 					</div>
-					<div id="form-body" class="modal-body">
+					<div class="modal-body form-body">
 						<form >                                
                             <input type="text" name="name" id="name" placeholder="Name" aria-label="Enter Name" required>
                             <input type="email" name="email" id="email" placeholder="Email" aria-label="Enter Email" required>
-                            <textarea name="message" id="message" placeholder="Leave a message or suggestion" aria-label="Enter Message" rows="3" required></textarea>
+                            <textarea name="message" id="message" placeholder="Leave a message or suggestion" aria-label="Enter Message" rows="4" required></textarea>
                             <button type="submit" class="btn btn-click" data-dismiss="modal" aria-label="Submit Button">Send</button>
                         </form>
 					</div>
