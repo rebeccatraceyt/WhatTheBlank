@@ -83,6 +83,64 @@ button:focus {
    right: 0; 
 }
 
+/*------------------------------------------------------- Toggle Switches */
+/* Styling for Toggle button section */
+
+/* Styling for Mute button */
+.mute-btn {
+    background: transparent;
+    border: none;
+    color: var(--yellow);
+
+    font-size: 1.5rem;
+    top: 10px;
+    right: 80px;
+    position: absolute; 
+ }
+
+/* Light / Dark toggle function styling for UX purposes
+	sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
+.toggle-sec input {
+    display: none;
+}
+.toggle-switch {
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+.toggle-slide {
+    background-color: var(--toggle-off);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+.toggle-slide:before {
+    background-color: var(--toggle-ball);
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+input:checked + .toggle-slide {
+    background-color: var(--toggle-on);
+}
+input:checked + .toggle-slide:before {
+    transform: translate(26px);
+}
+.toggle-slide.toggle-ball {
+    border-radius: 34px;
+}
+.toggle-slide.toggle-ball:before {
+    border-radius: 50%;
+}
+
 /*------------------------------------------------------- Menu Section */
 /* Styling for Menu section on page */
 .menu-sec {
@@ -249,64 +307,6 @@ button:focus {
     font-size: 1.6rem;
 }
 
-/*------------------------------------------------------- Toggle Switches */
-/* Styling for Toggle button section */
-.toggle-sec input {
-    display: none;
-}
-
-/* Styling for Mute button */
-.mute-btn {
-    background: transparent;
-    border: none;
-    color: var(--yellow);
-
-    font-size: 1.5rem;
-    top: 10px;
-    right: 80px;
-    position: absolute; 
- }
-
-/* Light / Dark toggle function styling for UX purposes
-	sourced and edited from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
-.toggle-switch {
-    height: 34px;
-    position: relative;
-    width: 60px;
-}
-.toggle-slide {
-    background-color: var(--toggle-off);
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-}
-.toggle-slide:before {
-    background-color: var(--toggle-ball);
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 26px;
-}
-input:checked + .toggle-slide {
-    background-color: var(--toggle-on);
-}
-input:checked + .toggle-slide:before {
-    transform: translate(26px);
-}
-.toggle-slide.toggle-ball {
-    border-radius: 34px;
-}
-.toggle-slide.toggle-ball:before {
-    border-radius: 50%;
-}
-
 /*------------------------------------------------------- Modal Styling */
 
 /*--------------------------- Welcome Modal */
@@ -336,35 +336,40 @@ input:checked + .toggle-slide:before {
     justify-content: center;
     align-items: center;
 }
-#welcome-body img {
+.welcome-text {
+    padding-bottom: 5px;
+}
+.welcome-text img {
     max-width: 100%;
     height: auto;
 }
-#welcome-body h3 {
+.welcome-text h3 {
     color: var(--blue);
     padding: 10px 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: var(--titlefont);
     text-shadow: 1px 1px var(--black);
     letter-spacing: 1px;
 }
-#welcome-body h4 {
+.welcome-text h4 {
     padding: 5px 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
-#welcome-body input {
+.welcome-text input {
+    font-size: 1.2rem;
     min-width: 50%;
     padding: 6px;
     border: 1px solid var(--white);
     border-radius: 5px;
     text-align: center;
 }
-#welcome-body button{
+.welcome-text button {
+    font-size: 1.2rem;
     background-color: var(--blue);
     color: var(--white);
 }
-#welcome-body button:hover  {
+.welcome-text button:hover  {
     background-color: var(--white);
     color: var(--blue);
 }
@@ -518,6 +523,27 @@ input:checked + .toggle-slide:before {
     .end-sec i {
         font-size: 2.5rem;
     }
+
+    /*--------------------------------- Modal Styling */
+    /* Styling for Welcome Modal */
+    .welcome-text img {
+        max-width: 80%;
+    }
+    .welcome-text h3 {
+        font-size: 2.5rem;
+    }
+    .welcome-text h4 {
+        font-size: 1.7rem;
+    }
+    .welcome-text input {
+        font-size: 1.5rem;
+        min-width: 30%;
+        max-width: 40%;
+    }
+    .welcome-text button {
+        font-size: 1.5rem;
+    }
+
 
     /*--------------------------------- Sliding Footer */
     /* Styling for Sliding Footer on a medium screen */
