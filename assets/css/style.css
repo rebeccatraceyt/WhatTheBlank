@@ -420,12 +420,12 @@ input:checked + .toggle-slide:before {
 /*------------------------------------------------------- Sliding Footer */
 /* Footer slides from bottom on mobile and tablet devices for UX purposes 
     sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ */
-#footer-container {
+.footer-container {
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-#footer-button {
+.footer-button {
     background: transparent;
     font-size: 2rem;
     position: absolute;
@@ -436,20 +436,20 @@ input:checked + .toggle-slide:before {
     border: none;
     cursor: pointer;
 }
-#footer-content {
+.footer-content {
     width: 100%;
     height: 0px;
     background: var(--blue);
     border: none;
     text-align: center;
+    font-size: 1.2rem;
 }
-#footer-text {
+.footer-text {
     padding: 5px;
 }
-#footer-icon i {
+.footer-icon i {
     padding: 5px;
     color: var(--yellow);
-    font-size: 1.2rem;
     letter-spacing: 10px;
 }
 
@@ -475,6 +475,17 @@ input:checked + .toggle-slide:before {
     /* Styling for Menu section on page on a medium screen */
     .game-sec {
         max-height: 60vh;
+    }
+
+    /*--------------------------------- Sliding Footer */
+    /* Styling for Sliding Footer on a medium screen */
+    .footer-button {
+        font-size: 3rem;
+        top: -70px;
+        right: 35px;
+    } 
+    .footer-content {
+        font-size: 1.5rem;
     }
 }
 

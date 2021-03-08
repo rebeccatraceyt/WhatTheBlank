@@ -1,5 +1,9 @@
 // --------------------------------------------------------- Variables
-/* Storage Variables */
+// Media Query Variables
+const smallMQ = window.matchMedia('(max-width:700px)');
+const mediumMQ = window.matchMedia('(min-width:700px) and (max-width:991px)');
+
+// Storage Variables
 let userName = sessionStorage.getItem("userName"); // Load username
 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // gets users theme preference
@@ -7,7 +11,7 @@ const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox
 
 const soundSetting = sessionStorage.getItem("sound") ? sessionStorage.getItem("sound") : null; // gets users sound effects preference
 
-/* Game Function Variables */
+// Game Function Variables
 const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answer-text'));
 const scoreNumber = document.getElementById('score');
@@ -30,14 +34,14 @@ let movieHighScore = 0;
 const correctBonus = 1; // How much correct answer is correct
 const maxQuestions = 3; // How many questions before end
 
-/* Audio Variables */
+// Audio Variables
 const btnSound = new Audio('assets/audio/btn-click.mp3');
 const slideSound = new Audio('assets/audio/toggle.mp3');
 const endSound = new Audio('assets/audio/game-end.mp3');
 const correctSound = new Audio('assets/audio/correct.mp3');
 const incorrectSound = new Audio('assets/audio/incorrect.mp3');
 
-/* Misc Variables */
+// Misc Variables
 let footerOpen = false; // default for sliding footer
 
 // --------------------------------------------------------- Audio
@@ -172,18 +176,34 @@ document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
 /* Implements sliding footer function
     sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ */
-$('#footer-button').on('click', function () {
-    if(footerOpen === false) {
-        $('#footer-content').animate({ height: '60px' });
-        $(this).css('backgroundPosition', 'bottom left');
-        $("i", this).toggleClass("fa-caret-square-up fa-caret-square-down"); // reference: https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle/15345885 
-        footerOpen = true;
-    } else {
-        $('#footer-content').animate({ height: '0px' });
-        $(this).css('backgroundPosition', 'top left');
-        $("i", this).toggleClass("fa-caret-square-down fa-caret-square-up");
-        footerOpen = false;
-    }  
+$('.footer-button').on('click', function () {
+    if (smallMQ.matches) {
+        if(footerOpen === false) {
+            $('.footer-content').animate({ height: '65px' });
+            $(this).css('backgroundPosition', 'bottom left');
+            $("i", this).toggleClass("fa-caret-square-up fa-caret-square-down"); // reference: https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle/15345885 
+            footerOpen = true;
+        } else {
+            $('.footer-content').animate({ height: '0px' });
+            $(this).css('backgroundPosition', 'top left');
+            $("i", this).toggleClass("fa-caret-square-down fa-caret-square-up");
+            footerOpen = false;
+        } 
+    } 
+    
+    if (mediumMQ.matches) {
+        if(footerOpen === false) {
+            $('.footer-content').animate({ height: '85px' });
+            $(this).css('backgroundPosition', 'bottom left');
+            $("i", this).toggleClass("fa-caret-square-up fa-caret-square-down"); // reference: https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle/15345885 
+            footerOpen = true;
+        } else {
+            $('.footer-content').animate({ height: '0px' });
+            $(this).css('backgroundPosition', 'top left');
+            $("i", this).toggleClass("fa-caret-square-down fa-caret-square-up");
+            footerOpen = false;
+        } 
+    } 
 });		
 
 // --------------------------------------------------------- On Page Load 
