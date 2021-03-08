@@ -227,12 +227,15 @@ button:focus {
     display: none;
 }
 .end-sec h3 {
+    font-size: 2.5rem;
     font-family: var(--titlefont);
 }
 .end-sec h5 {
+    font-size: 1.5rem;
     font-weight: 500;
 }
 .end-sec p {
+    font-size: 1.4rem;
     /* Override of default CSS styling for UI purposes */
     margin-block-start: 0;
     margin-block-end: 0;
@@ -243,7 +246,7 @@ button:focus {
     padding: 10px;
     margin: 12px;
     color: var(--yellow);
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 /*------------------------------------------------------- Toggle Switches */
@@ -474,16 +477,20 @@ input:checked + .toggle-slide:before {
     }
 
     /*--------------------------------- Game Play Section */
-    /* Styling for Menu section on page on a medium screen */
+    /* Styling for Game Play section on page on a medium screen */
     .game-sec {
         max-height: 60vh;
     }
     .play-sec {
         padding-top: 10vh;
     }
+
+    /* Styling for text on Home Page */
     #welcome-message h1 {
         font-size: 4rem;
     }
+
+    /* Styling for Questions and Answers section */
     .score-text {
         font-size: 1.8rem;
     }
@@ -498,6 +505,19 @@ input:checked + .toggle-slide:before {
         font-size: 1.5rem;
     }
 
+    /*--------------------------------- Game End Text */
+    .end-sec h3 {
+        font-size: 3.5rem;
+    }
+    .end-sec h5 {
+        font-size: 2rem;
+    }
+    .end-sec p {
+        font-size: 1.6rem;
+    }
+    .end-sec i {
+        font-size: 2.5rem;
+    }
 
     /*--------------------------------- Sliding Footer */
     /* Styling for Sliding Footer on a medium screen */
