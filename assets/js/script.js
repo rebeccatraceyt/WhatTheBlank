@@ -43,6 +43,8 @@ const incorrectSound = new Audio('assets/audio/incorrect.mp3');
 
 // Misc Variables
 let footerOpen = false; // default for sliding footer
+let year = new Date();
+let currentYear = year.getFullYear();
 
 // --------------------------------------------------------- Audio
 // General Buttons
@@ -172,7 +174,8 @@ toggleSwitch.addEventListener('change', switchMode, false);
 
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
-document.getElementById("current-year").innerHTML = new Date().getFullYear();
+document.getElementsByClassName('current-year')[0].innerHTML = currentYear;
+document.getElementsByClassName('current-year')[1].innerHTML = currentYear;
 
 /* Implements sliding footer function
     sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ */

@@ -543,7 +543,6 @@ input:checked + .toggle-slide:before {
         font-size: 2.5rem;
     }
 
-
     /*--------------------------------- Sliding Footer */
     /* Styling for Sliding Footer on a medium screen */
     .footer-button {
@@ -657,6 +656,17 @@ input:checked + .toggle-slide:before {
     .answer-text {
         font-size: 1.5rem;
     }
+
+    /*--------------------------------- Footer */
+    /* Footer for larger devices only */
+    .footer-lg {
+        padding: 0px 20px 0px 0px;
+        font-size: 1.4rem;
+    }
+    .footer-icon span {
+        padding-right: 10px;
+    }
+    .footer-icon i {
+        letter-spacing: 1px;
+    }
 }
-
-
