@@ -623,15 +623,40 @@ input:checked + .toggle-slide:before {
         min-height: 100vh;
         max-width: 70vw;
         float: right;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .game-body {
+        position: absolute;
+        max-width: 65vw;
+        min-height: 90vh;
+    }
+    .play-sec { 
+        padding-top: 25vh;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     /* Styling for text on Home Page */
     #welcome-message h1{
-        font-size: 5rem;
-        font-weight: normal;
+        font-size: 4rem;
     }
 
-}
+    /* Styling for score in game mode */
+    .score-text {
+        font-size: 2.8rem;
+    }
 
+    /* Styling for questions in game mode */
+    .questions-sec {
+        font-size: 2.3rem;
+    }
+
+    /* Styling for answers in game mode */
+    .answer-text {
+        font-size: 1.5rem;
+    }
+}
 
 
