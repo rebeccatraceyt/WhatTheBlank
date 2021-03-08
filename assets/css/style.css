@@ -508,9 +508,6 @@ input:checked + .toggle-slide:before {
     .game-sec {
         max-height: 60vh;
     }
-    .play-sec {
-        padding-top: 10vh;
-    }
 
     /* Styling for text on Home Page */
     #welcome-message h1 {
