@@ -21,6 +21,14 @@
 
 		<!-- Page title -->
 		<title>Blank!</title>
+
+		<!-- EmailJS Link -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function() {
+				emailjs.init("user_TMxBrvw73ZySzIBKjJ8E8");
+			})();
+		</script>
 	</head>
 	<body>
 
@@ -226,7 +234,7 @@
                             <input type="text" name="name" id="name" placeholder="Name" aria-label="Enter Name" required>
                             <input type="email" name="email" id="email" placeholder="Email" aria-label="Enter Email" required>
                             <textarea name="message" id="message" placeholder="Leave a message or suggestion" aria-label="Enter Message" rows="4" required></textarea>
-                            <button type="submit" class="btn btn-click" data-dismiss="modal" aria-label="Submit Button">Send</button>
+                            <button type="submit" class="btn btn-click" data-dismiss="modal" aria-label="Submit Button" onclick="sendMail()">Send</button>
                         </form>
 					</div>
 				</div>

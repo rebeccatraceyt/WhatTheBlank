@@ -207,7 +207,21 @@ $('.footer-button').on('click', function () {
             footerOpen = false;
         } 
     } 
-});		
+});	
+
+// --------------------------------------------------------- Email Verification
+// Accumulated from CI tutorial and https://www.youtube.com/watch?v=x7Ewtay0Q78
+function sendMail(params){
+    let tempParams = {
+        user_name: document.getElementById("name").value,
+        user_email: document.getElementById("email").value,
+        user_msg: document.getElementById("message").value,
+    };
+    emailjs.send('service_ky4ewk5', 'template_i8i69po', tempParams)
+    .then(function(res){
+        console.log("success", res.status);
+    })
+}
 
 // --------------------------------------------------------- On Page Load 
 // Initialize game on page load
