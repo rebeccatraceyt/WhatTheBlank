@@ -659,6 +659,20 @@ input:checked + .toggle-slide:before {
         font-size: 1.5rem;
     }
 
+    /*--------------------------------- Game End Text */
+    .end-sec h3 {
+        font-size: 4rem;
+    }
+    .end-sec h5 {
+        font-size: 2.3rem;
+    }
+    .end-sec p {
+        font-size: 2rem;
+    }
+    .end-sec i {
+        font-size: 3rem;
+    }
+
     /*--------------------------------- Footer */
     /* Footer for larger devices only */
     .footer-lg {
