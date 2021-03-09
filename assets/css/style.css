@@ -669,12 +669,13 @@ input:checked + .toggle-slide:before {
         min-width: 30vw;
         max-width: 32vw;
         padding-left: 0px;
+        padding-right: 50px;
         margin-bottom: 3px;
     }
-    .footer-icon a, .footer-icon i {
-        width: 5%;
+    .footer-icon a {
+        width: 2%;
     }
-    .footer-icon i {
+    .footer-copyright i {
         padding-left: 2%;
     }
 }
