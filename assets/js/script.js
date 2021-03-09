@@ -43,8 +43,6 @@ const incorrectSound = new Audio('assets/audio/incorrect.mp3');
 
 // Misc Variables
 let footerOpen = false; // default for sliding footer
-let year = new Date();
-let currentYear = year.getFullYear();
 
 // --------------------------------------------------------- Audio
 // General Buttons
@@ -174,8 +172,8 @@ toggleSwitch.addEventListener('change', switchMode, false);
 
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
-document.getElementsByClassName('current-year')[0].innerHTML = currentYear;
-document.getElementsByClassName('current-year')[1].innerHTML = currentYear;
+document.getElementsByClassName('current-year')[0].innerHTML = new Date().getFullYear();
+document.getElementsByClassName('current-year')[1].innerHTML = new Date().getFullYear();
 
 /* Implements sliding footer function
     sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ */
@@ -209,13 +207,39 @@ $('.footer-button').on('click', function () {
     } 
 });	
 
-// --------------------------------------------------------- Email Verification
+// --------------------------------------------------------- Form Validation
+// reference: https://codepen.io/tetnuc/pen/gRqOEO
+$('#suggestionForm').validate({
+    rules: {
+        pName: {
+            required: true
+        },
+        pEmail: {
+            required: true
+        },
+        pMessage: {
+            required: true
+        }
+    },
+    messages: {
+        pName: {
+            required: "Please complete all fields"
+        },
+        pEmail: {
+            required: "Please complete all fields"
+        },
+        pMessage: {
+            required: "Please complete all fields"
+        }
+    },
+});
+
 // Accumulated from CI tutorial and https://www.youtube.com/watch?v=x7Ewtay0Q78
 function sendMail(params){
     let tempParams = {
-        user_name: document.getElementById("name").value,
-        user_email: document.getElementById("email").value,
-        user_msg: document.getElementById("message").value,
+        user_name: document.getElementById("pName").value,
+        user_email: document.getElementById("pEmail").value,
+        user_msg: document.getElementById("pMessage").value,
     };
     emailjs.send('service_ky4ewk5', 'template_i8i69po', tempParams)
     .then(function(res){
