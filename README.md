@@ -10,7 +10,7 @@
 
 <div align="center">
 
-[Blank!](https://github.com/rebeccatraceyt/WhatsThatBlank) is web-based interactive fill-in-the-blank game, with a musical twist. With a wide variety of music categories to choose from, the user can test their memory in their favorite music genre, using a fun and intuitive user interface. Features include lively graphics and sound effects, that the user can control for their own personal experience.
+[Blank!](https://github.com/rebeccatraceyt/WhatsThatBlank) is web-based interactive fill-in-the-blank game, with a musical twist. With a wide variety of music categories to choose from, the user can test their memory in their favorite music genre, using a fun and intuitive user interface. Features include vibrant graphics and sound effects, that the user can control for their own personal experience. The game is designed to be intuitively easy to navigate, requiring no prior knowledge or a list of instructions in how to play, getting the players to where they want to be: **in the game**!
 
 [View the live project here]()
 
