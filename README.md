@@ -160,45 +160,50 @@ The information architecture was organized in a **hierarchial tree structure** i
 
 <strong>4. <u>Skeleton</u></strong>
 
-Wireframe mockups were created in a [Figma Workspace]() with providing a positive user experience in mind:
+Wireframe mockups were created in a [Figma Workspace](https://www.figma.com/file/aOGtRrWkTHhGUGqInODSdN/Blank "Link to Blank! Figma Workspace") with providing a positive user experience in mind:
 
 Main Page:
 
 - Welcome Modal:
 
-     ![Welcome Modal](assets/readme-files/welcome.png "Welcome Modal Wireframe")
+     ![Welcome Modal](assets/readme-files/welcome-mockup.png "Welcome Modal Wireframe")
 
 - Home Page:
 
-     ![Home Page](assets/readme-files/home.png "Home Page Wireframe")
+     ![Home Page](assets/readme-files/home-mockup.png "Home Page Wireframe")
 
 Game Mode:
 
-- Main Game Page:
+- **As Seen on TV** Game Page:
 
-     ![Main Game Page](assets/readme-files/game-mode.png "Game Mode Page Wireframe")
+     ![Main Game Page](assets/readme-files/tv-mockup.png "Game Mode Page Wireframe")
 
-- Player Feedback for **correct** answer:
+- **Chart Toppers** Game Page:
 
-     ![Player Feedback for CORRECT answer](assets/readme-files/correct.png "Game Mode Player Feedback (Correct) Wireframe")
+     ![Main Game Page](assets/readme-files/chart-mockup.png "Game Mode Page Wireframe")
 
-- Player Feedback for **incorrect** answer:
+- **Throwback** Game Page:
 
-     ![Player Feedback for INCORRECT answer](assets/readme-files/incorrect.png "Game Mode Player Feedback (Incorrect) Wireframe")
+     ![Main Game Page](assets/readme-files/throwback-mockup.png "Game Mode Page Wireframe")
+
+- **At The Movies** Game Page:
+
+     ![Main Game Page](assets/readme-files/movies-mockup.png "Game Mode Page Wireframe")
+
 
 Finished Page:
 
-- With High Score:
+- **With** High Score:
 
-     ![With High Score](assets/readme-files/hs.png "Finished with High Score Wireframe")
+     ![With High Score](assets/readme-files/hs-mockup.png "Finished with High Score Wireframe")
 
-- Without High Score:
+- **Without** High Score:
 
-     ![Without High Score](assets/readme-files/no-hs.png "Finished without High Score Wireframe")
+     ![Without High Score](assets/readme-files/nohs-mockup.png "Finished without High Score Wireframe")
 
 Form:
 
-- ![Suggestions Form](assets/readme-files/form.png "Suggestions Form Wireframe")
+- ![Suggestions Form](assets/readme-files/form-mockup.png "Suggestions Form Wireframe")
 
 
 <strong>5. <u>Surface</u></strong>
