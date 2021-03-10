@@ -21,6 +21,55 @@ const movieQuestions = [
         answer2: 'friend',
         answer3: 'pal',
         correctAnswer: 3
+    },
+    {
+        question: "Here come the Men in Black, Galaxy _____",
+        answer1: 'protectors',
+        answer2: 'defenders',
+        answer3: 'conquerors',
+        correctAnswer: 2 
+    },
+    {
+        question: "His palms are sweaty, knees weak, arms are _____",
+        answer1: 'weak',
+        answer2: 'tired',
+        answer3: 'heavy',
+        correctAnswer: 3
+    },
+    {
+        question: "Now I've had the time of my _____",
+        answer1: 'life',
+        answer2: 'night',
+        answer3: 'day',
+        correctAnswer: 1
+    },
+    {
+        question: "Tonight I gotta cut loose, footloose. Kick off your _____ shoes",
+        answer1: 'Sunday',
+        answer2: 'dancing',
+        answer3: 'Monday',
+        correctAnswer: 1
+    },
+    {
+        question: "Where troubles melt like lemon drops away above the chimney tops, that's where you'll find _____",
+        answer1: 'Obi',
+        answer2: 'me',
+        answer3: 'us',
+        correctAnswer: 2 
+    },
+    {
+        question: "As you _____ on by, will you call my name?",
+        answer1: 'run',
+        answer2: 'dance',
+        answer3: 'walk',
+        correctAnswer: 3
+    },
+    {
+        question: "Near, far, wherever you are, I believe that the _____ does go on",
+        answer1: 'heart',
+        answer2: 'soul',
+        answer3: 'love',
+        correctAnswer: 1 
     }
 ];
 
