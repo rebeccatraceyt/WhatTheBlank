@@ -239,8 +239,14 @@ $('#form-submit').click(function (event) {
     // reference: https://stackoverflow.com/questions/5127813/call-mvc-3-client-side-validation-manually-for-ajax-posts
     event.preventDefault();
     if($('#suggestionForm').valid()) {
-        sendMail();
         console.log('SUCCESS');
+        swal(
+            'Thank You!',
+            'Your message has been sent',
+            'success'
+        )
+        $('#form-modal').modal('hide');
+        sendMail();
     }
 });
 
