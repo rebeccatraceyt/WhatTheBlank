@@ -240,11 +240,13 @@ $('#form-submit').click(function (event) {
     event.preventDefault();
     if($('#suggestionForm').valid()) {
         console.log('SUCCESS');
-        swal(
-            'Thank You!',
-            'Your message has been sent',
-            'success'
-        )
+        Swal.fire({
+            icon: 'success',
+            title: 'Thank You!',
+            text: 'Your message has been received',
+            showConfirmButton: false,
+            timer: 1500
+        })
         $('#form-modal').modal('hide');
         sendMail();
     }
