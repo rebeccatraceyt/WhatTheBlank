@@ -322,7 +322,7 @@ This project was developed using [Visual Studio Code Insiders](https://code.visu
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
 1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
-2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/KryanLive "Link to GitHub Repo").
+2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/WhatTheBlank "Link to GitHub Repo").
 3. At the top of the repository, select Settings from the menu items.
 4. Scroll down the Settings page to the "GitHub Pages" section.
 5. Under "Source" click the drop-down menu labelled "None" and select "Master Branch".
@@ -334,7 +334,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
 1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
-2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/KryanLive "Link to GitHub Repo").
+2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/WhatTheBlank "Link to GitHub Repo").
 3. At the top of the repository, on the right side of the page, select "Fork"
 4. You should now have a copy of the original repository in your GitHub account.
 
@@ -343,14 +343,14 @@ How to run this project locally:
 1. Install the [GitPod Browser](https://www.gitpod.io/docs/browser-extension/ "Link to Gitpod Browser extension download") Extension for Chrome.
 2. After installation, restart the browser.
 3. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
-2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/KryanLive "Link to GitHub Repo").
+2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/WhatTheBlank "Link to GitHub Repo").
 5. Click the green "GitPod" button in the top right corner of the repository.
 This will trigger a new gitPod workspace to be created from the code in github where you can work locally.
 
 How to run this project within a local IDE, such as VSCode:
 
 1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
-2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/KryanLive "Link to GitHub Repo").
+2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/WhatTheBlank "Link to GitHub Repo").
 3. Under the repository name, click "Clone or download".
 4. In the Clone with HTTPs section, copy the clone URL for the repository.
 5. In your local IDE open the terminal.
