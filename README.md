@@ -367,11 +367,8 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ## Credits 
 
-### Content
-- 
-
-### Media
-- 
+### Audio
+Music and sound effect credits can be found in a separate [file](credits.md "Link to credits file")
 
 ### Code 
 The developer consulted multiple sites in order to better understand the code they were trying to implement. For code that was copied and edited, the developer made sure to reference this with the code. The following sites were used on a more regular basis:

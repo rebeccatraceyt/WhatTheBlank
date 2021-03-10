@@ -21,6 +21,55 @@ const tvQuestions = [
         answer2: 'street',
         answer3: 'block',
         correctAnswer: 2
+    },
+    {
+        question: "But I can't do this all on my own, no, I know, I'm no ______",
+        answer1: 'Superman',
+        answer2: 'Doctor',
+        answer3: 'Actor',
+        correctAnswer: 1
+    },
+    {
+        question: "Sometimes you want to know where everybody knows your _____",
+        answer1: 'age',
+        answer2: 'story',
+        answer3: 'name',
+        correctAnswer: 3
+    },
+    {
+        question: "Maths, science, history, unraveling the mysteries that all started with a big _____",
+        answer1: 'bang',
+        answer2: 'noise',
+        answer3: 'boom',
+        correctAnswer: 1 
+    },
+    {
+        question: "Scooby-Dooby-Doo, where are you? We got some _____ to do now",
+        answer1: 'jobs',
+        answer2: 'stuff',
+        answer3: 'work',
+        correctAnswer: 3
+    },
+    {
+        question: "Then drop on the deck and flop like a _____, Spongebob Squarepants!",
+        answer1: 'fish',
+        answer2: 'sponge',
+        answer3: 'star',
+        correctAnswer: 1
+    },
+    {
+        question: "Pokemon! Oh, you're my best friend, in a world we must _____!",
+        answer1: 'destroy',
+        answer2: 'defend',
+        answer3: 'understand',
+        correctAnswer: 2
+    },
+    {
+        question: "Catches _____ just like flies. Look out! Here comes the Spider-Man.",
+        answer1: 'dreams',
+        answer2: 'bees',
+        answer3: 'thieves',
+        correctAnswer: 3
     }
 ];
 

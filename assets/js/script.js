@@ -32,7 +32,7 @@ let tbHighScore = 0;
 let movieHighScore = 0;
 
 const correctBonus = 1; // How much correct answer is correct
-const maxQuestions = 3; // How many questions before end
+const maxQuestions = 10; // How many questions before end
 
 // Audio Variables
 const btnSound = new Audio('assets/audio/btn-click.mp3');
