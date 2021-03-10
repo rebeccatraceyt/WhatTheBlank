@@ -484,7 +484,7 @@ input:checked + .toggle-slide:before {
     .welcome-text input {
         font-size: 1.5rem;
         min-width: 30%;
-        max-width: 40%;
+        max-width: 50%;
     }
     .welcome-text button {
         font-size: 1.5rem;
