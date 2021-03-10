@@ -448,7 +448,7 @@ input:checked + .toggle-slide:before {
 }
 /* Edited from W3School's example to style contact form 
         reference: https://www.w3schools.com/howto/howto_css_contact_form.asp */
-.form-body input, textarea {
+.form-body input[type='text'], input[type='email'], textarea {
     width: 100%;
     padding: 7px;
     border: 2px solid var(--white);
@@ -457,12 +457,12 @@ input:checked + .toggle-slide:before {
     margin-bottom: 1px;
     resize: none;
 }
-.form-body button {
+.form-btn {
     float: right;
     background-color: var(--white);
     color: var(--blue);
 }
-.form-body button:hover {
+.form-btn:hover {
     background-color: var(--blue);
     color: var(--white);
 }
