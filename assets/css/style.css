@@ -52,6 +52,7 @@ body {
     color: var(--yellow);
     font-family: var(--bodyfont);
     font-weight: 300;
+    background-color: var(--blue);
 }
 
 button:focus {
@@ -87,7 +88,7 @@ button:focus {
     padding: 0;
 }
 #welcome-content {
-    background: var(--game-bg);
+    background-image: var(--game-bg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -146,7 +147,6 @@ button:focus {
 /* Styling for logo */
 .logo-sec {
     padding: 10px;
-    position: fixed;
     width: 50vw;
     height: auto;
     left: 0;
@@ -158,7 +158,6 @@ button:focus {
 /* Styling for Toggle buttons */
 .toggle-sec {
    padding: 10px;
-   position: fixed;
    right: 0; 
 }
 
@@ -224,7 +223,7 @@ input:checked + .toggle-slide:before {
 /* Styling for Menu section on page */
 .menu-sec {
     background-color: var(--blue);
-    min-height: 40vh;
+    min-height: 30vh;
     
     display: flex;
     justify-content: center;
@@ -232,10 +231,6 @@ input:checked + .toggle-slide:before {
 }
 
 /* Styling for Category section */
-.cat-sec {
-    padding-top: 20%;
-    padding-bottom: 2%;
-}
 .cat-btns {
     padding-top: .8rem;
     display: flex;
@@ -259,7 +254,7 @@ input:checked + .toggle-slide:before {
 }
 .home-sec {
     padding: 12px 5px 50px 5px;
-    background: var(--game-bg);
+    background-image: var(--game-bg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -493,11 +488,10 @@ input:checked + .toggle-slide:before {
     /*--------------------------------- Menu Section */
     /* Styling for Menu section on page on a medium screen */
     .menu-sec {
-        min-height: 40vh;
+        min-height: 30vh;
     }
     .cat-sec {
-        max-height: 60vh;
-        padding-top: 15vh;
+        max-height: 50vh;
     }
     .cat-btns a {
         width: 70%;
@@ -587,7 +581,7 @@ input:checked + .toggle-slide:before {
     .welcome-text input {
         font-size: 1.2rem;
         min-width: 10%;
-        max-width: 15%;
+        max-width: 20%;
     }
     .welcome-text button {
         font-size: 1.2rem;
@@ -595,8 +589,11 @@ input:checked + .toggle-slide:before {
     
     /*--------------------------------- Header Section */
     /* Styling for Header section on page on a larger screen */    
+    .header-sec {
+        position: fixed;
+    }
     .logo-sec img {
-        width: 55%;
+        width: 40%;
     }
 
     /*--------------------------------- Menu Section */
