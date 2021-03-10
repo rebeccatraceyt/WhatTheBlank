@@ -34,7 +34,7 @@
     --pink: rgb(213, 133, 183);
     --orange: rgb(216, 127, 111);
     --yellow: rgb(245, 238, 102);
-    --game-bg: url(../images/light.png) no-repeat;
+    --game-bg: url(../images/light.png);
         /* reference: https://www.nikpro.com.au/css-custom-properties-for-image-backgrounds-explained/ */
 }  
 /* Dark Mode colour variables */
@@ -44,7 +44,7 @@
     --pink: rgb(178, 61, 133);
     --orange: rgb(207, 100, 82);
     --yellow: rgb(240, 230, 25);
-    --game-bg: url(../images/dark.png) no-repeat;
+    --game-bg: url(../images/dark.png);
 }
 
 /*------------------------------------------------------- Special Styling */
@@ -88,6 +88,7 @@ button:focus {
 }
 #welcome-content {
     background: var(--game-bg);
+    background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -142,10 +143,6 @@ button:focus {
 }
 
 /*------------------------------------------------------- Header Section */
-.header-sec {
-    position: fixed;
-    z-index: 100;
-}
 /* Styling for logo */
 .logo-sec {
     padding: 10px;
@@ -263,6 +260,7 @@ input:checked + .toggle-slide:before {
 .home-sec {
     padding: 12px 5px 50px 5px;
     background: var(--game-bg);
+    background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
