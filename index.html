@@ -173,7 +173,7 @@
             </div>
         </footer>
 
-		<!-- ================================= MODAL ================================= -->
+		<!-- ================================= MODALS ================================= -->
 		
 		<!-- ======= Welcome Modal ======= -->
 		<!-- sourced and edited from https://getbootstrap.com/docs/4.3/components/modal/ -->
@@ -205,7 +205,7 @@
 			</div>
 		</div>
 
-		<!-- ======= Footer Modal ======= -->
+		<!-- ======= Form Modal ======= -->
 		<!-- sourced and edited from https://getbootstrap.com/docs/4.3/components/modal/ -->
 		<div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="suggestion-form" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
@@ -224,12 +224,12 @@
                             <input type="text" name="pName" id="pName" placeholder="Name" aria-label="Enter Name" required>
                             <input type="email" name="pEmail" id="pEmail" placeholder="Email" aria-label="Enter Email" required>
                             <textarea name="pMessage" id="pMessage" placeholder="Leave a message or suggestion" aria-label="Enter Message" rows="4" required></textarea>
-                            <button type="submit" class="btn btn-click" data-dismiss="modal" aria-label="Submit Button" onclick="sendMail()">Send</button>
+                            <input id="form-submit" type="submit" class="btn btn-click form-btn" aria-label="Submit Button" value="Send">
                         </form>
 					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 
 		<!-- ================================= SCRIPTS  ================================= -->
 		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> <!-- jQuery Import -->

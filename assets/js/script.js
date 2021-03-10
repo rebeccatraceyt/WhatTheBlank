@@ -208,7 +208,7 @@ $('.footer-button').on('click', function () {
 });	
 
 // --------------------------------------------------------- Form Validation
-// reference: https://codepen.io/tetnuc/pen/gRqOEO
+// Checking if form is valid - reference: https://codepen.io/tetnuc/pen/gRqOEO
 $('#suggestionForm').validate({
     rules: {
         pName: {
@@ -232,6 +232,16 @@ $('#suggestionForm').validate({
             required: "Please complete all fields"
         }
     },
+
+});
+
+$('#form-submit').click(function (event) {
+    // reference: https://stackoverflow.com/questions/5127813/call-mvc-3-client-side-validation-manually-for-ajax-posts
+    event.preventDefault();
+    if($('#suggestionForm').valid()) {
+        sendMail();
+        console.log('SUCCESS');
+    }
 });
 
 // Accumulated from CI tutorial and https://www.youtube.com/watch?v=x7Ewtay0Q78
