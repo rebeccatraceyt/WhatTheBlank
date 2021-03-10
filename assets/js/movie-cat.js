@@ -1,4 +1,5 @@
-// Declaring Questions
+// The foundation of the game play function was sourced and edited from https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript
+
 const movieQuestions = [
     {
         question: "What can I say except, 'You're welcome', for the tides, the sun, the _____",

@@ -1,4 +1,5 @@
-// Declaring Questions
+// The foundation of the game play function was sourced and edited from https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript
+
 const tvQuestions = [
     {
         question: "I'll be there for you, when the rain starts to _____",

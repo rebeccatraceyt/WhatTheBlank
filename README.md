@@ -282,6 +282,8 @@ As well as this, there was an issue with the modal, whereby the modal would cont
 ### Frameworks, Libraries & Programs Used
 - [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/ "Link to Bootstrap page")
      - Bootstrap was used to implement the responsiveness of the site, using bootstrap classes.
+- [jQuery](https://jquery.com/ "Link to jQuery page")
+     - jQuery was used to simplify the JavaSCript code used
 - [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
     - Google fonts was used to import the fonts "Shaodows Into Light Two" and "Roboto" into the style.css file. These fonts were used throughout the project.
 - [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
@@ -290,6 +292,10 @@ As well as this, there was an issue with the modal, whereby the modal would cont
      - Git was used for version control by utilizing the GitPod terminal to commit to Git and push to GitHub.
 - [GitHub](https://github.com/ "Link to GitHub")
      - GitHub was used to store the project after pushing
+- [jQuery Validation](https://jqueryvalidation.org/ "Link to jQuery Validation page")
+     - jQuery Validation was used to simplify form validation for the **Suggestions Form**
+- [SweetAlert2](https://sweetalert2.github.io/ "Link to Sweet Alert 2 page")
+     - SweetAlert2 was used to customise the **Suggestions Form** success message for UX purposes
 - [Figma](https://www.figma.com/ "Link to Figma homepage")
      - Figma was used to create the wireframes during the design phase of the project.
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")

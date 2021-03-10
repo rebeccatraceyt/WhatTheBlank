@@ -1,4 +1,5 @@
-// Declaring Questions
+// The foundation of the game play function was sourced and edited from https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript
+
 const tbQuestions = [
     {
         question: "But, if you're _____ about my baby, it don't matter if you're black or white",
