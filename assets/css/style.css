@@ -38,7 +38,7 @@
         /* reference: https://www.nikpro.com.au/css-custom-properties-for-image-backgrounds-explained/ */
 }  
 /* Dark Mode colour variables */
-[data-theme="dark"]{
+:root[data-theme="dark"]{
     --blue: rgb(26, 67, 116);
     --purple: rgb(103, 57, 141);
     --pink: rgb(178, 61, 133);
@@ -89,6 +89,7 @@ button:focus {
 }
 #welcome-content {
     background-image: var(--game-bg);
+    background-attachment: scroll; /* To allow on ios devices */
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -255,6 +256,7 @@ input:checked + .toggle-slide:before {
 .home-sec {
     padding: 12px 5px 50px 5px;
     background-image: var(--game-bg);
+    background-attachment: scroll; /* To allow on ios devices */
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -262,6 +264,7 @@ input:checked + .toggle-slide:before {
     -o-background-size: cover;
 
     min-height: 60vh;
+    max-height: 60vh;
     width: 100vw;
 
     display: flex;
