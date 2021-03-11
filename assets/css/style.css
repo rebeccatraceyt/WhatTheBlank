@@ -88,7 +88,7 @@ button:focus {
     padding: 0;
 }
 #welcome-content {
-    background-image: var(--game-bg);
+    background-image: url(../images/light.png);
     background-attachment: scroll; /* To allow on ios devices */
     -webkit-background-size: cover;
     -moz-background-size: cover;
