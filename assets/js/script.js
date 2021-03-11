@@ -154,6 +154,13 @@ if (currentTheme) {
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
+        $('.home-sec').css("background-image", "url(assets/images/dark.png)");
+        $('#welcome-content').css("background-image", "url(assets/images/dark.png)");  
+    }
+    if (currentTheme === 'light') {
+        toggleSwitch.checked = false;
+        $('.home-sec').css("background-image", "url(assets/images/light.png)");
+        $('#welcome-content').css("background-image", "url(assets/images/light.png)");  
     }
 }
 
@@ -162,13 +169,18 @@ function switchMode(mode) {
     if (mode.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
+        $('.home-sec').css("background-image", "url(assets/images/dark.png)");
+        $('#welcome-content').css("background-image", "url(assets/images/dark.png)");  
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
+        $('.home-sec').css("background-image", "url(assets/images/light.png)");
+        $('#welcome-content').css("background-image", "url(assets/images/light.png)");  
     }
 }
 
 toggleSwitch.addEventListener('change', switchMode, false);
+
 
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
