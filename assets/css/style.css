@@ -90,11 +90,11 @@ button:focus {
 #welcome-content {
     background-image: var(--game-bg);
     background-attachment: scroll; /* To allow on ios devices */
-    background-repeat: no-repeat;
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     height: auto;
     min-height: 100%;
@@ -257,11 +257,11 @@ input:checked + .toggle-slide:before {
     padding: 12px 5px 50px 5px;
     background-image: var(--game-bg);
     background-attachment: scroll; /* To allow on ios devices */
-    background-repeat: no-repeat;
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     min-height: 60vh;
     max-height: 60vh;
