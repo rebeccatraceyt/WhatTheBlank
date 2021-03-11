@@ -89,6 +89,7 @@ button:focus {
 }
 #welcome-content {
     background-attachment: scroll; /* To allow on ios devices */
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -143,6 +144,10 @@ button:focus {
 }
 
 /*------------------------------------------------------- Header Section */
+.header-sec {
+    min-height: 10vh;
+    max-height: 10vh;
+}
 /* Styling for logo */
 .logo-sec {
     padding: 10px;
@@ -151,7 +156,8 @@ button:focus {
     left: 0;
 }
 .logo-sec img {
-    width: 100%;
+    width: 80%;
+    height: 80%;
 }
 
 /* Styling for Toggle buttons */
@@ -254,6 +260,7 @@ input:checked + .toggle-slide:before {
 .home-sec {
     padding: 12px 5px 50px 5px;
     background-attachment: scroll; /* To allow on ios devices */
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -483,6 +490,13 @@ input:checked + .toggle-slide:before {
     .welcome-text button {
         font-size: 1.5rem;
     }
+
+    /*--------------------------------- Header Section */
+    /* Styling for Header section on page on a medium screen */    
+    .logo-sec img {
+        width: 80%;
+        height: 70%;
+    }
     
     /*--------------------------------- Menu Section */
     /* Styling for Menu section on page on a medium screen */
@@ -592,7 +606,8 @@ input:checked + .toggle-slide:before {
         position: fixed;
     }
     .logo-sec img {
-        width: 40%;
+        width: 43%;
+        height: 60%;
     }
 
     /*--------------------------------- Toggle Switches */
