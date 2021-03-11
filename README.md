@@ -38,9 +38,8 @@
      2. [Forking the Repository](#Forking-the-Repository)
      3. [Creating a Clone](#Creating-a-Clone)
 7. [Credits](#Credits)
-     1. [Content](#Content)
-     2. [Media](#Media)
-     3. [Code](#Code)
+     1. [Audio](#Audio)
+     2. [Code](#Code)
 8. [Acknowledgements](#Acknowledgements)
 ***
 
@@ -75,7 +74,7 @@ The Developer is looking to:
 4. Get visual/audio feedback on answers I choose, to see whether they were correct.
 5. Have the ability to toggle sound effects on or off, to suit my preference.
 6. Have to ability to choose the game theme (Day vs. Night Mode), to suit my preference.
-7. View latest high score to see the competition.
+7. View their highest session score.
 8. Have the option to replay the game once I have finished to start again.
 9. Provide suggestions to the developer to upgrade the game, enhancing my user experience.
 10. Connect with the developer on a social platform of my choosing to see their other projects.
@@ -96,7 +95,7 @@ Broken into three categories, the website will focus on the following target aud
 - **Demographic:**
      - Music Lovers
      - Aged 10 years and up
-     -Quiz Lovers
+     - Quiz Lovers
 
 - **Psychographics:**
      - Personality & Attitudes:
