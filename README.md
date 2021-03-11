@@ -278,6 +278,8 @@ As well as this, there was an issue with the modal, whereby the modal would cont
 
 **Email Validation Issue** For the **Suggestions Form** the design was to create a modal form that could only be submitted once all areas were complete and, on submission, the user would receive a success message, providing them with the necessary feedback. The problem with this was that, by default, the modal button would override this validation, closing the modal regardless of whether the user had actually inputted any information. In order to rectify this, the developer used the [jQuery Validation](https://jqueryvalidation.org/ "Link to jQuery Validation page") plugin that would allow for jQuery to validate the form, which could then allow for a conditional response, when the form was validated.
 
+**Background image bug** The is a background image rendered for both the **welcome modal** and **homepage**. With the known issue regarding `background-size: cover` and ios devices, the developer had to create a work around to be able to call on the background image conditional to the current theme set. In order to do this, the images had to be rendered in JavaScript, as opposed to CSS.
+
 [Back to top ⇧](#blank)
 
 ## Technologies Used
