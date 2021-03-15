@@ -213,7 +213,7 @@ Form:
 
      - As the theme of the game is music related, the colour scheme mirrors the atmospheric setting of a music venue.
 
-     - Drawing from research conducted on stage lights, two colour palettes were created for a day-to-night feature toggle:
+     - Drawing from research conducted on stage lights, and using the color contrast tool available at [Material.io](https://material.io/ "Link to material.io Homepage"), two colour palettes were created for a day-to-night feature toggle:
 
           - Light (Day Mode):
 

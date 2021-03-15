@@ -31,12 +31,13 @@
 :root {
     --blue: #5993d9;
     --yellow: #fff59d;
-        /* reference: https://www.nikpro.com.au/css-custom-properties-for-image-backgrounds-explained/ */
+    --orange: #ef8257;
 }  
 /* Dark Mode colour variables */
 :root[data-theme="dark"]{
     --blue: #001d48;
     --yellow: #d6ce84;
+    --orange: #b8532c;
 }
 
 /*------------------------------------------------------- Special Styling */
@@ -418,7 +419,7 @@ input:checked + .toggle-slide:before {
 
 /*------------------------------------------------------- Form Modal */
 .form-content {
-    background-color: var(--blue);
+    background-color: var(--orange);
     color: var(--white);
 }
 .form-header {
