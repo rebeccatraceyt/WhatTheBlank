@@ -1,0 +1,72 @@
+[
+    {
+        "question": "But, if you're _____ about my baby, it don't matter if you're black or white",
+        "answer1": "thinking",
+        "answer2": "dreaming",
+        "answer3": "singing",
+        "correctAnswer": 1
+    },
+    {
+        "question": "Friday night and the lights are _____, looking out for a place to go",
+        "answer1": "dim",
+        "answer2": "on",
+        "answer3": "low",
+        "correctAnswer": 3
+    },
+    {
+        "question": "Hangin' out the passenger side of his best friend's ride, trying to _____ at me",
+        "answer1": "call",
+        "answer2": "holla",
+        "answer3": "yell",
+        "correctAnswer": 2
+    },
+    {
+        "question": "I said, young man, 'cause you're in a new town there's no need to be _____",
+        "answer1": "unhappy",
+        "answer2": "down",
+        "answer3": "upset",
+        "correctAnswer": 1
+    },
+    {
+        "question": "When the rain washes you _____, you'll know. You'll know",
+        "answer1": "through",
+        "answer2": "free",
+        "answer3": "clean",
+        "correctAnswer": 3
+    },
+    {
+        "question": "I'm giving you everything, all that _____ can bring, this I swear",
+        "answer1": "fun",
+        "answer2": "love",
+        "answer3": "joy",
+        "correctAnswer": 3
+    },
+    {
+        "question": "Say you will, say you won't, say you'll do what I _____",
+        "answer1": "say",
+        "answer2": "don't",
+        "answer3": "hope",
+        "correctAnswer": 2 
+    },
+    {
+        "question": "How deep is your love? I really mean to learn 'cause we're living in a world of _____",
+        "answer1": "hurt",
+        "answer2": "cruel",
+        "answer3": "fools",
+        "correctAnswer": 3
+    },
+    {
+        "question": "Alright stop, collaborate and listen, Ice is back with my brand new _____",
+        "answer1": "track",
+        "answer2": "invention",
+        "answer3": "sound",
+        "correctAnswer": 2
+    },
+    {
+        "question": "Uptown girl, you know I can't afford to buy her _____",
+        "answer1": "pearls",
+        "answer2": "gucci",
+        "answer3": "shoes",
+        "correctAnswer": 1
+    }
+]

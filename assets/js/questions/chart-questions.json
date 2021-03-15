@@ -1,0 +1,72 @@
+[
+    {
+        "question": "With the lights out, its less dangerous. Here we are now _____ us",
+        "answer1": "delight",
+        "answer2": "enlighten",
+        "answer3": "entertain",
+        "correctAnswer": 3
+    },
+    {
+        "question": "So you think you can _____ me and spit in my eye?",
+        "answer1": "own",
+        "answer2": "stone",
+        "answer3": "clone",
+        "correctAnswer": 2
+    },
+    {
+        "question": "Tonight's the night, let's live it up. I got my money, let's spend it _____",
+        "answer1": "up",
+        "answer2": "all",
+        "answer3": "now",
+        "correctAnswer": 1
+    },
+    {
+        "question": "I'll be riding shotgun underneath the hot _____, feeling like a someone",
+        "answer1": "sky",
+        "answer2": "sun",
+        "answer3": "moon",
+        "correctAnswer": 2 
+    },
+    {
+        "question": "Mother always told me be careful who you love and be careful what you do 'cause the lie becomes the _____",
+        "answer1": "lie",
+        "answer2": "truth",
+        "answer3": "proof",
+        "correctAnswer": 2
+    },
+    {
+        "question": "There was something in the air that night, the stars were _____, Fernando",
+        "answer1": "high",
+        "answer2": "out",
+        "answer3": "bright",
+        "correctAnswer": 3
+    },
+    {
+        "question": "I'll send an S.O.S to the _____, I hope that someone gets my message in a bottle",
+        "answer1": "boat",
+        "answer2": "police",
+        "answer3": "world",
+        "correctAnswer": 3
+    },
+    {
+        "question": "Oops, I did it again, I played with your heart, got lost in the _____",
+        "answer1": "game",
+        "answer2": "maze",
+        "answer3": "hay",
+        "correctAnswer": 1 
+    },
+    {
+        "question": "Never mind, I'll find someone like you, I wish nothing but the _____ for you",
+        "answer1": "luck",
+        "answer2": "worst",
+        "answer3": "best",
+        "correctAnswer": 3
+    },
+    {
+        "question": "Because I'm happy, _____ along if you feel like happiness is the truth",
+        "answer1": "clap",
+        "answer2": "cry",
+        "answer3": "dance",
+        "correctAnswer": 1
+    }
+]
