@@ -29,22 +29,14 @@
 
 /* Light Mode colour variables */
 :root {
-    --blue: rgb(89, 147, 217);
-    --purple: rgb(148, 96, 190);
-    --pink: rgb(213, 133, 183);
-    --orange: rgb(216, 127, 111);
-    --yellow: rgb(245, 238, 102);
-    --game-bg: url(../images/light.png);
+    --blue: #5993d9;
+    --yellow: #fff59d;
         /* reference: https://www.nikpro.com.au/css-custom-properties-for-image-backgrounds-explained/ */
 }  
 /* Dark Mode colour variables */
 :root[data-theme="dark"]{
-    --blue: rgb(26, 67, 116);
-    --purple: rgb(103, 57, 141);
-    --pink: rgb(178, 61, 133);
-    --orange: rgb(207, 100, 82);
-    --yellow: rgb(240, 230, 25);
-    --game-bg: url(../images/dark.png);
+    --blue: #001d48;
+    --yellow: #d6ce84;
 }
 
 /*------------------------------------------------------- Special Styling */
@@ -426,7 +418,7 @@ input:checked + .toggle-slide:before {
 
 /*------------------------------------------------------- Form Modal */
 .form-content {
-    background-color: var(--orange);
+    background-color: var(--blue);
     color: var(--white);
 }
 .form-header {
@@ -470,8 +462,8 @@ input:checked + .toggle-slide:before {
 /* Breakpoint to maintain structural integrity on a Tablet device */
 @media (min-width: 700px) and (max-width: 991px) {
 
-    /*--------------------------------- Welcome Modal */
-    /* Styling for Welcome Modal */
+    /*--------------------------------- Player Info Menu */
+    /* Styling for Player Info Menu */
     .info-text img {
         max-width: 80%;
     }
@@ -606,7 +598,7 @@ input:checked + .toggle-slide:before {
     }
     .logo-sec img {
         width: 43%;
-        height: 60%;
+        height: 80%;
     }
 
     /*--------------------------------- Toggle Switches */
