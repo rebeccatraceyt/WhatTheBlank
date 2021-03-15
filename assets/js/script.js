@@ -38,7 +38,7 @@ $('.toggle-slide').on('click', () => {
 
 // Mute Button - toggles mute for ALL pages
 $('.mute-btn').on('click', () => {
-    
+    console.log("THIS IS WORKING");
     if($('.mute-btn i').hasClass('fa-volume-up')) {
         muteOn();        
         sessionStorage.setItem("sound", 'off');
@@ -250,7 +250,7 @@ $('#form-submit').click(function (event) {
 });
 
 // Accumulated from CI tutorial and https://www.youtube.com/watch?v=x7Ewtay0Q78
-function sendMail(params){
+function sendMail(){
     let tempParams = {
         user_name: document.getElementById("pName").value,
         user_email: document.getElementById("pEmail").value,

@@ -153,6 +153,9 @@ button:focus {
 }
 
 /*------------------------------------------------------- Toggle Switches */
+.toggle-sec input {
+    display: none;
+}
 /* Styling for Mute button */
 .mute-btn {
     background: transparent;
@@ -163,7 +166,8 @@ button:focus {
     top: 10px;
     right: 70px;
     position: absolute; 
- }
+    z-index: 101;
+}
 
 /* Light / Dark toggle function styling for UX purposes
 	sourced and edited from https://codepen.io/FlorinPop17/pen/XWWZYYG */
@@ -173,10 +177,10 @@ button:focus {
     right: 10px;
     top: 10px;
     position: absolute;
+    cursor: pointer;
+    z-index: 100;
 }
-.toggle-switch input {
-    display: none;
-}
+
 .toggle-slide {
     background-color: var(--blue);
     border: 1px solid var(--yellow);
