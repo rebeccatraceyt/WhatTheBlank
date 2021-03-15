@@ -30,7 +30,7 @@ const tvQuestions = [
         correctAnswer: 1
     },
     {
-        question: "Sometimes you want to know where everybody knows your _____",
+        question: "Sometimes you want to go where everybody knows your _____",
         answer1: 'age',
         answer2: 'story',
         answer3: 'name',

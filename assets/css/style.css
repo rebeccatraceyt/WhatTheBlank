@@ -77,42 +77,32 @@ button:focus {
     cursor: pointer;
 }
 
-/*------------------------------------------------------- Welcome Modal */
-#welcomeModal .modal-dialog {
-    /* Makes Welcome Modal full screen
-        sourced from https://stackoverflow.com/questions/18432394/how-to-make-twitter-bootstrap-modal-full-screen */
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-#welcome-content {
+/*------------------------------------------------------- Player Info */
+#player-info {
+    display: none;
+
     background-attachment: scroll; /* To allow on ios devices */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
-
-    height: auto;
-    min-height: 100%;
-    border-radius: 0;
-    margin: 0 auto;
 }
-#welcome-body {
+#info-content {
+    width: 100vw;
+    height: 100vh;
+
     display: inline-flex;
-    justify-content: center;
     align-items: center;
 }
-.welcome-text {
+.info-text {
     padding-bottom: 5px;
 }
-.welcome-text img {
+.info-text img {
     max-width: 100%;
     height: auto;
 }
-.welcome-text h3 {
+.info-text h3 {
     color: var(--blue);
     padding: 10px 0;
     font-size: 1.4rem;
@@ -120,12 +110,12 @@ button:focus {
     text-shadow: 1px 1px var(--black);
     letter-spacing: 1px;
 }
-.welcome-text h4 {
+.info-text h4 {
     padding: 5px 0;
     font-size: 1.3rem;
     font-weight: 500;
 }
-.welcome-text input {
+.info-text input {
     font-size: 1.2rem;
     min-width: 50%;
     padding: 6px;
@@ -133,17 +123,20 @@ button:focus {
     border-radius: 5px;
     text-align: center;
 }
-.welcome-text button {
+.info-text button {
     font-size: 1.2rem;
     background-color: var(--blue);
     color: var(--white);
 }
-.welcome-text button:hover  {
+.info-text button:hover  {
     background-color: var(--white);
     color: var(--blue);
 }
 
 /*------------------------------------------------------- Header Section */
+#header {
+    display: none;
+}
 .header-sec {
     min-height: 10vh;
     max-height: 10vh;
@@ -250,6 +243,9 @@ input:checked + .toggle-slide:before {
 
 /*------------------------------------------------------- Game Play Section */
 /* Styling for Game Play section on page */
+#game {
+    display: none;
+}
 .game-sec {
     padding: 12px 5px 50px 5px;
 
@@ -391,6 +387,9 @@ input:checked + .toggle-slide:before {
 /*------------------------------------------------------- Sliding Footer */
 /* Footer slides from bottom on mobile and tablet devices for UX purposes 
     sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ */
+.footer-sm {
+    display: none;
+}
 .footer-container {
     position: fixed;
     bottom: 0;
@@ -473,21 +472,21 @@ input:checked + .toggle-slide:before {
 
     /*--------------------------------- Welcome Modal */
     /* Styling for Welcome Modal */
-    .welcome-text img {
+    .info-text img {
         max-width: 80%;
     }
-    .welcome-text h3 {
+    .info-text h3 {
         font-size: 2.5rem;
     }
-    .welcome-text h4 {
+    .info-text h4 {
         font-size: 1.7rem;
     }
-    .welcome-text input {
+    .info-text input {
         font-size: 1.5rem;
         min-width: 30%;
         max-width: 50%;
     }
-    .welcome-text button {
+    .info-text button {
         font-size: 1.5rem;
     }
 
@@ -579,24 +578,24 @@ input:checked + .toggle-slide:before {
 /* Breakpoint to maintain structural integrity on a Laptop Screen */
 @media (min-width: 991px){ 
 
-    /*--------------------------------- Welcome Modal */
-    /* Styling for Welcome Modal */
-     /* Styling for Welcome Modal */
-     .welcome-text img {
+    /*--------------------------------- Player Info Menu */
+    /* Styling for Player Info Menu */
+
+    .info-text img {
         max-width: 60%;
     }
-    .welcome-text h3 {
+    .info-text h3 {
         font-size: 3rem;
     }
-    .welcome-text h4 {
+    .info-text h4 {
         font-size: 1.7rem;
     }
-    .welcome-text input {
+    .info-text input {
         font-size: 1.2rem;
         min-width: 10%;
         max-width: 20%;
     }
-    .welcome-text button {
+    .info-text button {
         font-size: 1.2rem;
     }
     
@@ -691,6 +690,7 @@ input:checked + .toggle-slide:before {
     /*--------------------------------- Footer */
     /* Footer for larger devices only */
     .footer-lg {
+        display: none;
         font-size: 1.4rem;
         padding: 0;
     }

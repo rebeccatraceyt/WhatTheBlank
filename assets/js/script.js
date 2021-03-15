@@ -112,12 +112,8 @@ function checkForUserData() {
         sessionStorage.setItem("tbHighScore", 0);
         sessionStorage.setItem("movieHighScore", 0);
 
-        setTimeout(function() {
-            $("#welcomeModal").modal({
-                backdrop: 'static',
-                keyboard: false
-            });
-        }, 500);
+        // If user does not exist, they have to enter data
+        $("#player-info").css("display", "block");
     }
     else {
         userName = sessionStorage.getItem("userName");
@@ -126,7 +122,14 @@ function checkForUserData() {
         chartHighScore = sessionStorage.getItem("chartHighScore");
         tbHighScore = sessionStorage.getItem("tbHighScore");
         movieHighScore = sessionStorage.getItem("movieHighScore");
+
+        $("#player-info").css("display", "none");
+        $("#header").css("display", "block");
+        $("#game").css("display", "block");
+        $(".footer-lg").css("display", "block");
+        $(".footer-sm").css("display", "block");
         return;
+
     }
 }
 
@@ -141,7 +144,12 @@ function userData() {
     sessionStorage.setItem("userName", userName);
     
     if ((userName)|| ((((userName !== null) && (userName !== "Player") && (userName !== ""))))) { 
-        $('#welcomeModal').modal('hide');
+        $('#player-info').hide();
+        $('#header').show();
+        $('#game').show();
+        $('.footer-lg').show();
+        $('.footer-content').show();
+        $('.footer-button').show();
     }
 }
 
@@ -155,12 +163,12 @@ if (currentTheme) {
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
         $('.home-sec').css("background-image", "url(assets/images/dark.png)");
-        $('#welcome-content').css("background-image", "url(assets/images/dark.png)");  
+        $('#player-info').css("background-image", "url(assets/images/dark.png)");  
     }
     if (currentTheme === 'light') {
         toggleSwitch.checked = false;
         $('.home-sec').css("background-image", "url(assets/images/light.png)");
-        $('#welcome-content').css("background-image", "url(assets/images/light.png)");  
+        $('#player-info').css("background-image", "url(assets/images/light.png)");  
     }
 }
 
@@ -170,12 +178,12 @@ function switchMode(mode) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
         $('.home-sec').css("background-image", "url(assets/images/dark.png)");
-        $('#welcome-content').css("background-image", "url(assets/images/dark.png)");  
+        $('#player-info').css("background-image", "url(assets/images/dark.png)");  
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
         $('.home-sec').css("background-image", "url(assets/images/light.png)");
-        $('#welcome-content').css("background-image", "url(assets/images/light.png)");  
+        $('#player-info').css("background-image", "url(assets/images/light.png)");  
     }
 }
 
