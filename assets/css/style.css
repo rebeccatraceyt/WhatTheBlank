@@ -153,8 +153,6 @@ button:focus {
 }
 
 /*------------------------------------------------------- Toggle Switches */
-/* Styling for Toggle button section */
-
 /* Styling for Mute button */
 .mute-btn {
     background: transparent;
@@ -486,7 +484,23 @@ input:checked + .toggle-slide .toggle-ball {
         width: 80%;
         height: 70%;
     }
-    
+
+    /*--------------------------------- Toggle Switches */
+    /* Styling mute button on tablet devices */
+    .mute-btn {
+        font-size: 1.5rem;
+        right: 85px;
+    }
+
+    /* Styling toggle button on tablet devices */
+    .toggle-switch {
+        right: 15px;
+        top: 15px;
+    }
+    .toggle-slide {
+        transform: scale(1.5);
+    }
+
     /*--------------------------------- Menu Section */
     /* Styling for Menu section on page on a medium screen */
     .menu-sec {
@@ -600,10 +614,20 @@ input:checked + .toggle-slide .toggle-ball {
     }
 
     /*--------------------------------- Toggle Switches */
+    /* Styling mute button position on larger devices */
     .mute-btn {
-        /* Styling mute button position on larger devices */
-        right: 70px;
-     }
+        font-size: 1.5rem;
+        right: 90px;
+    }
+
+    /* Styling toggle button on tablet devices */
+    .toggle-switch {
+        right: 20px;
+        top: 15px;
+    }
+    .toggle-slide {
+        transform: scale(1.5);
+    }
 
     /*--------------------------------- Menu Section */
     /* Styling for Menu section on page on a larger screen */
