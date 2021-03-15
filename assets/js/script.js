@@ -11,29 +11,6 @@ const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox
 
 const soundSetting = sessionStorage.getItem("sound") ? sessionStorage.getItem("sound") : null; // gets users sound effects preference
 
-// Game Function Variables
-const question = document.getElementById('question');
-const answers = Array.from(document.getElementsByClassName('answer-text'));
-const scoreNumber = document.getElementById('score');
-
-let currentQuestion = {};
-let acceptingAnswers = false; // can't answer until everything loaded
-let questionCounter = 0;
-let availableQuestions = [];
-
-let tvScore = 0;
-let chartScore = 0;
-let tbScore = 0;
-let movieScore = 0;
-
-let tvHighScore = 0;
-let chartHighScore = 0;
-let tbHighScore = 0;
-let movieHighScore = 0;
-
-const correctBonus = 1; // How much correct answer is correct
-const maxQuestions = 10; // How many questions before end
-
 // Audio Variables
 const btnSound = new Audio('assets/audio/btn-click.mp3');
 const slideSound = new Audio('assets/audio/toggle.mp3');
