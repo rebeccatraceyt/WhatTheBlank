@@ -9,15 +9,10 @@ let acceptingAnswers = false; // can't answer until everything loaded
 let questionCounter = 0;
 let availableQuestions = [];
 
-let tvScore = 0;
 let chartScore = 0;
-let tbScore = 0;
-let movieScore = 0;
-
-let tvHighScore = 0;
 let chartHighScore = 0;
-let tbHighScore = 0;
-let movieHighScore = 0;
+
+let timer = {};
 
 const correctBonus = 1; // How much correct answer is correct
 const maxQuestions = 10; // How many questions before end
@@ -31,6 +26,7 @@ fetch("assets/js/questions/chart-questions.json")
     .then(loadedQuestions => {
         chartQuestions = loadedQuestions;
         startGame();
+		startTimer();
     })
     .catch(err => {
         console.error(err);
@@ -38,7 +34,7 @@ fetch("assets/js/questions/chart-questions.json")
 
 
 function startGame () {
-    scoreNumber.innerText = '0';
+    scoreNumber.innerText = '00';
     questionCounter = 0;
     chartScore = 0;
     availableQuestions = [...chartQuestions];
@@ -48,6 +44,8 @@ function startGame () {
 function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
         
+		stopTimer();
+
         function checkHighScore() {
             // checks score
             if ((chartScore == chartHighScore) || (chartScore > chartHighScore)){
@@ -142,5 +140,39 @@ answers.forEach(answer => {
 const incrementScore = num => {
     // Add to score Counter
     chartScore += num;
-    scoreNumber.innerText = chartScore;
+    if (tvScore < 10){
+		scoreNumber.innerText = "0" + tvScore;
+	} else {
+    	scoreNumber.innerText = tvScore;
+	}
 };
+
+// Game timer
+// reference: https://hub.packtpub.com/html5-games-development-using-local-storage-store-game-data/
+function startTimer(){
+	// reset the elapsed time to 0.
+	timer.elapsedTime = 0;
+		
+	// start the timer
+	timer.timer = setInterval(countTimer, 1000);
+}
+
+function countTimer () {
+	timer.elapsedTime++;
+	// calculate the minutes and seconds from elapsed time
+	let second = timer.elapsedTime % 60;   
+	if (second < 10) {
+	   second = "0" + second;
+	};
+	// display the elapsed time
+	$("#time").html(second);
+}
+
+function stopTimer() {
+	// stop the timer 
+	clearInterval(timer.timer);
+   
+	// set the score
+	$(".final-time").html($("#time").html());
+	sessionStorage.setItem("timer", timer.elapsedTime)
+}

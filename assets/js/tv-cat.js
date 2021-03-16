@@ -12,6 +12,8 @@ let availableQuestions = [];
 let tvScore = 0;
 let tvHighScore = 0;
 
+let timer = {};
+
 const correctBonus = 1; // How much correct answer is correct
 const maxQuestions = 10; // How many questions before end
 
@@ -24,13 +26,14 @@ fetch("assets/js/questions/tv-questions.json")
     .then(loadedQuestions => {
         tvQuestions = loadedQuestions;
         startGame();
+		startTimer();
     })
     .catch(err => {
         console.error(err);
     });
 
 function startGame () {
-    scoreNumber.innerText = '0';
+    scoreNumber.innerText = '00';
     questionCounter = 0;
     tvScore = 0;
     availableQuestions = [...tvQuestions];
@@ -40,6 +43,8 @@ function startGame () {
 function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
         
+		stopTimer();
+
         function checkHighScore() {
             // checks score
             if ((tvScore == tvHighScore) || (tvScore > tvHighScore)){
@@ -135,14 +140,39 @@ answers.forEach(answer => {
 const incrementScore = num => {
     // Add to score Counter
     tvScore += num;
-    scoreNumber.innerText = tvScore;
+	if (tvScore < 10){
+		scoreNumber.innerText = "0" + tvScore;
+	} else {
+    	scoreNumber.innerText = tvScore;
+	}
 };
 
-window.setInterval((function(){
-    var start = Date.now();
-    var textNode = document.createTextNode('0');
-    document.getElementById('time').appendChild(textNode);
-    return function() {
-         textNode.data = Math.floor((Date.now()-start)/1000);
-         };
-    }()), 1000);
+// Game timer
+// reference: https://hub.packtpub.com/html5-games-development-using-local-storage-store-game-data/
+function startTimer(){
+	// reset the elapsed time to 0.
+	timer.elapsedTime = 0;
+		
+	// start the timer
+	timer.timer = setInterval(countTimer, 1000);
+}
+
+function countTimer () {
+	timer.elapsedTime++;
+	// calculate the minutes and seconds from elapsed time
+	let second = timer.elapsedTime % 60;   
+	if (second < 10) {
+	   second = "0" + second;
+	};
+	// display the elapsed time
+	$("#time").html(second);
+}
+
+function stopTimer() {
+	// stop the timer 
+	clearInterval(timer.timer);
+   
+	// set the score
+	$(".final-time").html($("#time").html());
+	sessionStorage.setItem("timer", timer.elapsedTime)
+}

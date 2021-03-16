@@ -100,9 +100,12 @@
 				<div class="row game-sec chart-bg">
 					<div class="col-12 col-lg-9 game-body">
 						<!-- Score Section -->
-						<div class="row" class="score-sec">
+						<div class="row score-sec text-center text-lg-left">
 							<div class="col-12">
-								<p class="score-text">Score: <span id="score">0</span></p>
+								<ul class="score-hud">
+									<li class="score-text"><span id="score">00</span></li>
+									<li class="score-text"><span id="time">00</span></li>
+								</ul>
 							</div>
 						</div>
 
@@ -134,6 +137,9 @@
 							<div class="col-12 end-sec">
 								<p>Your Score: <span class="final-score"></span></p>
 								<p class="hs-no">High Score: <span class="high-score"></span></p>
+							</div>
+							<div class="col-12 end-sec">
+								<p>Time: <span class="final-time"></span> seconds</p>
 							</div>
 							<div class="col-12 end-sec">
 								<p class="hs-yes">Play again?</p>

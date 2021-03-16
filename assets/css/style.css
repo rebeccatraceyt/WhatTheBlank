@@ -236,6 +236,7 @@ input:checked + .toggle-slide .toggle-ball {
     padding-top: .8rem;
     display: flex;
     justify-content: center;
+	z-index: 102;
 }
 
 /* Styling for buttons */
