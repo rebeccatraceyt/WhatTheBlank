@@ -310,33 +310,33 @@ input:checked + .toggle-slide .toggle-ball {
     font-size: 3rem;
 }   
 
-/* Styling for Questions and Answers section */
-/* Styling for score in game mode */
+/* Styling for heads up display in game mode */
 .score-hud {
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 .score-hud li {
     display: inline;
     background-color: var(--blue);
     border-radius: 50%;
-    padding: 5px;  
-}
-.score-hud span {
-    width: 200px;
-    height: 200px;
-}
-.score-text {
-    font-size: 1.4rem;
+    padding: 10px;
+    margin: 5px;
+    font-size: 2rem;
     font-weight: 700;
+    width: 50%;
+    height: 50%; 
+}
+.score-hud span, .score-hud a {
+    margin: 5px 1px;
+    padding: 5px 1px;
 }
 
 /* Styling for questions in game mode */
 .questions-sec, .answers-sec {
-    padding: 10px;
+    padding: 5px;
 }
 .questions-sec {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -346,7 +346,7 @@ input:checked + .toggle-slide .toggle-ball {
     padding: 3px;
 }
 .answer-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: var(--blue);
     color: var(--white);
 
@@ -534,7 +534,7 @@ input:checked + .toggle-slide .toggle-ball {
         max-height: 50vh;
     }
     .cat-btns a {
-        width: 70%;
+        width: 55%;
     }
 
     /*--------------------------------- Game Play Section */
@@ -684,11 +684,13 @@ input:checked + .toggle-slide .toggle-ball {
         position: absolute;
         max-width: 65vw;
         min-height: 90vh;
+        
+        justify-content: center;
+        align-items: center;
     }
     .play-sec { 
-        padding-top: 25vh;
-        padding-left: 5%;
-        padding-right: 5%;
+        display: flex;
+        padding: 15%;
     }
 
     /* Styling for text on Home Page */
@@ -696,33 +698,38 @@ input:checked + .toggle-slide .toggle-ball {
         font-size: 4rem;
     }
 
-    /* Styling for score in game mode */
-    .score-text {
-        font-size: 2.8rem;
+    /* Styling for heads up display in game mode */
+    .score-hud li {
+        font-size: 3rem;
     }
 
     /* Styling for questions in game mode */
     .questions-sec {
-        font-size: 2.3rem;
+        padding-top: 10%;
+        font-size: 3rem;
     }
 
     /* Styling for answers in game mode */
     .answer-text {
-        font-size: 1.5rem;
+        font-size: 2.1rem;
     }
 
     /*--------------------------------- Game End Text */
     .end-sec h3 {
-        font-size: 4rem;
+        font-size: 6rem;
     }
     .end-sec h5 {
-        font-size: 2.3rem;
+        font-size: 4rem;
     }
     .end-sec p {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    .replay {
+        /* Separate play again feature */
+        padding-top: 8%;
     }
     .end-sec i {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     /*--------------------------------- Footer */
