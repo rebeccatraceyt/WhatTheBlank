@@ -102,8 +102,8 @@ function checkForUserData() {
 
         $("#player-info").css("display", "none");
         $("#header").css("display", "block");
-        $("#game").css("display", "block");
-        $(".footer-lg").css("display", "block");
+        $("#home").css("display", "block");
+        $(".footer-home").css("display", "block");
         $(".footer-sm").css("display", "block");
         return;
 
@@ -121,12 +121,11 @@ function userData() {
     sessionStorage.setItem("userName", userName);
     
     if ((userName)|| ((((userName !== null) && (userName !== "Player") && (userName !== ""))))) { 
-        $('#player-info').hide();
-        $('#header').show();
-        $('#game').show();
-        $('.footer-lg').show();
-        $('.footer-content').show();
-        $('.footer-button').show();
+        $("#player-info").css("display", "none");
+        $("#header").css("display", "block");
+        $("#home").css("display", "block");
+        $(".footer-home").css("display", "block");
+        $(".footer-sm").css("display", "block");
     }
 }
 

@@ -72,6 +72,8 @@ button:focus {
 .btn-click {
     cursor: pointer;
 }
+
+/* Classes to be called based on light/dark mode */
 .light-bg {
 	background-image: url(../images/light.png);
     background-attachment: scroll; /* To allow on ios devices */
@@ -91,10 +93,27 @@ button:focus {
     background-repeat: no-repeat;
 }
 
-/*------------------------------------------------------- Player Info */
+/* Display set to none by default to be called in by JS */
 #player-info {
     display: none;
 }
+#header {
+    display: none;
+}
+#home {
+    display: none;
+}
+.end-sec {
+    display: none;
+}
+.footer-sm {
+    display: none;
+}
+.footer-home{
+    display: none;
+}
+
+/*------------------------------------------------------- Player Info */
 #info-content {
     width: 100vw;
     height: 100vh;
@@ -141,9 +160,6 @@ button:focus {
 }
 
 /*------------------------------------------------------- Header Section */
-#header {
-    display: none;
-}
 .header-sec {
     min-height: 10vh;
     max-height: 10vh;
@@ -165,12 +181,9 @@ button:focus {
    padding: 10px;
    right: 0; 
 }
-
-/*------------------------------------------------------- Toggle Switches */
 .toggle-sec input {
     display: none;
 }
-/* Styling for Mute button */
 .mute-btn {
     background: transparent;
     border: none;
@@ -181,10 +194,8 @@ button:focus {
     position: absolute; 
     z-index: 101;
 }
-
-/* Light / Dark toggle function styling for UX purposes
-	sourced and edited from https://codepen.io/FlorinPop17/pen/XWWZYYG */
 .toggle-switch {
+    /* sourced and edited from https://codepen.io/FlorinPop17/pen/XWWZYYG */
     bottom: 0;
     left: 0;
     right: 10px;
@@ -193,7 +204,6 @@ button:focus {
     cursor: pointer;
     z-index: 100;
 }
-
 .toggle-slide {
     background-color: var(--blue);
     border: 1px solid var(--yellow);
@@ -247,11 +257,25 @@ input:checked + .toggle-slide .toggle-ball {
     box-shadow: 2px 3px var(--black);
 }
 
-/*------------------------------------------------------- Game Play Section */
-/* Styling for Game Play section on page */
-#game {
-    display: none;
+/*------------------------------------------------------- Home Page */
+.home-sec {
+    min-height: 90vh;
+    width: 100vw;
+    padding-bottom: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+#home-message {
+    font-family: var(--titlefont);
+    font-size: 2rem;
+} 
+.home-btns div > a {
+    width: 55vw;
+}
+
+/*------------------------------------------------------- Game Play Section */
 .game-sec {
     padding: 12px 5px 50px 5px;
 
@@ -259,19 +283,10 @@ input:checked + .toggle-slide .toggle-ball {
     max-height: 60vh;
     width: 100vw;
 }
-.home-sec {
-    padding: 12px 5px 50px 5px;
-
-    min-height: 60vh;
-    max-height: 60vh;
-    width: 100vw;
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
 .play-sec {
     padding-top: 10vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 /* Styling for each category background - for consistency purposes */
@@ -304,12 +319,6 @@ input:checked + .toggle-slide .toggle-ball {
     -o-background-size: cover;
 }
 
-/* Styling for text on Home Page */
-#welcome-message h1 {
-    font-family: var(--titlefont);
-    font-size: 3rem;
-}   
-
 /* Styling for heads up display in game mode */
 .score-hud {
     padding: 10px;
@@ -321,7 +330,7 @@ input:checked + .toggle-slide .toggle-ball {
     border-radius: 50%;
     padding: 10px;
     margin: 5px;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     width: 50%;
     height: 50%; 
@@ -367,10 +376,6 @@ input:checked + .toggle-slide .toggle-ball {
 }
 
 /*------------------------------------------------------- Game End Text */
-/* End text is not displayed by default, but called in JS on game end */
-.end-sec {
-    display: none;
-}
 .end-sec h3 {
     font-size: 2.5rem;
     font-family: var(--titlefont);
@@ -396,15 +401,14 @@ input:checked + .toggle-slide .toggle-ball {
 /*------------------------------------------------------- Sliding Footer */
 /* Footer slides from bottom on mobile and tablet devices for UX purposes 
     sourced and edited from http://jsfiddle.net/nathanbweb/JHu7j/ */
-.footer-sm {
-    display: none;
-}
 .footer-container {
+    z-index: 103;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 .footer-button {
+    
     background: transparent;
     font-size: 2rem;
     position: absolute;
@@ -482,8 +486,8 @@ input:checked + .toggle-slide .toggle-ball {
 /* Breakpoint to maintain structural integrity on a Tablet device */
 @media (min-width: 700px) and (max-width: 991px) {
 
-    /*--------------------------------- Player Info Menu */
-    /* Styling for Player Info Menu */
+    /*--------------------------------- Player Info */
+    /* Styling for Player Info */
     .info-text img {
         max-width: 80%;
     }
@@ -509,7 +513,6 @@ input:checked + .toggle-slide .toggle-ball {
         height: 70%;
     }
 
-    /*--------------------------------- Toggle Switches */
     /* Styling mute button on tablet devices */
     .mute-btn {
         font-size: 1.5rem;
@@ -534,7 +537,16 @@ input:checked + .toggle-slide .toggle-ball {
         max-height: 50vh;
     }
     .cat-btns a {
-        width: 55%;
+        width: 70%;
+    }
+
+    /*--------------------------------- Home Page */
+    /* Styling for Home Page on a medium screen */
+    #home-message {
+        font-size: 3rem;
+    }
+    .home-btns div > a {
+        width: 45vw;
     }
 
     /*--------------------------------- Game Play Section */
@@ -542,20 +554,17 @@ input:checked + .toggle-slide .toggle-ball {
     .game-sec {
         max-height: 60vh;
     }
+    .play-sec {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 
-    /* Styling for text on Home Page */
-    #welcome-message h1 {
-        font-size: 4rem;
+    /* Styling for heads up display */
+    .score-hud li {
+        font-size: 2.7rem;
     }
 
     /* Styling for Questions and Answers section */
-    .score-text {
-        font-size: 1.8rem;
-    }
-    .questions-sec, .answers-sec {
-        padding-right: 10%;
-        padding-left: 10%;
-    }
     .questions-sec {
         font-size: 2rem;
     }
@@ -606,7 +615,7 @@ input:checked + .toggle-slide .toggle-ball {
 /* Breakpoint to maintain structural integrity on a Laptop Screen */
 @media (min-width: 991px){ 
 
-    /*--------------------------------- Player Info Menu */
+    /*--------------------------------- Player Info */
     /* Styling for Player Info Menu */
 
     .info-text img {
@@ -637,14 +646,13 @@ input:checked + .toggle-slide .toggle-ball {
         height: 80%;
     }
 
-    /*--------------------------------- Toggle Switches */
     /* Styling mute button position on larger devices */
     .mute-btn {
         font-size: 1.5rem;
         right: 90px;
     }
 
-    /* Styling toggle button on tablet devices */
+    /* Styling toggle button on larger devices */
     .toggle-switch {
         right: 20px;
         top: 15px;
@@ -656,7 +664,7 @@ input:checked + .toggle-slide .toggle-ball {
     /*--------------------------------- Menu Section */
     /* Styling for Menu section on page on a larger screen */
     .menu-sec {
-        padding-top: 2%;
+        padding-top: 5%;
         min-height: 100vh;
         max-width: 30vw;
         float: left;
@@ -670,9 +678,22 @@ input:checked + .toggle-slide .toggle-ball {
         width: 60%;
     }
 
+    /*--------------------------------- Home Page */
+    /* Styling for Home Page on a larger screen */
+    .home-sec {
+        padding: 25vh 20vw;
+    }
+    #home-message {
+        font-size: 4rem;
+        padding-bottom: 25px;
+    } 
+    .home-btns div > a {
+        width: 25vw;
+    }
+
     /*--------------------------------- Game Play Section */
     /* Styling for Game Play section on page on a larger screen */
-    .game-sec, .home-sec {
+    .game-sec {
         min-height: 100vh;
         max-width: 70vw;
         float: right;
@@ -735,7 +756,6 @@ input:checked + .toggle-slide .toggle-ball {
     /*--------------------------------- Footer */
     /* Footer for larger devices only */
     .footer-lg {
-        display: none;
         font-size: 1.4rem;
         padding: 0;
     }
@@ -744,6 +764,12 @@ input:checked + .toggle-slide .toggle-ball {
         max-width: 32vw;
         padding-right: 50px;
         margin-bottom: 3px;
+    }
+    .footer-home {
+        padding-top: 10px;
+        background-color: var(--blue);
+        width: 100vw;
+        font-size: 1.4rem;
     }
     .footer-icon a {
         width: 2%;
