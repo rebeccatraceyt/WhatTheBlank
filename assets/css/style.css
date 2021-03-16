@@ -807,3 +807,42 @@ input:checked + .toggle-slide .toggle-ball {
         padding-left: 2%;
     }
 }
+
+/*------------------------------------------------------- 404 Page Styling */
+#error-page {
+    display: flex;
+    justify-content: center;
+}
+
+#error {
+    align-self: center;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-top: 10%;
+
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#error-img {
+    max-width: 80%;
+    height: auto;
+}
+#error button {
+    background-color: var(--blue);
+    border-radius: 7px;
+    border: 2px solid var(--white);
+    box-shadow: 0 8px 16px 0 var(--btn-shadow), 0 6px 20px 0 var(--btn-shadow);
+}
+#error button > a {
+    font-size: 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+}
+#error button:hover  {
+    background-color: var(--white);
+}
+#error button > a:hover {
+    color: var(--blue);
+}
