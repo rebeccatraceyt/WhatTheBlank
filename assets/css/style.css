@@ -304,9 +304,19 @@ input:checked + .toggle-slide .toggle-ball {
 
 /* Styling for Questions and Answers section */
 /* Styling for score in game mode */
-.score-sec {
-    left: 0;
-    top: 0;
+.score-hud {
+    padding: 0;
+    margin: 0;
+}
+.score-hud li {
+    display: inline;
+    background-color: var(--blue);
+    border-radius: 50%;
+    padding: 5px;  
+}
+.score-hud span {
+    width: 200px;
+    height: 200px;
 }
 .score-text {
     font-size: 1.4rem;
