@@ -47,6 +47,9 @@ body {
     font-weight: 300;
     background-color: var(--blue);
 }
+body i {
+	color: var(--yellow);
+}
 
 button:focus {
     /* reference: https://github.com/react-bootstrap/react-bootstrap/issues/1300 */
@@ -171,7 +174,6 @@ button:focus {
 .mute-btn {
     background: transparent;
     border: none;
-    color: var(--yellow);
 
     font-size: 1.2rem;
     top: 10px;
@@ -388,7 +390,6 @@ input:checked + .toggle-slide .toggle-ball {
     border: 2px solid var(--yellow);
     padding: 10px;
     margin: 12px;
-    color: var(--yellow);
     font-size: 1.6rem;
 }
 

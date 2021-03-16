@@ -140,10 +140,10 @@ answers.forEach(answer => {
 const incrementScore = num => {
     // Add to score Counter
     chartScore += num;
-    if (tvScore < 10){
-		scoreNumber.innerText = "0" + tvScore;
+    if (chartScore < 10){
+		scoreNumber.innerText = "0" + chartScore;
 	} else {
-    	scoreNumber.innerText = tvScore;
+    	scoreNumber.innerText = chartScore;
 	}
 };
 

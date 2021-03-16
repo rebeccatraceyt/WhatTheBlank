@@ -142,10 +142,10 @@ answers.forEach(answer => {
 const incrementScore = num => {
     // Add to score Counter
     movieScore += num;
-    if (tvScore < 10){
-		scoreNumber.innerText = "0" + tvScore;
+    if (movieScore < 10){
+		scoreNumber.innerText = "0" + movieScore;
 	} else {
-    	scoreNumber.innerText = tvScore;
+    	scoreNumber.innerText = movieScore;
 	}
 };
 
