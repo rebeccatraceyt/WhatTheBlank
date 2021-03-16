@@ -22,8 +22,8 @@
 		<title>Blank!</title>
 
 		<!-- EmailJS Link -->
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-		<script type="text/javascript">
+		<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+		<script>
 			(function() {
 				emailjs.init("user_TMxBrvw73ZySzIBKjJ8E8");
 			})();
@@ -80,7 +80,7 @@
 							<label for="checkbox" class="toggle-slide">
 								<i class="fas fa-moon"></i>
 								<i class="fas fa-sun"></i>
-								<div class="toggle-ball"></div>
+								<span class="toggle-ball"></span>
 							</label>
 						</div>
 					</div>
@@ -102,22 +102,22 @@
 								<div class="row home-btns">
 									<div class="col-12 col-lg-6 cat-btns">
 										<a href="as-seen-on-tv.html" aria-label="Link to TV Category">
-											<img class="btn-click" src="assets/images/tv-button.png" alt="Category Button: As Seen on TV" width="100%" height="100%">
+											<img class="btn-click" src="assets/images/tv-button.png" alt="Category Button: As Seen on TV">
 										</a>
 									</div>
 									<div class="col-12 col-lg-6  cat-btns">
 										<a href="chart-toppers.html" aria-label="Link to Chart Toppers Category">
-											<img class="btn-click" src="assets/images/chart-button.png" alt="Category Button: Chart Toppers" width="100%" height="100%">
+											<img class="btn-click" src="assets/images/chart-button.png" alt="Category Button: Chart Toppers">
 										</a>
 									</div>
 									<div class="col-12 col-lg-6  cat-btns">
 										<a href="throwback.html" aria-label="Link to Throwback Category">
-											<img class="btn-click" src="assets/images/tb-button.png" alt="Category Button: Throwback" width="100%" height="100%">
+											<img class="btn-click" src="assets/images/tb-button.png" alt="Category Button: Throwback">
 										</a>
 									</div>
 									<div class="col-12 col-lg-6 cat-btns">
 										<a href="at-the-movies.html" aria-label="Link to Movie Category">
-											<img  class="btn-click" src="assets/images/movie-button.png" alt="Category Button: At The Movies" width="100%" height="100%">
+											<img  class="btn-click" src="assets/images/movie-button.png" alt="Category Button: At The Movies">
 										</a>
 									</div>
 								</div>
@@ -145,7 +145,7 @@
 						</div>
 						<div class="row">
 							<div class="col-12">
-								<ul class="footer-icon" aria-label="Footer Items">
+								<ul class="footer-icon">
 									<li>
 										<a href="https://www.linkedin.com/in/rebeccatraceytimoney/" target="_blank" rel="noopener" aria-label="Linkedin - Rebecca Tracey-Timoney">
 											<i class="fab fa-linkedin-in btn-click"></i>
@@ -172,7 +172,7 @@
             <div class="container-fluid">
                 <div class="row">
 					<div class="col-12 footer-home">
-						<ul class="footer-text text-center" aria-label="Footer Items">
+						<ul class="footer-text text-center">
 							<li>
 								<span class="footer-copyright"><i class="far fa-copyright"></i> Rebecca Tracey-Timoney <span class="current-year"></span></span>
 							</li>
@@ -198,20 +198,20 @@
 		<!-- ================================= MODAL ================================= -->
 		<!-- ======= Form Modal ======= -->
 		<!-- sourced and edited from https://getbootstrap.com/docs/4.3/components/modal/ -->
-		<div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="suggestion-form" aria-hidden="true">
+		<div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-label="suggestion-form" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content form-content">
 					<div class="modal-header form-header">
-						<span>
+						<div>
                             <h4 class="modal-title">Got a Suggestion?</h4>
                             <p>Let the developer know!</p>
-                        </span> 
+                        </div> 
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span><i class="fas fa-times btn-click"></i></span>
 						</button>
 					</div>
 					<div class="modal-body form-body">
-						<form id="suggestionForm" role="form" aria-label="Suggestions Form">                                
+						<form id="suggestionForm" aria-label="Suggestions Form">                                
                             <input type="text" name="pName" id="pName" placeholder="Name" aria-label="Enter Name" required>
                             <input type="email" name="pEmail" id="pEmail" placeholder="Email" aria-label="Enter Email" required>
                             <textarea name="pMessage" id="pMessage" placeholder="Leave a message or suggestion" aria-label="Enter Message" rows="4" required></textarea>

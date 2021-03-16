@@ -47,26 +47,7 @@ function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
         
         stopTimer();
-
-		function checkHighScore() {
-            // checks score
-            if ((tbScore == tbHighScore) || (tbScore > tbHighScore)){
-                tbHighScore = tbScore;
-                sessionStorage.setItem("tbHighScore", tbHighScore);
-        
-                // Shows applicable text based on score
-                $('.hs-yes').show();
-                $('.hs-no').hide();
-                $('#high-score').text(tbHighScore);
-        
-                return true;
-            } else {
-                $('.hs-yes').hide();
-                $('.hs-no').show();
-
-                return false;
-            }
-        }
+        checkHighScore();
 
         // go to Game End
         $('.score-text').hide();
@@ -146,6 +127,26 @@ const incrementScore = num => {
 	}
 };
 
+function checkHighScore() {
+    // checks score
+    if ((tbScore == tbHighScore) || (tbScore > tbHighScore)){
+        tbHighScore = tbScore;
+        sessionStorage.setItem("tbHighScore", tbHighScore);
+
+        // Shows applicable text based on score
+        $('.hs-yes').show();
+        $('.hs-no').hide();
+        $('#high-score').text(tbHighScore);
+
+        return true;
+    } else {
+        $('.hs-yes').hide();
+        $('.hs-no').show();
+
+        return false;
+    }
+}
+
 // Game timer
 // reference: https://hub.packtpub.com/html5-games-development-using-local-storage-store-game-data/
 function startTimer(){
@@ -162,7 +163,7 @@ function countTimer () {
 	let second = timer.elapsedTime % 60;   
 	if (second < 10) {
 	   second = "0" + second;
-	};
+	}
 	// display the elapsed time
 	$("#time").html(second);
 }
@@ -173,5 +174,5 @@ function stopTimer() {
    
 	// set the score
 	$(".final-time").html($("#time").html());
-	sessionStorage.setItem("timer", timer.elapsedTime)
+	sessionStorage.setItem("timer", timer.elapsedTime);
 }

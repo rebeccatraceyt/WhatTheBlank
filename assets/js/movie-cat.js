@@ -47,26 +47,7 @@ function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
         
 		stopTimer();
-
-        function checkHighScore() {
-            // checks score
-            if ((movieScore == movieHighScore) || (movieScore > movieHighScore)){
-                movieHighScore = movieScore;
-                sessionStorage.setItem("movieHighScore", movieHighScore);
-        
-                // Shows applicable text based on score
-                $('.hs-yes').show();
-                $('.hs-no').hide();
-                $('.high-score').text(movieHighScore);
-        
-                return true;
-            } else {
-                $('.hs-yes').hide();
-                $('.hs-no').show();
-
-                return false;
-            }
-        }
+        checkHighScore();
 
         // go to Game End
         $('.score-text').hide();
@@ -138,6 +119,26 @@ answers.forEach(answer => {
     });
 }); 
 
+function checkHighScore() {
+    // checks score
+    if ((movieScore == movieHighScore) || (movieScore > movieHighScore)){
+        movieHighScore = movieScore;
+        sessionStorage.setItem("movieHighScore", movieHighScore);
+
+        // Shows applicable text based on score
+        $('.hs-yes').show();
+        $('.hs-no').hide();
+        $('.high-score').text(movieHighScore);
+
+        return true;
+    } else {
+        $('.hs-yes').hide();
+        $('.hs-no').show();
+
+        return false;
+    }
+}
+
 const incrementScore = num => {
     // Add to score Counter
     movieScore += num;
@@ -164,7 +165,7 @@ function countTimer () {
 	let second = timer.elapsedTime % 60;   
 	if (second < 10) {
 	   second = "0" + second;
-	};
+	}
 	// display the elapsed time
 	$("#time").html(second);
 }
@@ -175,5 +176,5 @@ function stopTimer() {
    
 	// set the score
 	$(".final-time").html($("#time").html());
-	sessionStorage.setItem("timer", timer.elapsedTime)
+	sessionStorage.setItem("timer", timer.elapsedTime);
 }

@@ -259,6 +259,10 @@ input:checked + .toggle-slide .toggle-ball {
     border-radius: 3px;
     box-shadow: 2px 3px var(--black);
 }
+.cat-btns a > img {
+    width: 100%;
+    height: 100%;
+}
 
 /*------------------------------------------------------- Home Page */
 .home-sec {
@@ -313,7 +317,7 @@ input:checked + .toggle-slide .toggle-ball {
     }
 }
 .play-sec {
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -406,25 +410,26 @@ input:checked + .toggle-slide .toggle-ball {
 
 /*------------------------------------------------------- Game End Text */
 .end-sec h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: var(--titlefont);
 }
 .end-sec h5 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 .end-sec p {
-    font-size: 1.4rem;
-    /* Override of default CSS styling for UI purposes */
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding: 2px;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 .end-sec i {
     border: 2px solid var(--yellow);
     padding: 10px;
     margin: 12px;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+}
+.replay {
+    /* Separate play again feature */
+    padding-top: 3%;
 }
 
 /*------------------------------------------------------- Sliding Footer */
@@ -774,10 +779,6 @@ input:checked + .toggle-slide .toggle-ball {
     .end-sec p {
         font-size: 3rem;
     }
-    .replay {
-        /* Separate play again feature */
-        padding-top: 8%;
-    }
     .end-sec i {
         font-size: 4rem;
     }
@@ -805,6 +806,16 @@ input:checked + .toggle-slide .toggle-ball {
     }
     .footer-copyright i {
         padding-left: 2%;
+    }
+    /*--------------------------------- Form */
+    .form-header p {
+        font-size: 1.6rem;
+    }
+    .form-body input, textarea {
+        font-size: 1.2rem;
+    }
+    .form-body button {
+        font-size: 1.3rem;
     }
 }
 
