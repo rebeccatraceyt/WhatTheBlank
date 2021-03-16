@@ -39,6 +39,8 @@ function startGame () {
     movieScore = 0;
     availableQuestions = [...movieQuestions];
     getNewQuestion();
+    $(".game-load").css("display", "none");
+    $(".game-body").css("display", "block");
 }
 
 function getNewQuestion () {

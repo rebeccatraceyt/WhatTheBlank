@@ -38,6 +38,8 @@ function startGame () {
     tvScore = 0;
     availableQuestions = [...tvQuestions];
     getNewQuestion();
+    $(".game-load").css("display", "none");
+    $(".game-body").css("display", "block");
 }
 
 function getNewQuestion () {

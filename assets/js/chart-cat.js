@@ -39,6 +39,8 @@ function startGame () {
     chartScore = 0;
     availableQuestions = [...chartQuestions];
     getNewQuestion();
+    $(".game-load").css("display", "none");
+    $(".game-body").css("display", "block");
 }
 
 function getNewQuestion () {

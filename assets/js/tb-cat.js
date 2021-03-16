@@ -39,6 +39,8 @@ function startGame () {
     tbScore = 0;
     availableQuestions = [...tbQuestions];
     getNewQuestion();
+    $(".game-load").css("display", "none");
+    $(".game-body").css("display", "block");
 }
 
 function getNewQuestion () {

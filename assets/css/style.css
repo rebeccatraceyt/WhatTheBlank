@@ -112,6 +112,9 @@ button:focus {
 .footer-home{
     display: none;
 }
+.game-body {
+    display: none;
+}
 
 /*------------------------------------------------------- Player Info */
 #info-content {
@@ -282,6 +285,32 @@ input:checked + .toggle-slide .toggle-ball {
     min-height: 60vh;
     max-height: 60vh;
     width: 100vw;
+}
+.game-load {
+    /* reference: https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
+    display: block;
+    margin: auto;
+    font-size: 7rem;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 .play-sec {
     padding-top: 10vh;
