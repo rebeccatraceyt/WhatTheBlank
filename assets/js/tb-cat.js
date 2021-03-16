@@ -53,7 +53,6 @@ function getNewQuestion () {
             if ((tbScore == tbHighScore) || (tbScore > tbHighScore)){
                 tbHighScore = tbScore;
                 sessionStorage.setItem("tbHighScore", tbHighScore);
-                console.log("new high score - TB");
         
                 // Shows applicable text based on score
                 $('.hs-yes').show();
@@ -64,7 +63,6 @@ function getNewQuestion () {
             } else {
                 $('.hs-yes').hide();
                 $('.hs-no').show();
-                console.log("no high score - TB");
 
                 return false;
             }
@@ -118,7 +116,6 @@ answers.forEach(answer => {
                 checkedAnswer = 'correct';
                 if (checkedAnswer === 'correct') {
                     incrementScore(correctBonus);
-                    console.log('sound correct');
                     correctSound.currentTime = 0;
                     correctSound.play();
                 }

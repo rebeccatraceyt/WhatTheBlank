@@ -53,7 +53,6 @@ function getNewQuestion () {
             if ((chartScore == chartHighScore) || (chartScore > chartHighScore)){
                 chartHighScore = chartScore;
                 sessionStorage.setItem("chartHighScore", chartHighScore);
-                console.log("new high score - CHART");
         
                 // Shows applicable text based on score
                 $('.hs-yes').show();
@@ -64,7 +63,6 @@ function getNewQuestion () {
             } else {
                 $('.hs-yes').hide();
                 $('.hs-no').show();
-                console.log("no high score - CHART");
 
                 return false;
             }
@@ -118,7 +116,6 @@ answers.forEach(answer => {
                 checkedAnswer = 'correct';
                 if (checkedAnswer === 'correct') {
                     incrementScore(correctBonus);
-                    console.log('sound correct');
                     correctSound.currentTime = 0;
                     correctSound.play();
                 }

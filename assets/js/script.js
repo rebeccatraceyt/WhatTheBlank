@@ -25,7 +25,6 @@ let footerOpen = false; // default for sliding footer
 // General Buttons
 $('.btn-click').on('click', () => {
     // reference: https://stackoverflow.com/questions/15888716/how-do-i-play-an-audio-file-with-jquery/38499527
-    console.log('sound played');
     btnSound.currentTime = 0;
     btnSound.play();
 });
@@ -38,7 +37,6 @@ $('.toggle-slide').on('click', () => {
 
 // Mute Button - toggles mute for ALL pages
 $('.mute-btn').on('click', () => {
-    console.log("THIS IS WORKING");
     if($('.mute-btn i').hasClass('fa-volume-up')) {
         muteOn();        
         sessionStorage.setItem("sound", 'off');
@@ -226,7 +224,6 @@ $('#form-submit').click(function (event) {
     // reference: https://stackoverflow.com/questions/5127813/call-mvc-3-client-side-validation-manually-for-ajax-posts
     event.preventDefault();
     if($('#suggestionForm').valid()) {
-        console.log('SUCCESS');
         Swal.fire({
             icon: 'success',
             title: 'Thank You!',
@@ -247,9 +244,6 @@ function sendMail(){
         user_msg: document.getElementById("pMessage").value,
     };
     emailjs.send('service_ky4ewk5', 'template_i8i69po', tempParams)
-    .then(function(res){
-        console.log("success", res.status);
-    })
 }
 
 // --------------------------------------------------------- On Page Load 

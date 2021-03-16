@@ -53,7 +53,6 @@ function getNewQuestion () {
             if ((movieScore == movieHighScore) || (movieScore > movieHighScore)){
                 movieHighScore = movieScore;
                 sessionStorage.setItem("movieHighScore", movieHighScore);
-                console.log("new high score - MOVIE");
         
                 // Shows applicable text based on score
                 $('.hs-yes').show();
@@ -64,7 +63,6 @@ function getNewQuestion () {
             } else {
                 $('.hs-yes').hide();
                 $('.hs-no').show();
-                console.log("no high score - MOVIE");
 
                 return false;
             }
@@ -120,7 +118,6 @@ answers.forEach(answer => {
                 checkedAnswer = 'correct';
                 if (checkedAnswer === 'correct') {
                     incrementScore(correctBonus);
-                    console.log('sound correct');
                     correctSound.currentTime = 0;
                     correctSound.play();
                 }

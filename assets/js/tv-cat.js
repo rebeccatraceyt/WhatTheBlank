@@ -52,7 +52,6 @@ function getNewQuestion () {
             if ((tvScore == tvHighScore) || (tvScore > tvHighScore)){
                 tvHighScore = tvScore;
                 sessionStorage.setItem("tvHighScore", tvHighScore);
-                console.log("new high score - TV");
         
                 // Shows applicable text based on score
                 $('.hs-yes').show();
@@ -63,7 +62,6 @@ function getNewQuestion () {
             } else {
                 $('.hs-yes').hide();
                 $('.hs-no').show();
-                console.log("no high score - TV");
 
                 return false;
             }
@@ -118,7 +116,6 @@ answers.forEach(answer => {
                 checkedAnswer = 'correct';
                 if (checkedAnswer === 'correct') {
                     incrementScore(correctBonus);
-                    console.log('sound correct');
                     correctSound.currentTime = 0;
                     correctSound.play();
                 }
