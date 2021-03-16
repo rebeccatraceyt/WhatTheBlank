@@ -69,17 +69,28 @@ button:focus {
 .btn-click {
     cursor: pointer;
 }
-
-/*------------------------------------------------------- Player Info */
-#player-info {
-    display: none;
-
+.light-bg {
+	background-image: url(../images/light.png);
     background-attachment: scroll; /* To allow on ios devices */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
+}
+.dark-bg {
+	background-image: url(../images/dark.png);
+    background-attachment: scroll; /* To allow on ios devices */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*------------------------------------------------------- Player Info */
+#player-info {
+    display: none;
 }
 #info-content {
     width: 100vw;
@@ -247,12 +258,6 @@ input:checked + .toggle-slide .toggle-ball {
 }
 .home-sec {
     padding: 12px 5px 50px 5px;
-    background-attachment: scroll; /* To allow on ios devices */
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
 
     min-height: 60vh;
     max-height: 60vh;

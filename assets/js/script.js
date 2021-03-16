@@ -139,13 +139,7 @@ if (currentTheme) {
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
-        $('.home-sec').css("background-image", "url(assets/images/dark.png)");
-        $('#player-info').css("background-image", "url(assets/images/dark.png)");  
-    }
-    if (currentTheme === 'light') {
-        toggleSwitch.checked = false;
-        $('.home-sec').css("background-image", "url(assets/images/light.png)");
-        $('#player-info').css("background-image", "url(assets/images/light.png)");  
+        $('.light-bg').addClass('dark-bg').removeClass('light-bg');
     }
 }
 
@@ -154,18 +148,15 @@ function switchMode(mode) {
     if (mode.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
-        $('.home-sec').css("background-image", "url(assets/images/dark.png)");
-        $('#player-info').css("background-image", "url(assets/images/dark.png)");  
+        $('.light-bg').addClass('dark-bg').removeClass('light-bg');
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
-        $('.home-sec').css("background-image", "url(assets/images/light.png)");
-        $('#player-info').css("background-image", "url(assets/images/light.png)");  
+		$('.dark-bg').addClass('light-bg').removeClass('dark-bg');
     }
 }
 
 toggleSwitch.addEventListener('change', switchMode, false);
-
 
 // --------------------------------------------------------- Footer
 // Sets the year to the current year
