@@ -47,7 +47,6 @@ function getNewQuestion () {
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
         
 		stopTimer();
-        checkHighScore();
 
         // go to Game End
         $('.score-text').hide();
@@ -160,7 +159,7 @@ function startTimer(){
 function countTimer () {
 	timer.elapsedTime++;
 	// calculate the minutes and seconds from elapsed time
-	let second = timer.elapsedTime % 60;   
+	let second = timer.elapsedTime;   
 	if (second < 10) {
 	   second = "0" + second;
 	}
