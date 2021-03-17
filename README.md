@@ -1,5 +1,3 @@
-# Blank!
-
 <h1 align="center">
      <a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/D8q3jqy/logo.png" alt="Blank! logo"/></a>
 </h1>
@@ -237,7 +235,7 @@ Form:
 
      - The imagery used was created by the developer using the application [Procreate](https://procreate.art/) in order to create a consistency of the elements while maintaining the look and feel of the application
 
-[Back to top ⇧](#blank)
+[Back to top ⇧](#table-of-contents)
 
 ## Features
 
@@ -360,7 +358,7 @@ Each page of the game features a consistent responsive and intuitive navigationa
           - Random
      - Although this was the original plan for the game, the developer scaled the scope, choosing to focus on one version; Music.
 
-[Back to top ⇧](#blank)
+[Back to top ⇧](#table-of-contents)
 
 ## Issues and Bugs 
 The developer ran into a number of issues during the development of the websites, with the noteworthy ones listed below, along with solutions or ideas to implement in the future.
@@ -381,7 +379,7 @@ As well as this, there was an issue with the modal, whereby the modal would cont
 
 **Background image bug** The is a background image rendered for both the **welcome modal** and **homepage**. With the known issue regarding `background-size: cover` and ios devices, the developer had to create a work around to be able to call on the background image conditional to the current theme set. In order to do this, the images had to be rendered in JavaScript, as opposed to CSS.
 
-[Back to top ⇧](#blank)
+[Back to top ⇧](#table-of-contents)
 
 ## Technologies Used
 ### Main Languages Used
@@ -411,7 +409,7 @@ As well as this, there was an issue with the modal, whereby the modal would cont
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
 
-[Back to top ⇧](#blank)
+[Back to top ⇧](#table-of-contents)
 
 ## Testing
 
@@ -466,7 +464,7 @@ git clone https://github.com/USERNAME/REPOSITORY
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository "Link to GitHub troubleshooting")
 
-[Back to top ⇧](#blank)
+[Back to top ⇧](#table-of-contents)
 
 ## Credits 
 
@@ -484,11 +482,12 @@ The developer consulted multiple sites in order to better understand the code th
 
 For the basic functionality of the game play mode of the site, the developer sourced a similar project by [JamesQQuick](https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript "Link to Build-A-Quiz repo") and was able to edit and manipulate it in order to design the game to their specifications.
 
-[Back to top ⇧](#blank)
+[Back to top ⇧](#table-of-contents)
 
 ## Acknowledgements
-- 
+- I would like to thank my mentor Seun for her unwavering encouragement and guidance throughout.
+- I would like to thank my friends and family for their never-ending encouragement and valued opinions during the entire process of development.
 
-[Back to top ⇧](#blank)
+[Back to top ⇧](#table-of-contents)
 
 ***
