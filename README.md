@@ -71,7 +71,7 @@ The Developer is looking to:
 2. Intuitively navigate to game mode, to have an easy gaming experience.
 3. Have a clear score counter, to keep track of my score as I play.
 4. Have a clear time counter, to keep track of time elapsed.
-5. Get visual/audio feedback on answers I choose, to see whether they were correct.
+5. Get visual/auditory feedback on answers I choose, to see whether they were correct.
 6. Have the ability to toggle sound effects on or off, to suit my preference.
 7. Have to ability to choose the game theme (Day vs. Night Mode), to suit my preference.
 8. View my highest session score.
@@ -311,15 +311,27 @@ Each page of the game features a consistent responsive and intuitive navigationa
 
 ### Existing Features
 - **Personalised Player Name** - When the user first opens the page, they will be prompted to enter a player name of their choice. This name is then used to personalise their in-game experience.
+
 - **Logo** - Appearing on every page for brand recognition. Clicking the logo will return the user to the home page, as expected.
+
 - **Mute Button** - Appearing on every page for convenience, this feature allows the user to choose their sound preferences, then stores this choice in the pages' `sessionStorage`, applying it to all pages on the site. The button uses appropriate icons to represent the sound state.
+
 - **Dark Mode Toggle** - Appearing on every page for convenience, this feature allows the user to control the theme to be used, allowing a selection between 'light mode' and 'dark mode'. Each providing a different colour experience for the user. Should the user already have a stored system theme on their device, the page will use this as default.
+
 - **Social Icons** - On each page, in the footer (regardless of whether this is the standard or sliding footer) the developers' chosen social platforms are displayed using appropriate icons.
+
 - **Suggestions Form** - As well as the social media icons, there is also a form feature, allowing users to submit their suggestions or comments to the developer. The form uses an appropriate icon for consistency. On form submission, both the developer and the user will get an email, confirming the message has been sent.
+
 - **Answer Feedback** - The answer buttons provide users with both visual and aural feedback, displaying whether they are correct in their choice.
+
 - **Score Counter** - Incrementing by 1 each time the correct answer is selected, the counter provides real-time information as to the players score. This is then displayed at game end. The score is then compared to the session High Score for competitiveness purposes.
+
 - **Time Counter** - A time counter, displaying the time elapsed since page load, gives users feedback on how long they have been playing, in seconds. This is then displayed at game end.
+
+- **Page Loader** - As the questions are being called in JavaScript, there is a slight delay in loading. In order to create a more user-friendly experience, a loader icon (appropriately shaped as a compact disc) displays first on all game pages, until the questions have been loaded.
+
 - **Session Storage** - The `sessionStorage` function is used to store user information such as **username**, player's **highscore** and the chosen **user preferences**.
+
 - **404 page** - A 404 page is provided, should something go wrong, with a **call-to-action** button, redirecting the user back to the homepage.
 
 ### Features to Implement in the future
