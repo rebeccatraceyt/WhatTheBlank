@@ -9,8 +9,8 @@ let acceptingAnswers = false; // can't answer until everything loaded
 let questionCounter = 0;
 let availableQuestions = [];
 
-let chartScore = 0;
-let chartHighScore = 0;
+let chartScore;
+let chartHighScore = sessionStorage.getItem("chartHighScore");
 
 let timer = {};
 
@@ -60,7 +60,7 @@ function getNewQuestion () {
 
         // Calls their Player Name
         $('.playerName').text(userName);
-
+        
         // Play ending sound
         endSound.currentTime = 0;
         endSound.play();
@@ -125,13 +125,18 @@ function checkHighScore() {
         // Shows applicable text based on score
         $('.hs-yes').show();
         $('.hs-no').hide();
-        $('#high-score').text(chartHighScore);
-
+        $('.high-score').text(chartHighScore);
         return true;
+
+    } else if (chartHighScore == 0) {
+        $('.hs-yes').hide();
+        $('.hs-no').show();
+        $('.hs-num').hide();
+        return false;
+
     } else {
         $('.hs-yes').hide();
         $('.hs-no').show();
-
         return false;
     }
 }

@@ -9,8 +9,8 @@ let acceptingAnswers = false; // can't answer until everything loaded
 let questionCounter = 0;
 let availableQuestions = [];
 
-let tbScore = 0;
-let tbHighScore = 0;
+let tbScore;
+let tbHighScore = sessionStorage.getItem("tbHighScore");
 
 let timer = {};
 
@@ -116,16 +116,6 @@ answers.forEach(answer => {
     });
 }); 
 
-const incrementScore = num => {
-    // Add to score Counter
-    tbScore += num;
-    if (tbScore < 10){
-		scoreNumber.innerText = "0" + tbScore;
-	} else {
-    	scoreNumber.innerText = tbScore;
-	}
-};
-
 function checkHighScore() {
     // checks score
     if ((tbScore == tbHighScore) || (tbScore > tbHighScore)){
@@ -135,16 +125,31 @@ function checkHighScore() {
         // Shows applicable text based on score
         $('.hs-yes').show();
         $('.hs-no').hide();
-        $('#high-score').text(tbHighScore);
-
+        $('.high-score').text(tbHighScore);
         return true;
+        
+    } else if (tbHighScore == 0) {
+        $('.hs-yes').hide();
+        $('.hs-no').show();
+        $('.hs-num').hide();
+        return false;
+
     } else {
         $('.hs-yes').hide();
         $('.hs-no').show();
-
         return false;
     }
 }
+
+const incrementScore = num => {
+    // Add to score Counter
+    tbScore += num;
+    if (tbScore < 10){
+		scoreNumber.innerText = "0" + tbScore;
+	} else {
+    	scoreNumber.innerText = tbScore;
+	}
+};
 
 // Game timer
 // reference: https://hub.packtpub.com/html5-games-development-using-local-storage-store-game-data/

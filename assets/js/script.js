@@ -82,11 +82,21 @@ if (soundSetting) {
 function checkForUserData() {
     // check if user already exists
     if ((userName === null) || (userName === "Player") || (userName === "")) {
+        sessionStorage.setItem("tvHighScore", 0);
+        sessionStorage.setItem("chartHighScore", 0);
+        sessionStorage.setItem("tbHighScore", 0);
+        sessionStorage.setItem("movieHighScore", 0);
+        
         // If user does not exist, they have to enter data
         $("#player-info").css("display", "block");
     }
     else {
         userName = sessionStorage.getItem("userName");
+
+        tvHighScore = sessionStorage.getItem("tvHighScore");
+        chartHighScore = sessionStorage.getItem("chartHighScore");
+        tbHighScore = sessionStorage.getItem("tbHighScore");
+        movieHighScore = sessionStorage.getItem("movieHighScore");
 
         $("#player-info").css("display", "none");
         $("#header").css("display", "block");

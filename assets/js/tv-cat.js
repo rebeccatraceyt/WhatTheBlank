@@ -9,8 +9,8 @@ let acceptingAnswers = false; // can't answer until everything loaded
 let questionCounter = 0;
 let availableQuestions = [];
 
-let tvScore = 0;
-let tvHighScore = 0;
+let tvScore;
+let tvHighScore = sessionStorage.getItem("tvHighScore");
 
 let timer = {};
 
@@ -65,7 +65,6 @@ function getNewQuestion () {
         endSound.play();
 
         checkHighScore();
-        return false;
     }
 
     questionCounter++; // start game and increment to 1
@@ -125,13 +124,18 @@ function checkHighScore() {
         // Shows applicable text based on score
         $('.hs-yes').show();
         $('.hs-no').hide();
-        $('#high-score').text(tvHighScore);
-
+        $('.high-score').text(tvHighScore);
         return true;
+
+    } else if (tvHighScore == 0) {
+        $('.hs-yes').hide();
+        $('.hs-no').show();
+        $('.hs-num').hide();
+        return false;
+
     } else {
         $('.hs-yes').hide();
         $('.hs-no').show();
-
         return false;
     }
 }
