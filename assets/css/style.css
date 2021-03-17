@@ -697,7 +697,6 @@ input:checked + .toggle-slide .toggle-ball {
     /*--------------------------------- Menu Section */
     /* Styling for Menu section on page on a larger screen */
     .menu-sec {
-        padding-top: 5%;
         min-height: 100vh;
         max-width: 30vw;
         float: left;
