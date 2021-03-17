@@ -19,6 +19,7 @@ const maxQuestions = 10; // How many questions before end
 
 let tbQuestions = [];
 
+// fetch questions from json file
 fetch("assets/js/questions/throwback-questions.json")
     .then(res => {
         return res.json();
@@ -44,8 +45,9 @@ function startGame () {
 }
 
 function getNewQuestion () {
+
+    // End of game
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
-        
         stopTimer();
 
         // go to Game End
@@ -68,6 +70,7 @@ function getNewQuestion () {
         checkHighScore();
     }
 
+    // Iterate through questions
     questionCounter++; // start game and increment to 1
     const questionIndex = Math.floor(Math.random() * availableQuestions.length); // amount is always equal to how many questions are left
     currentQuestion = availableQuestions[questionIndex];
@@ -83,6 +86,7 @@ function getNewQuestion () {
     acceptingAnswers = true; // allow user to answer
 }
 
+// Listen for answer choice
 answers.forEach(answer => {
     answer.addEventListener('click', e => {
         if(!acceptingAnswers) return; // ignore click if not ready
@@ -116,6 +120,7 @@ answers.forEach(answer => {
     });
 }); 
 
+// check score vs high score
 function checkHighScore() {
     // checks score
     if ((tbScore == tbHighScore) || (tbScore > tbHighScore)){
@@ -141,6 +146,7 @@ function checkHighScore() {
     }
 }
 
+// Add to score Counter
 const incrementScore = num => {
     // Add to score Counter
     tbScore += num;

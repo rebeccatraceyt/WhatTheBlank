@@ -77,7 +77,7 @@ if (soundSetting) {
 }
 
 // --------------------------------------------------------- Player Information
-/* Welcome Modal allows user to enter name of choice
+/* Allows user to enter name of choice
     Code accumulated through researching similar functions with the majority of credits to fellow CI students. */
 function checkForUserData() {
     // check if user already exists
@@ -104,7 +104,6 @@ function checkForUserData() {
         $(".footer-home").css("display", "block");
         $(".footer-sm").css("display", "block");
         return;
-
     }
 }
 
