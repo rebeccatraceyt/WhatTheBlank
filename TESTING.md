@@ -184,46 +184,46 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 - Home Page
 
-     ![Home Page HTML Validation Results](assets/testing-files/home-val.png)
+     ![Home Page HTML Validation Results](assets/testing-files/automated/home-val.png)
 
 - As Seen on TV Category Page
 
-     ![As Seen on Tv Category Page HTML Validation Results](assets/testing-files/tv-val.png)
+     ![As Seen on Tv Category Page HTML Validation Results](assets/testing-files/automated/tv-val.png)
 
 - Chart Toppers Category Page
 
-     ![Chart Topppers Category Page HTML Validation Results](assets/testing-files/chart-val.png)
+     ![Chart Topppers Category Page HTML Validation Results](assets/testing-files/automated/chart-val.png)
 
 - Throwback Category Page
 
-     ![Throwback Category Page HTML Validation Results](assets/testing-files/tb-val.png)
+     ![Throwback Category Page HTML Validation Results](assets/testing-files/automated/tb-val.png)
 
 - At The Movies Category Page
 
-     ![At The Movies Category Page HTML Validation Results](assets/testing-files/movie-val.png)
+     ![At The Movies Category Page HTML Validation Results](assets/testing-files/automated/movie-val.png)
 
 The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) service was used to validate the `CSS` coded used.
 
 **Results:**
-![Style sheet validation results](assets/testing-files/css-val.png)
+![Style sheet validation results](assets/testing-files/automated/css-val.png)
 
 ### Browser Validation
-- Chrome - ![test image](assets/testing-files/chrome.png)
-- Safari - ![test image](assets/testing-files/safari.png)
-- Edge - ![test image](assets/testing-files/edge.png)
-- Opera - ![test image](assets/testing-files/opera.png)
-- Firefox - ![test image](assets/testing-files/firefox.png)
+- Chrome - ![test image](assets/testing-files/automated/chrome.png)
+- Safari - ![test image](assets/testing-files/automated/safari.png)
+- Edge - ![test image](assets/testing-files/automated/edge.png)
+- Opera - ![test image](assets/testing-files/automated/opera.png)
+- Firefox - ![test image](assets/testing-files/fautomated/irefox.png)
 
 ### Lighthouse Auditing
 - Welcome Menu - 
 
-![DevTools - Welcome Menu](assets/testing-files/player-info.png)
+![DevTools - Welcome Menu](assets/testing-files/automated/player-info.png)
 - Home Page - 
 
-![DevTools - HomePage](assets/testing-files/homepage.png)
+![DevTools - HomePage](assets/testing-files/automated/homepage.png)
 - Game Play Page - 
 
-![DevTools - Game Play Page](assets/testing-files/gameplay.png)
+![DevTools - Game Play Page](assets/testing-files/automated/gameplay.png)
 
 Issues were related to render-blocking resources. No recommendations in this report have been implemented in the first release but will be looked into for future releases.
 
