@@ -377,9 +377,10 @@ input:checked + .toggle-slide .toggle-ball {
 .questions-sec, .answers-sec {
     padding: 5px;
 }
-.questions-sec {
+.questions-sec h2 {
     font-size: 1.2rem;
     font-weight: 500;
+    width: 100%;
 }
 
 /* Styling for answers in game mode */
@@ -745,7 +746,7 @@ input:checked + .toggle-slide .toggle-ball {
     }
     .play-sec { 
         display: flex;
-        padding: 15%;
+        padding: 10% 5%;
     }
 
     /* Styling for text on Home Page */
@@ -759,7 +760,7 @@ input:checked + .toggle-slide .toggle-ball {
     }
 
     /* Styling for questions in game mode */
-    .questions-sec {
+    .questions-sec h2 {
         padding-top: 10%;
         font-size: 3rem;
     }
