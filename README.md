@@ -242,21 +242,108 @@ Form:
 ## Features
 
 ### Design Features
-<dl>
-  <dt><a href="index.html" target="_blank" alt=""> </a></dt>
-  <dd>
-     <ul>
-          <li></li>
-          <li></li>
-     </ul>
-  </dd>
+Each page of the game features a consistent responsive and intuitive navigational system:
+- There is a conventionally placed **Logo** on the top left of each page. Clicking on the logo will redirect players back to the home page.
+- To ensure the player has full control of the game, there are two **Toggle** functions conventionally located at the top right corner of each page. These allow the users to control the sound and page theme to their preference.
+- On larger screens, the **Footer** is conventionally placed at the bottom of the screen, allowing users to navigate to the social icon of their choosing.
+- On smaller screens, the **Footer** is placed within a sliding function, where users can click the appropriate icon in order to reveal the footer. This was to ensure that the footer would not interfere with the game-play.
 
- 
+<dl>
+     <dt>
+          <a href="https://rebeccatraceyt.github.io/WhatTheBlank/" target="_blank" alt="Blank! Home Page">Home Page</a>
+     </dt>
+     <dd>
+          There is a conditional class in place that determines what content the user will see when they enter the website. Based on whether the user has already provided a <strong>Player Name</strong>, the user will see one of the following:
+               <ul>
+                    <li>
+                         <strong>Welcome Menu</strong> - A full-screen welcome menu, introducing the user to the game, providing the basics in how the game works and prompting them to enter a player name of their choice. 
+                    </li>
+                    <li>
+                         <strong>Home Page</strong> - When the user has entered their chosen name, or if they have previously already entered this information, the user will see the home page. Again, a full-screen page, the home page provides a point of navigation for the players to start the game in the category of their choosing.
+                    </li>
+               </ul>
+     </dd>
+     <dt>
+          <a href="https://rebeccatraceyt.github.io/WhatTheBlank/as-seen-on-tv.html" target="_blank" alt="Blank! As Seen On TV Game Page">Game Play Page</a>
+     </dt>
+     <dd>
+          There are four identical game-play pages in total, each representing a different category of music. Each page is individually styled, but the general layout and functionality are the same in order to maintain consistency throughout the game. Each page has the following features:
+          <ul>
+               <li>
+                    <strong>Menu Section</strong> - The Menu section is conventionally placed on the left of the screen, taking up 30% of the viewport width on larger screens and 30% of the viewport height on smaller screens. It displays:
+                         <ul>
+                              <li>
+                                   <strong>Category Buttons</strong> - Allowing users to navigate to other categories, as they wish.
+                              </li>
+                              <li>
+                                   <strong>Footer</strong> - Depending on the device, the footer will be automatically displayed or be hidden in a <strong>sliding footer</strong>, providing links to the developers chosen social media as well as a <strong>form</strong>, allowing users to make suggestions for improvement.
+                              </li>
+                         </ul>
+               </li>
+               <li>
+                    <strong>Game Play Section</strong> - The Game Play section takes up the remainder of the page, providing ample game playing space. Within the game play, there are a number of features to create a more interactive environment for the user to enjoy:
+                    <ul>
+                         <li>
+                              <strong>Questions and Answers</strong> - The primary focus of the section is the questions and answers. These are called in at random and take up the majority of the space, in order to sustain readability.
+                         </li>
+                         <li>
+                              <strong>Heads Up Display</strong> - Conveniently placed in the players eye-line, the heads up display provides gaming functions such as:
+                                   <ul>
+                                        <li>
+                                             <strong>Score Counter</strong> - Incremented by 1 each time the player gets the answer correct, the score counter provides visual feedback for user to know how they are doing
+                                        </li>
+                                        <li>
+                                             <strong>Time Keeper</strong> - The time keeper function provides realtime time elapse of how long the player has been playing that particular round for. This is then displayed at the end.
+                                        </li>
+                                        <li>
+                                             <strong>Restart Button</strong> - A restart button allows the user to refresh the page, starting back at 0, for their convenience.
+                                        </li>
+                                   </ul>
+                         </li>
+                         <li>
+                              <strong>Game End</strong> - Once the player has answered all questions, they will be directed to the game-end feature. This is still a part the game-play page, showing the conditional information based on the users score. This was to avoid redirecting to another page, and allowed for custom styling for each page.
+                         </li>
+                    </ul>
+               </li>
+          </ul>
+     </dd>
+</dl>
+
 ### Existing Features
-- 
+- **Personalised Player Name** - When the user first opens the page, they will be prompted to enter a player name of their choice. This name is then used to personalise their in-game experience.
+- **Logo** - Appearing on every page for brand recognition. Clicking the logo will return the user to the home page, as expected.
+- **Mute Button** - Appearing on every page for convenience, this feature allows the user to choose their sound preferences, then stores this choice in the pages' `sessionStorage`, applying it to all pages on the site. The button uses appropriate icons to represent the sound state.
+- **Dark Mode Toggle** - Appearing on every page for convenience, this feature allows the user to control the theme to be used, allowing a selection between 'light mode' and 'dark mode'. Each providing a different colour experience for the user. Should the user already have a stored system theme on their device, the page will use this as default.
+- **Social Icons** - On each page, in the footer (regardless of whether this is the standard or sliding footer) the developers' chosen social platforms are displayed using appropriate icons.
+- **Suggestions Form** - As well as the social media icons, there is also a form feature, allowing users to submit their suggestions or comments to the developer. The form uses an appropriate icon for consistency. On form submission, both the developer and the user will get an email, confirming the message has been sent.
+- **Answer Feedback** - The answer buttons provide users with both visual and aural feedback, displaying whether they are correct in their choice.
+- **Score Counter** - Incrementing by 1 each time the correct answer is selected, the counter provides real-time information as to the players score. This is then displayed at game end. The score is then compared to the session High Score for competitiveness purposes.
+- **Time Counter** - A time counter, displaying the time elapsed since page load, gives users feedback on how long they have been playing, in seconds. This is then displayed at game end.
+- **Session Storage** - The `sessionStorage` function is used to store user information such as **username**, player's **highscore** and the chosen **user preferences**.
+- **404 page** - A 404 page is provided, should something go wrong, with a **call-to-action** button, redirecting the user back to the homepage.
 
 ### Features to Implement in the future
-- 
+- There are two categories that the developer would like to implement in future releases:
+     - **Beat The Clock**
+          - Allowing users to race against the clock in their chosen category. 
+          - The developer did try to implement this feature in the current release but it created a bug that was, unfortunately, beyond their skill level. After further learning, the developer hopes to tackle this.
+     - **Random Round**
+          - A category that would call in a random question from the provide arrays to create a completely random set of questions for players.
+          - The developer held off on this feature in the current release in order to further develop their skills to be able to implement the feature properly. Although a simplified version could have been implemented, the developer believed that it would not do the name justice.
+- An online leadership board, allowing players to see the High Scores of other players.
+     - This would require the use of a database in order to implement.
+- Branching out into other versions of the game, for example:
+     - Famous Sayings
+          - Poets
+          - Literature
+          - Idioms
+          - Quotes
+     - Movie Quotes
+          - Cult Classics
+          - Action
+          - Family
+          - Random
+     - Although this was the original plan for the game, the developer scaled the scope, choosing to focus on one version; Music.
 
 [Back to top ⇧](#blank)
 
