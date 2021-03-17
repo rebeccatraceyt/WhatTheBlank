@@ -236,7 +236,8 @@ It was through this testing that the following changes were made:
 - Update to the Heads-up display to be more gamer-friendly.
 - Change to Questions and Answers `font-size` in order to maintain readability on all devices
 - Complete overhaul of Home Page to avoid dead space and to make the experience more intuitive.
-- The addition of minutes to the ***time counter* function for better readability.
+- The addition of minutes to the **time counter** function for better readability.
+- The addition of a **home button** along side the **play again** button at game end, allowing users to select where they want to go next.
 
 [Back to top ⇧](#Blank---Testing)
 
