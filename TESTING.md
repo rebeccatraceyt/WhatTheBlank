@@ -75,57 +75,53 @@ Manual testing was conducted on the following elements that appear on every page
 
 - Clicking the **Mute Button** will trigger an icon change
 
-    ![Mute Button in action]()
+    ![Mute Button in action](assets/testing-files/manual/mute-btn.gif)
 
 - This preference is stored and will be default for all pages
 
-    ![Mute button on another page]()
+    ![Mute button on another page](assets/testing-files/manual/mute-load.gif)
 
 - Clicking the **Toggle Function** will show the appropriate icon for the current theme
         
-    ![Toggle Function in action]()
+    ![Toggle Function in action](assets/testing-files/manual/toggle.gif)
 
 - This preference is stored and will be default for all pages
 
-    ![Toggle function on another page]()
+    ![Toggle function on another page](assets/testing-files/manual/toggle-load.gif)
 
 - Clicking the icon will trigger the **Sliding Footer** on smaller screens
 
-    ![Sliding Footer in action]()
+    ![Sliding Footer in action](assets/testing-files/manual/sliding-footer.gif)
 
 - Clicking on social media icons will open them in a new tab
 
-    ![Clicking LinkedIn link]()
+    ![Clicking LinkedIn link](assets/testing-files/manual/linkedin.gif)
 
-    ![Clicking GitHub link]()
+    ![Clicking GitHub link](assets/testing-files/manual/github.gif)
 
 - Clicking on the icon will open the **Form Modal**
 
-    ![Form Modal in action]()
+    ![Form Modal in action](assets/testing-files/manual/form.gif)
 
 ### Home Page
 Manual testing was conducted on the following elements on the Home Page:
 
 - On first load, the user will be directed to the welcome menu, where they will be prompted to enter a player name before entry
 
-    ![Entering Player Information]()
+    ![Entering Player Information](assets/testing-files/manual/player-info.gif)
 
 - Clicking logo on left of screen will refresh the landing page
 
-     ![Homepage Refresh]()
-
-- On a mobile device, the category buttons stacks on top of each other for UX purposes
-
-     ![Home page - mobile version]()
+     ![Homepage Refresh](assets/testing-files/manual/home-logo.gif)
 
 - The responsiveness of the Home page
     - Welcome Menu
         
-        ![Welcome Menu responsiveness]()
+        ![Welcome Menu responsiveness](assets/testing-files/manual/welcome-res.gif)
 
     - Home Page
 
-        ![Home page responsiveness]()
+        ![Home page responsiveness](assets/testing-files/manual/home-res.gif)
 
 
 ### Game Play Page
@@ -133,45 +129,49 @@ Manual testing was conducted on the following elements on the Game Play Page:
 
 - Clicking logo on left of screen will redirect user back to Home Page
 
-    ![Homepage Redirect]()
+    ![Homepage Redirect](assets/testing-files/manual/game-logo.gif)
 
 - If there is a delay in the loading of the questions, a **Page Loader** will be displayed
 
-    ![Page loader in action]()
+    ![Page loader in action](assets/testing-files/manual/page-load.gif)
 
 - On page load, the **Time Counter** begins 
 
-    ![Time Counter in action]()
+    ![Time Counter in action](assets/testing-files/manual/time-count.gif)
 
 - If the player wishes to restart mid-game, they click the restart button in the heads-up display
 
-    ![Restart button in Heads-up display]()
+    ![Restart button in Heads-up display](assets/testing-files/manual/hud-restart.gif)
 
 - When player chooses correct answer, they will be provided feedback and their score will be incremented by 1
 
-    ![Correct Answer]()
+    ![Correct Answer](assets/testing-files/manual/correct-ans.gif)
 
 - When player chooses incorrect answer, they will be provided feedback on both the correct and incorrect choice
 
-    ![Incorrect Answer]()
+    ![Incorrect Answer](assets/testing-files/manual/incorrect-ans.gif)
 
 - On page end, the player's score will determine the text they will be presented with:
 
     - When they have reached a High Score
     
-        ![High Score]()
+        ![High Score](assets/testing-files/manual/high-score.gif)
     
     - When they have not reached a High Score
 
-        ![No High Score]()
+        ![No High Score](assets/testing-files/manual/no-high-score.gif)
 
 - When they click on the **replay** icon, they will be redirected back to the start
 
-    ![Restart Button in action]()
+    ![Restart Button in action](assets/testing-files/manual/restart-btn.gif)
+
+- When they click on the **home** icon, they will be redirected back to the home page
+
+    ![Home Button in action](assets/testing-files/manual/home-btn.gif)
 
 - The responsiveness of the Game Play Page
 
-     ![Game page responsiveness]()
+     ![Game page responsiveness](assets/testing-files/manual/game-res.gif)
 
 [Back to top ⇧](#Blank---Testing)
 
