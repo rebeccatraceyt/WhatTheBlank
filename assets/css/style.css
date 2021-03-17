@@ -318,11 +318,6 @@ input:checked + .toggle-slide .toggle-ball {
         transform: rotate(360deg);
     }
 }
-.play-sec {
-    padding-top: 5vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
-}
 
 /* Styling for each category background - for consistency purposes */
 .tv-bg {
@@ -376,13 +371,13 @@ input:checked + .toggle-slide .toggle-ball {
 }
 
 /* Styling for questions in game mode */
-.questions-sec, .answers-sec {
-    padding: 5%;
+.questions-sec {
+    padding: 20% 5%;
 }
 .questions-sec h2 {
     font-size: 1.2rem;
     font-weight: 500;
-    width: 100%;
+    padding-bottom: 5%;
 }
 
 /* Styling for answers in game mode */
@@ -413,26 +408,28 @@ input:checked + .toggle-slide .toggle-ball {
 
 /*------------------------------------------------------- Game End Text */
 .end-sec h3 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-family: var(--titlefont);
+    padding-top: 10%;
 }
 .end-sec h5 {
     font-size: 1.2rem;
     font-weight: 500;
 }
 .end-sec p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-bottom: 0;
 }
 .end-sec i {
     border: 2px solid var(--yellow);
     padding: 10px;
-    margin: 12px;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
-.replay {
-    /* Separate play again feature */
-    padding-top: 3%;
+.end-replay{
+    padding-top: 5%;
+}
+.end-icons {
+    padding: 2vh 20vw;
 }
 
 /*------------------------------------------------------- Sliding Footer */
@@ -595,7 +592,7 @@ input:checked + .toggle-slide .toggle-ball {
 
     /* Styling for heads up display */
     .score-hud li {
-        font-size: 2.7rem;
+        font-size: 1.5rem;
     }
 
     /* Styling for Questions and Answers section */
@@ -618,6 +615,9 @@ input:checked + .toggle-slide .toggle-ball {
     }
     .end-sec i {
         font-size: 2.5rem;
+    }
+    .end-icons {
+        padding: 2vh 30vw;
     }
 
     /*--------------------------------- Sliding Footer */
@@ -743,38 +743,39 @@ input:checked + .toggle-slide .toggle-ball {
         align-items: center;
     }
     .play-sec { 
-        display: flex;
         padding: 10% 5%;
     }
 
     /* Styling for heads up display in game mode */
     .score-hud li {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     /* Styling for questions in game mode */
     .questions-sec h2 {
-        padding-top: 10%;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     /* Styling for answers in game mode */
     .answer-text {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     /*--------------------------------- Game End Text */
     .end-sec h3 {
-        font-size: 6rem;
+        font-size: 4rem;
     }
     .end-sec h5 {
-        font-size: 4rem;
+        font-size: 2.8rem;
     }
     .end-sec p {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
     .end-sec i {
-        font-size: 4rem;
+        font-size: 2.8rem;
+    }
+    .end-icons {
+        padding: 3vh 20vw;
     }
 
     /*--------------------------------- Footer */

@@ -296,6 +296,9 @@ Each page of the game features a consistent responsive and intuitive navigationa
                                              <strong>Time Keeper</strong> - The time keeper function provides realtime time elapse of how long the player has been playing that particular round for. This is then displayed at the end.
                                         </li>
                                         <li>
+                                             <strong>Home Button</strong> - A home button allows the user to return to the home page.
+                                        </li>
+                                        <li>
                                              <strong>Restart Button</strong> - A restart button allows the user to refresh the page, starting back at 0, for their convenience.
                                         </li>
                                    </ul>
@@ -330,7 +333,7 @@ Each page of the game features a consistent responsive and intuitive navigationa
 
 - **Page Loader** - As the questions are being called in JavaScript, there is a slight delay in loading. In order to create a more user-friendly experience, a loader icon (appropriately shaped as a compact disc) displays first on all game pages, until the questions have been loaded.
 
-- **Session Storage** - The `sessionStorage` function is used to store user information such as **username**, player's **highscore** and the chosen **user preferences**.
+- **Session Storage** - The `sessionStorage` function is used to store user information such as **username**, player's **high score** and the chosen **user preferences**.
 
 - **404 page** - A 404 page is provided, should something go wrong, with a **call-to-action** button, redirecting the user back to the homepage.
 
