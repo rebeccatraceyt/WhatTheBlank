@@ -57,6 +57,7 @@
 9. As a player, I want to have the option to replay the game once I have finished to start again.
     - Once they have completed all questions, the player will be presented with the game-end text. 
     - No matter their score, the player will have the option to **play** again (or to **try** again), using an appropriate **redo** icon.
+    - They also have the option to restart during the game, clearing their score and time.
 10. As a player, I want to provide suggestions to the developer to upgrade the game, enhancing my user experience.
     - In the footer, the user can access a suggestions form, allowing them to send a message to the developer.
     - Using **EmailJS**, the form is validated and will send a message to both the developer and the sender.
@@ -65,156 +66,112 @@
     - Conventionally, these links open in a new tab.
 
 
-[Back to top ⇧](#Blank!---Testing)
+[Back to top ⇧](#Blank---Testing)
 
 ## Manual Testing
 
 ### Common Elements Testing
 Manual testing was conducted on the following elements that appear on every page:
 
-- Hovering over the Navbar will trigger `hover` effect, confirming the link the users are on
+- Clicking the **Mute Button** will trigger an icon change
 
-     ![Navbar hover effect](assets/testing-files/gen-gif/navbar.gif)
+    ![Mute Button in action]()
 
-- Hovering over Social links will trigger `hover` effect and clicking on them will open a new tab
+- This preference is stored and will be default for all pages
 
-     Facebook:
+    ![Mute button on another page]()
 
-     ![Facebook Social link](assets/testing-files/gen-gif/facebook.gif)
+- Clicking the **Toggle Function** will show the appropriate icon for the current theme
+        
+    ![Toggle Function in action]()
 
-     Instagram:
+- This preference is stored and will be default for all pages
 
-     ![Instagram Social link](assets/testing-files/gen-gif/instagram.gif)
+    ![Toggle function on another page]()
 
-     Twitter:
+- Clicking the icon will trigger the **Sliding Footer** on smaller screens
 
-     ![Twitter Social link](assets/testing-files/gen-gif/twitter.gif)
+    ![Sliding Footer in action]()
 
-     Spotify:
+- Clicking on social media icons will open them in a new tab
 
-     ![Spotify Social link](assets/testing-files/gen-gif/spotify.gif)
+    ![Clicking LinkedIn link]()
 
-     Apple Music:
+    ![Clicking GitHub link]()
 
-     ![Apple Music Social link](assets/testing-files/gen-gif/apple-music.gif)
+- Clicking on the icon will open the **Form Modal**
 
-     Deezer:
-
-     ![Deezer Social link](assets/testing-files/gen-gif/deezer.gif)
+    ![Form Modal in action]()
 
 ### Home Page
-Manual testing was conducted on the following elements of the [Home Page](index.html):
+Manual testing was conducted on the following elements on the Home Page:
+
+- On first load, the user will be directed to the welcome menu, where they will be prompted to enter a player name before entry
+
+    ![Entering Player Information]()
 
 - Clicking logo on left of screen will refresh the landing page
 
-     ![Homepage Refresh](assets/testing-files/home-gif/home-logo.gif)
+     ![Homepage Refresh]()
 
-- Hovering over 'Out Now' link will create a `hover` effect
+- On a mobile device, the category buttons stacks on top of each other for UX purposes
 
-     !['Out Now' hover effect](assets/testing-files/home-gif/home-link.gif)
-
-- On a mobile device, the hero image stacks on top of the other column for UX purposes
-
-     ![Home page - mobile version](assets/testing-files/home-gif/home-mobile.png)
+     ![Home page - mobile version]()
 
 - The responsiveness of the Home page
+    - Welcome Menu
+        
+        ![Welcome Menu responsiveness]()
 
-     ![Home page responsiveness](assets/testing-files/home-gif/home-res.gif)
+    - Home Page
 
-### Bio Page
-Manual testing was conducted on the following elements of the [Bio Page](bio.html):
+        ![Home page responsiveness]()
 
-- Clicking the logo on the top left of the page will return the user to the Home Page
 
-     ![Bio page to Home page](assets/testing-files/bio-gif/bio-logo.gif)
+### Game Play Page
+Manual testing was conducted on the following elements on the Game Play Page:
 
-- Hovering over each accordion menu will trigger the `hover` effect and clicking the link within will open it in a new tab
+- Clicking logo on left of screen will redirect user back to Home Page
 
-     Jordo and 'the Legs':
- 
-     ![Accordion link opens in new tab](assets/testing-files/bio-gif/bio-accordion1.gif)
+    ![Homepage Redirect]()
 
-     The Scratch:
+- If there is a delay in the loading of the questions, a **Page Loader** will be displayed
 
-     ![Accordion link opens in new tab](assets/testing-files/bio-gif/bio-accordion2.gif)
+    ![Page loader in action]()
 
-     The Hit Machine Drummers:
+- On page load, the **Time Counter** begins 
 
-     ![Accordion link opens in new tab](assets/testing-files/bio-gif/bio-accordion3.gif)
+    ![Time Counter in action]()
 
-- On a mobile device, the hero image stacks on top of the other column for UX purposes
+- If the player wishes to restart mid-game, they click the restart button in the heads-up display
 
-     ![Bio page - mobile version](assets/testing-files/bio-gif/bio-mobile.gif)
+    ![Restart button in Heads-up display]()
 
-- The responsiveness of the Bio page
+- When player chooses correct answer, they will be provided feedback and their score will be incremented by 1
 
-     ![Bio page responsiveness](assets/testing-files/bio-gif/bio-res.gif)
+    ![Correct Answer]()
 
-### Live Page
-Manual testing was conducted on the following elements of the [Live Page](live.html):
+- When player chooses incorrect answer, they will be provided feedback on both the correct and incorrect choice
 
-- Clicking the logo on the top left of the page will return the user to the Home page
+    ![Incorrect Answer]()
 
-     ![Live page to Home page](assets/testing-files/live-gif/live-logo.gif)
+- On page end, the player's score will determine the text they will be presented with:
 
-- Hovering over the venue name will trigger a `hover` effect and clicking it will open the event page in a new tab
+    - When they have reached a High Score
+    
+        ![High Score]()
+    
+    - When they have not reached a High Score
 
-     ![Live page venue link](assets/testing-files/live-gif/live-venue.gif)
+        ![No High Score]()
 
-- Hovering over the ticket button will trigger a `hover` effect and clicking will open ticketing site in a new tab   
+- When they click on the **replay** icon, they will be redirected back to the start
 
-     ![Live page button link](assets/testing-files/live-gif/live-ticket.gif)
+    ![Restart Button in action]()
 
-- Clicking on the map `iframe` embed will open the map in a new tab
+- The responsiveness of the Game Play Page
 
-     ![Live page map link](assets/testing-files/live-gif/live-map.gif)
-
-- On a mobile device, the hero image stacks on top of the other column for UX purposes
-
-     ![Live page - mobile version](assets/testing-files/live-gif/live-mobile.png)
-
-- The responsiveness of the Live page
-
-     ![Live page responsiveness](assets/testing-files/live-gif/live-res.gif)
-
-### Press Kit Page
-Manual testing was conducted on the following elements of the [Electronic Press Kit Page](epk.html):
-
-- Clicking the logo on the top left of the page will return the user to the Home page
-
-     ![Press Kit page to Home page](assets/testing-files/epk-gif/epk-logo.gif)
-
-- Clicking the `next tab` icon on the carousel will allow the user to flick through the images
-
-     ![Carousel image selection](assets/testing-files/epk-gif/epk-pics.gif)
-
-- Hovering over the article link will trigger a `hover` effect and clicking will open article in a new tab
-
-     ![Indie Buddie link](assets/testing-files/epk-gif/epk-link1.gif)
-
-- Clicking on the IGTV `iframe` embed will open the video in a new tab
-
-     ![IGTV video link](assets/testing-files/epk-gif/epk-link2.gif)
-
-- Clicking on the Spotify `iframe` will allow the users to control the music playing in the embed
-
-     ![Spotify embed](assets/testing-files/epk-gif/epk-link3.gif)
-
-- Hovering over the Booking Agent's name will trigger a `hover` effect. On click will lead users to a `mailto` platform
-
-     ![Mailto Hover effect](assets/testing-files/epk-gif/epk-mail.gif)
-
-- When filling out the contact form, the user must complete all fields
-
-     ![Contact form required fields](assets/testing-files/epk-gif/epk-form.gif)
-
-- On a mobile device, the hero image stacks on top of the other column for UX purposes
-
-     ![Press Kit page - mobile version](assets/testing-files/epk-gif/epk-mobile.gif)
-
-- The responsiveness of the Electronic Press Kit page
-
-     ![Press Kit page responsiveness](assets/testing-files/epk-gif/epk-res.gif)
+     ![Game page responsiveness]()
 
 [Back to top ⇧](#Kryan-Live---Testing)
 
@@ -227,35 +184,48 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 - Home Page
 
-     ![Home Page HTML Validation Results](assets/testing-files/automated/home.png)
+     ![Home Page HTML Validation Results](assets/testing-files/home-val.png)
 
-- Bio Page
+- As Seen on TV Category Page
 
-     ![Bio Page HTML Validation Results](assets/testing-files/automated/bio.png)
+     ![As Seen on Tv Category Page HTML Validation Results](assets/testing-files/tv-val.png)
 
-- Live Page
+- Chart Toppers Category Page
 
-     ![Live Page HTML Validation Results](assets/testing-files/automated/live.png)
+     ![Chart Topppers Category Page HTML Validation Results](assets/testing-files/chart-val.png)
 
-- Electronic Press Kit Page
+- Throwback Category Page
 
-     ![EPK Page HTML Validation Results](assets/testing-files/automated/epk.png)
+     ![Throwback Category Page HTML Validation Results](assets/testing-files/tb-val.png)
+
+- At The Movies Category Page
+
+     ![At The Movies Category Page HTML Validation Results](assets/testing-files/movie-val.png)
 
 The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) service was used to validate the `CSS` coded used.
 
 **Results:**
-![Style sheet validation results](assets/testing-files/automated/style.png)
+![Style sheet validation results](assets/testing-files/css-val.png)
 
 ### Browser Validation
-- Chrome - [test image](assets/testing-files/automated/chrome.png)
-- Safari - [test image](assets/testing-files/automated/safari.png)
-- Edge - [test image](assets/testing-files/automated/edge.png)
-- Opera - [test image](assets/testing-files/automated/opera.png)
-- Firefox - [test image](assets/testing-files/automated/firefox.png)
+- Chrome - ![test image](assets/testing-files/chrome.png)
+- Safari - ![test image](assets/testing-files/safari.png)
+- Edge - ![test image](assets/testing-files/edge.png)
+- Opera - ![test image](assets/testing-files/opera.png)
+- Firefox - ![test image](assets/testing-files/firefox.png)
 
 ### Lighthouse Auditing
-- Click [here](assets/testing-files/automated/lighthouse.pdf) for full report
-- No recommendations in this report have been implemented in the first release but will be looked into for future releases.
+- Welcome Menu - 
+
+![DevTools - Welcome Menu](assets/testing-files/player-info.png)
+- Home Page - 
+
+![DevTools - HomePage](assets/testing-files/homepage.png)
+- Game Play Page - 
+
+![DevTools - Game Play Page](assets/testing-files/gameplay.png)
+
+Issues were related to render-blocking resources. No recommendations in this report have been implemented in the first release but will be looked into for future releases.
 
 [Back to top ⇧](#Kryan-Live---Testing)
 
