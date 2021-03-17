@@ -173,7 +173,7 @@ Manual testing was conducted on the following elements on the Game Play Page:
 
      ![Game page responsiveness]()
 
-[Back to top ⇧](#Kryan-Live---Testing)
+[Back to top ⇧](#Blank---Testing)
 
 ## Automated Testing
 
@@ -227,16 +227,16 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) service was used t
 
 Issues were related to render-blocking resources. No recommendations in this report have been implemented in the first release but will be looked into for future releases.
 
-[Back to top ⇧](#Kryan-Live---Testing)
+[Back to top ⇧](#Blank---Testing)
 
 ## User testing 
 Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. Their helpful advice throughout the process led to many UX changes in order to create a better experience. 
 
 It was through this testing that the following changes were made:
-- Change to the Navbar background color on mobiles in order for the toggler menu icon to more distinguishable to the background image.
-- Change to Navbar font-size on mobile for clearer reading.
-- Complete overhaul of Live page in order to display the information in a more user-friendly way.
+- Update to the Heads-up display to be more gamer-friendly.
+- Change to Questions and Answers `font-size` in order to maintain readability on all devices
+- Complete overhaul of Home Page to avoid dead space and to make the experience more intuitive.
 
-[Back to top ⇧](#Kryan-Live---Testing)
+[Back to top ⇧](#Blank---Testing)
 
 ***
