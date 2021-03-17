@@ -167,12 +167,19 @@ function startTimer(){
 function countTimer () {
 	timer.elapsedTime++;
 	// calculate the minutes and seconds from elapsed time
-	let second = timer.elapsedTime;   
-	if (second < 10) {
+	let minute = Math.floor(timer.elapsedTime / 60);
+    let second = timer.elapsedTime % 60;   
+	
+    if (minute == 0){
+        minute = "00";
+    } else if ((minute > 0) && (minute < 10)){
+        minute = "0" + minute;
+    }
+    if (second < 10) {
 	   second = "0" + second;
 	}
 	// display the elapsed time
-	$("#time").html(second);
+	$("#time").html(minute+":"+second);
 }
 
 function stopTimer() {

@@ -326,7 +326,7 @@ Each page of the game features a consistent responsive and intuitive navigationa
 
 - **Score Counter** - Incrementing by 1 each time the correct answer is selected, the counter provides real-time information as to the players score. This is then displayed at game end. The score is then compared to the session High Score for competitiveness purposes.
 
-- **Time Counter** - A time counter, displaying the time elapsed since page load, gives users feedback on how long they have been playing, in seconds. This is then displayed at game end.
+- **Time Counter** - A time counter, displaying the time elapsed since page load, gives users feedback on how long they have been playing, in minutes and seconds. This is then displayed at game end.
 
 - **Page Loader** - As the questions are being called in JavaScript, there is a slight delay in loading. In order to create a more user-friendly experience, a loader icon (appropriately shaped as a compact disc) displays first on all game pages, until the questions have been loaded.
 

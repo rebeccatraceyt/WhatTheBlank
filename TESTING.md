@@ -35,7 +35,7 @@
     - The player's final score is then displayed in the game-end, allowing users to view their score and compare it to their high score in that category.
 4. As a player, I want to have a clear time counter, to keep track of time elapsed.
     - The time counter is displayed in the heads-up-display of the game-play section.
-    - The timer begins on page loads and measures the time elapsed in `seconds` for readability.
+    - The timer begins on page loads and measures the time elapsed in `minutes` and `seconds` for readability.
     - The player's final time is then displayed in the game-end.
 5. As a player, I want to get visual/auditory feedback on answers I choose, to see whether they were correct.
     - As the player selects their chosen answer, one of two things occur:
@@ -236,6 +236,7 @@ It was through this testing that the following changes were made:
 - Update to the Heads-up display to be more gamer-friendly.
 - Change to Questions and Answers `font-size` in order to maintain readability on all devices
 - Complete overhaul of Home Page to avoid dead space and to make the experience more intuitive.
+- The addition of minutes to the ***time counter* function for better readability.
 
 [Back to top ⇧](#Blank---Testing)
 
