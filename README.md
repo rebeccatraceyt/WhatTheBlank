@@ -70,13 +70,14 @@ The Developer is looking to:
 1. Choose my own username, to personalize my game-playing experience.
 2. Intuitively navigate to game mode, to have an easy gaming experience.
 3. Have a clear score counter, to keep track of my score as I play.
-4. Get visual/audio feedback on answers I choose, to see whether they were correct.
-5. Have the ability to toggle sound effects on or off, to suit my preference.
-6. Have to ability to choose the game theme (Day vs. Night Mode), to suit my preference.
-7. View their highest session score.
-8. Have the option to replay the game once I have finished to start again.
-9. Provide suggestions to the developer to upgrade the game, enhancing my user experience.
-10. Connect with the developer on a social platform of my choosing to see their other projects.
+4. Have a clear time counter, to keep track of time elapsed.
+5. Get visual/audio feedback on answers I choose, to see whether they were correct.
+6. Have the ability to toggle sound effects on or off, to suit my preference.
+7. Have to ability to choose the game theme (Day vs. Night Mode), to suit my preference.
+8. View my highest session score.
+9. Have the option to replay the game once I have finished to start again.
+10. Provide suggestions to the developer to upgrade the game, enhancing my user experience.
+11. Connect with the developer on a social platform of my choosing to see their other projects.
 
 
 ### Development Planes
