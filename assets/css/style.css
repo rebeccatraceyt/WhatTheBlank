@@ -256,6 +256,8 @@ input:checked + .toggle-slide .toggle-ball {
 
 /* Styling for buttons */
 .cat-btns a {
+    width: 80%;
+    height: auto;
     border-radius: 3px;
     box-shadow: 2px 3px var(--black);
 }
@@ -542,11 +544,9 @@ input:checked + .toggle-slide .toggle-ball {
     }
 
     /*--------------------------------- Header Section */
-    /* Styling for Header section on page on a medium screen */    
     .logo-sec img {
-        width: 80%;
+        width: 60%;
     }
-
     /* Styling mute button on tablet devices */
     .mute-btn {
         font-size: 1.5rem;
@@ -571,7 +571,7 @@ input:checked + .toggle-slide .toggle-ball {
         max-height: 50vh;
     }
     .cat-btns a {
-        width: 70%;
+        width: 60%;
     }
 
     /*--------------------------------- Home Page */
