@@ -212,7 +212,7 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) service was used t
 - Safari - ![test image](assets/testing-files/automated/safari.png)
 - Edge - ![test image](assets/testing-files/automated/edge.png)
 - Opera - ![test image](assets/testing-files/automated/opera.png)
-- Firefox - ![test image](assets/testing-files/fautomated/irefox.png)
+- Firefox - ![test image](assets/testing-files/automated/firefox.png)
 
 ### Lighthouse Auditing
 - Welcome Menu - 
