@@ -1,7 +1,7 @@
 # Blank!
 
 <h1 align="center">
-     <a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/BTHXqbC/logo.png" alt="Blank! logo"/></a>
+     <a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/D8q3jqy/logo.png" alt="Blank! logo"/></a>
 </h1>
 
 <h2 align="center">
@@ -10,9 +10,9 @@
 
 <div align="center">
 
-[Blank!](https://github.com/rebeccatraceyt/WhatsThatBlank) is web-based interactive fill-in-the-blank game, with a musical twist. With a wide variety of music categories to choose from, the user can test their memory in their favorite music genre, using a fun and intuitive user interface. Features include vibrant graphics and sound effects, that the user can control for their own personal experience. The game is designed to be intuitively easy to navigate, requiring no prior knowledge or a list of instructions in how to play, getting the players to where they want to be: **in the game**!
+Blank! is web-based interactive fill-in-the-blank game, with a musical twist. With a wide variety of music categories to choose from, the user can test their memory in their favorite music genre, using a fun and intuitive user interface. Features include vibrant graphics and sound effects, that the user can control for their own personal experience. The game is designed to be intuitively easy to navigate, requiring no prior knowledge or a list of instructions in how to play, getting the players to where they want to be: **in the game**!
 
-[View the live project here]()
+[View the live project here](https://rebeccatraceyt.github.io/WhatTheBlank/)
 
 </div>
 

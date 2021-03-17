@@ -176,7 +176,7 @@ button:focus {
 }
 .logo-sec img {
     width: 80%;
-    height: 80%;
+    height: auto;
 }
 
 /* Styling for Toggle buttons */
@@ -545,7 +545,6 @@ input:checked + .toggle-slide .toggle-ball {
     /* Styling for Header section on page on a medium screen */    
     .logo-sec img {
         width: 80%;
-        height: 70%;
     }
 
     /* Styling mute button on tablet devices */
@@ -678,7 +677,6 @@ input:checked + .toggle-slide .toggle-ball {
     }
     .logo-sec img {
         width: 43%;
-        height: 80%;
     }
 
     /* Styling mute button position on larger devices */
@@ -723,7 +721,7 @@ input:checked + .toggle-slide .toggle-ball {
         padding-bottom: 25px;
     } 
     .home-btns div > a {
-        width: 25vw;
+        width: 80%;
     }
 
     /*--------------------------------- Game Play Section */
