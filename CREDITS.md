@@ -1,10 +1,10 @@
 # Blank! - Audio Credits
 
-[Main README.md file](/README.md)
+[Main README.md file](README.md "Link to README file")
 
-[View live project]()
+[View live project](https://rebeccatraceyt.github.io/WhatTheBlank/ "Link to Live project")
 
-[View website in GitHub Pages](https://github.com/rebeccatraceyt/WhatTheBlank)
+[View website in GitHub Pages](https://github.com/rebeccatraceyt/WhatTheBlank "Link to Blank! Repository")
 
 ***
 ## Table of contents
@@ -98,3 +98,8 @@ The following song lyrics were used in the above category:
 | Somewhere over the rainbow    | Judy Garland                  | 1939    |
 | Don't you (forget about me)   | Simple Minds                  | 1985    |
 | My Heart will go on           | Celine Dion                   | 1997    |
+***
+
+[Back to top ⇧](#Blank---Audio-Credits)
+
+***
