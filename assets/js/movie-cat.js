@@ -69,6 +69,7 @@ function getNewQuestion () {
         endSound.play();
 
         checkHighScore();
+        return false;
     }
 
     // Iterate through questions

@@ -49,6 +49,7 @@ function getNewQuestion () {
     
     // End of game
     if(availableQuestions.length === 0 || questionCounter >=  maxQuestions){
+
         stopTimer();
 
         // go to Game End
@@ -69,6 +70,7 @@ function getNewQuestion () {
         endSound.play();
 
         checkHighScore();
+        return false;
     }
 
     // Iterate through questions
