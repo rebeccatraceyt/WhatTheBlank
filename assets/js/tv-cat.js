@@ -59,7 +59,7 @@ function getNewQuestion () {
         $('.high-score').text(tvHighScore);
 
         // Calls their Player Name
-        $('.playerName').text(userName);
+        $(".playerName").text(sessionStorage.getItem("userName"));
 
         // Play ending sound
         endSound.currentTime = 0;
