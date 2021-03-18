@@ -235,6 +235,24 @@ input:checked + .toggle-slide .toggle-ball {
     transform: translateX(24px);
 }
 
+/*------------------------------------------------------- Home Page */
+.home-sec {
+    min-height: 90vh;
+    width: 100vw;
+    padding-bottom: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#home-message {
+    font-family: var(--titlefont);
+    font-size: 2rem;
+} 
+.home-btns div > a {
+    width: 55vw;
+}
+
 /*------------------------------------------------------- Menu Section */
 /* Styling for Menu section on page */
 .menu-sec {
@@ -264,24 +282,6 @@ input:checked + .toggle-slide .toggle-ball {
 .cat-img {
     width: 100%;
     height: 100%;
-}
-
-/*------------------------------------------------------- Home Page */
-.home-sec {
-    min-height: 90vh;
-    width: 100vw;
-    padding-bottom: 10vh;
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-#home-message {
-    font-family: var(--titlefont);
-    font-size: 2rem;
-} 
-.home-btns div > a {
-    width: 55vw;
 }
 
 /*------------------------------------------------------- Game Play Section */
@@ -317,6 +317,21 @@ input:checked + .toggle-slide .toggle-ball {
         -o-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+}
+
+.score-sec {
+    width: 100%;
+    height: 20%;
+    margin: 0%;
+}
+.play-sec {
+    max-width: 100vw;
+    min-height: 40vh;
+    max-height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 /* Styling for each category background - for consistency purposes */
@@ -371,9 +386,6 @@ input:checked + .toggle-slide .toggle-ball {
 }
 
 /* Styling for questions in game mode */
-.questions-sec {
-    padding: 20% 5%;
-}
 .questions-sec h2 {
     font-size: 1.2rem;
     font-weight: 500;
@@ -428,8 +440,11 @@ input:checked + .toggle-slide .toggle-ball {
 .end-replay{
     padding-top: 5%;
 }
-.end-icons {
+.end-icons-sec {
     padding: 2vh 20vw;
+}
+.end-icons {
+    padding: 0;
 }
 
 /*------------------------------------------------------- Sliding Footer */
@@ -514,7 +529,6 @@ input:checked + .toggle-slide .toggle-ball {
     background-color: var(--blue);
     color: var(--white);
 }
-
 /*------------------------------------------------------- Media Queries */
 
 /* Breakpoint to maintain structural integrity on a Tablet device */
@@ -582,14 +596,6 @@ input:checked + .toggle-slide .toggle-ball {
 
     /*--------------------------------- Game Play Section */
     /* Styling for Game Play section on page on a medium screen */
-    .game-sec {
-        max-height: 60vh;
-    }
-    .play-sec {
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-
     /* Styling for heads up display */
     .score-hud li {
         font-size: 1.8rem;
@@ -616,8 +622,8 @@ input:checked + .toggle-slide .toggle-ball {
     .end-sec i {
         font-size: 2.5rem;
     }
-    .end-icons {
-        padding: 2vh 30vw;
+    .end-icons-sec {
+        padding: 2vh 35vw;
     }
 
     /*--------------------------------- Sliding Footer */
@@ -676,7 +682,8 @@ input:checked + .toggle-slide .toggle-ball {
         position: fixed;
     }
     .logo-sec img {
-        width: 43%;
+        width: 40%;
+        padding-left: 2%;
     }
 
     /* Styling mute button position on larger devices */
@@ -707,7 +714,7 @@ input:checked + .toggle-slide .toggle-ball {
         min-width: 30vw;
     }
     .cat-btns a {
-        width: 60%;
+        width: 55%;
     }
 
     /*--------------------------------- Home Page */
@@ -729,20 +736,13 @@ input:checked + .toggle-slide .toggle-ball {
         min-height: 100vh;
         max-width: 70vw;
         float: right;
-
-        justify-content: center;
-        align-items: center;
     }
-    .game-body {
-        position: absolute;
-        max-width: 65vw;
-        min-height: 90vh;
-        
-        justify-content: center;
-        align-items: center;
-    }
-    .play-sec { 
-        padding: 10% 5%;
+    .play-sec {
+        min-width: 65vw;
+        max-width: 70vw;
+        min-height: 80vh;
+        max-height: 80vh;
+        margin: 1px;
     }
 
     /* Styling for heads up display in game mode */
@@ -773,8 +773,8 @@ input:checked + .toggle-slide .toggle-ball {
     .end-sec i {
         font-size: 2.8rem;
     }
-    .end-icons {
-        padding: 3vh 20vw;
+    .end-icons-sec {
+        padding: 3% 35%;
     }
 
     /*--------------------------------- Footer */
