@@ -189,7 +189,7 @@ Game Mode:
 
 - **At The Movies** Game Page:
 
-     ![Main Game Page](assets/readme-files/movies-mockup.png "Game Mode Page Wireframe")
+     ![Main Game Page](assets/readme-files/movie-mockup.png "Game Mode Page Wireframe")
 
 
 Finished Page:
