@@ -178,7 +178,8 @@ Manual testing was conducted on the following elements on the Game Play Page:
 ## Automated Testing
 
 ### Code Validation
-The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` code used.
+
+#### [W3C Markup Validator](https://validator.w3.org/ "Link to W3C Markup Validator") was used to validate the `HTML` code used:
 
 **Results:**
 
@@ -202,10 +203,23 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
      ![At The Movies Category Page HTML Validation Results](assets/testing-files/automated/movie-val.png)
 
-The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) service was used to validate the `CSS` coded used.
+#### [W3C CSS Validator](https://jigsaw.w3.org/css-validator/ "Link to W3C CSS Validator") was used to validate the `CSS` code used:
 
-**Results:**
+**Result:**
 ![Style sheet validation results](assets/testing-files/automated/css-val.png)
+
+#### [JSHint](https://jshint.com/ "Link to JSHint") was used to validate the `JavaScript` and `JQuery` code used:
+
+- There were no errors for:
+    - `tv-cat.js`
+    - `chart-cat.js`
+    - `tb-cat.js`
+    - `movie-cat.js`
+
+- The errors for `script.js` were pertaining to the variables declared in the external script files [SweetAlert2](https://sweetalert2.github.io/ "Link to Sweet Alert 2 page") and [jQuery Validation](https://jqueryvalidation.org/ "Link to jQuery Validation page"):
+
+    ![Error declared in JSHint](assets/testing-files/automated/jshint-error.png)
+
 
 ### Browser Validation
 - Chrome - ![test image](assets/testing-files/automated/chrome.png)
