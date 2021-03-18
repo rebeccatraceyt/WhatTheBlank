@@ -14,9 +14,9 @@ const soundSetting = sessionStorage.getItem("sound") ? sessionStorage.getItem("s
 // Audio Variables
 const btnSound = new Audio('assets/audio/btn-click.mp3');
 const slideSound = new Audio('assets/audio/toggle.mp3');
-const endSound = new Audio('assets/audio/game-end.mp3');
-const correctSound = new Audio('assets/audio/correct.mp3');
-const incorrectSound = new Audio('assets/audio/incorrect.mp3');
+export const endSound = new Audio('assets/audio/game-end.mp3');
+export const correctSound = new Audio('assets/audio/correct.mp3');
+export const incorrectSound = new Audio('assets/audio/incorrect.mp3');
 
 // Misc Variables
 let footerOpen = false; // default for sliding footer
@@ -93,10 +93,10 @@ function checkForUserData() {
     else {
         userName = sessionStorage.getItem("userName");
 
-        tvHighScore = sessionStorage.getItem("tvHighScore");
-        chartHighScore = sessionStorage.getItem("chartHighScore");
-        tbHighScore = sessionStorage.getItem("tbHighScore");
-        movieHighScore = sessionStorage.getItem("movieHighScore");
+        sessionStorage.getItem("tvHighScore");
+        sessionStorage.getItem("chartHighScore");
+        sessionStorage.getItem("tbHighScore");
+        sessionStorage.getItem("movieHighScore");
 
         $("#player-info").css("display", "none");
         $("#header").css("display", "block");

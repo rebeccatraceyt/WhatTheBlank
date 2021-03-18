@@ -19,6 +19,8 @@ const maxQuestions = 10; // How many questions before end
 
 let movieQuestions = [];
 
+import { endSound, correctSound, incorrectSound } from "./script.js";
+
 // fetch questions from json file
 fetch("assets/js/questions/movies-questions.json")
     .then(res => {

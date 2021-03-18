@@ -19,6 +19,8 @@ const maxQuestions = 10; // How many questions before end
 
 let chartQuestions = [];
 
+import { endSound, correctSound, incorrectSound } from "./script.js";
+
 // fetch questions from json file
 fetch("assets/js/questions/chart-questions.json")
     .then(res => {
