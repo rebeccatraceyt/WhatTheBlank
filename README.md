@@ -311,7 +311,7 @@ Each page of the game features a consistent responsive and intuitive navigationa
 </dl>
 
 ### Existing Features
-- **Personalised Player Name** - When the user first opens the page, they will be prompted to enter a player name of their choice. This name is then used to personalise their in-game experience.
+- **Personalized Player Name** - When the user first opens the page, they will be prompted to enter a player name of their choice. This name is then used to personalize their in-game experience.
 
 - **Logo** - Appearing on every page for brand recognition. Clicking the logo will return the user to the home page, as expected.
 
@@ -357,6 +357,8 @@ Each page of the game features a consistent responsive and intuitive navigationa
           - Family
           - Random
      - Although this was the original plan for the game, the developer scaled the scope, choosing to focus on one version; Music.
+- Creating a timer delay for players to choose when the clock starts
+     - Although the developer did research and try to implement this in this release, it was not to be. As each answer was called into an array and is conditional (checking whether the answer is correct), there was a problem with with click event, where it would not register the click, and start the timer, if the answer was wrong. They tried to design a landing page for each category in order to create a button the player could press to enter the game and, thus, start the timer. This felt counter-intuitive as it was unnecessary creating steps for the user. The developer hopes to gain more knowledge and, hopefully, implement this feature in the future.
 
 [Back to top ⇧](#table-of-contents)
 
