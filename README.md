@@ -40,6 +40,10 @@ Blank! is web-based interactive fill-in-the-blank game, with a musical twist. Wi
 8. [Acknowledgements](#Acknowledgements)
 ***
 
+![Blank! Responsiveness](assets/readme-files/responsive.png)
+
+***
+
 ## UX 
 ### Project Goals
 The primary goal of Blank! is to provide a web-based interactive game, that is intuitive and entertaining, through a fill-in-the-blank game, designed to test the users music knowledge.
@@ -57,9 +61,9 @@ The player is looking for:
 
 #### Developer / Site Owner Goals
 The Developer is looking to:
-- Create fun and entertaining game that they would play themselves
+- Create a fun and entertaining game they would play themselves
 - Demonstrate their proficiency in a variety of software development skills, using newly learned languages and libraries and API's to achieve this goal
-- Deploy a project they are excited to have on their portfolio
+- Deploy a project they are proud and excited to have on their portfolio
 
 
 ### User Stories
@@ -73,14 +77,14 @@ The Developer is looking to:
 6. Have the ability to toggle sound effects on or off, to suit my preference.
 7. Have to ability to choose the game theme (Day vs. Night Mode), to suit my preference.
 8. View my highest session score.
-9. Have the option to replay the game once I have finished to start again.
+9. Control what happens at the end of the game, to decide what to do next.
 10. Provide suggestions to the developer to upgrade the game, enhancing my user experience.
 11. Connect with the developer on a social platform of my choosing to see their other projects.
 
 
 ### Development Planes
 
-In order to design and create a web-based interactive game, the developer distinguished the required functionality of the site and how it would answer the user stories, as described above. They then applied their research to the Five Development Planes:
+In order to design and create a web-based interactive game, the developer distinguished the required functionality of the site and how it would answer the user stories, as described above, using the **Five Development Planes**:
 
 <strong>1. <u>Strategy</u></strong>
 
@@ -110,7 +114,7 @@ Broken into three categories, the website will focus on the following target aud
           - Competitiveness
 
 The website needs to enable the **user** to:
-- Play with easy, navigating without complications or instructions
+- Play with ease, navigating without complications or instructions
 - Choose their preferred music category
 - Control sound settings
 - Control light/dark settings
@@ -198,9 +202,9 @@ Finished Page:
 
      ![Without High Score](assets/readme-files/nohs-mockup.png "Finished without High Score Wireframe")
 
-Form:
+- Form:
 
-- ![Suggestions Form](assets/readme-files/form-mockup.png "Suggestions Form Wireframe")
+     ![Suggestions Form](assets/readme-files/form-mockup.png "Suggestions Form Wireframe")
 
 
 <strong>5. <u>Surface</u></strong>
@@ -240,9 +244,9 @@ Form:
 ## Features
 
 ### Design Features
-Each page of the game features a consistent responsive and intuitive navigational system:
-- There is a conventionally placed **Logo** on the top left of each page. Clicking on the logo will redirect players back to the home page.
-- To ensure the player has full control of the game, there are two **Toggle** functions conventionally located at the top right corner of each page. These allow the users to control the sound and page theme to their preference.
+Each page of the game features a consistently responsive and intuitive navigational system:
+- There is a conventionally placed **Logo** on the top-left of each page. Clicking on the logo will redirect players back to the home page.
+- To ensure the player has full control of the game, there are two **Toggle** functions conventionally located at the top-right corner of each page. These allow the users to control the sound and page theme to their preference.
 - On larger screens, the **Footer** is conventionally placed at the bottom of the screen, allowing users to navigate to the social icon of their choosing.
 - On smaller screens, the **Footer** is placed within a sliding function, where users can click the appropriate icon in order to reveal the footer. This was to ensure that the footer would not interfere with the game-play.
 
@@ -302,7 +306,7 @@ Each page of the game features a consistent responsive and intuitive navigationa
                                    </ul>
                          </li>
                          <li>
-                              <strong>Game End</strong> - Once the player has answered all questions, they will be directed to the game-end feature. This is still a part the game-play page, showing the conditional information based on the users score. This was to avoid redirecting to another page, and allowed for custom styling for each page.
+                              <strong>Game End</strong> - Once the player has answered all questions, they will be directed to the game-end feature. This is still a part of the game-play page, showing the conditional information based on the users score. This was to avoid redirecting to another page, and allowed for custom styling for each page.
                          </li>
                     </ul>
                </li>
@@ -321,11 +325,11 @@ Each page of the game features a consistent responsive and intuitive navigationa
 
 - **Social Icons** - On each page, in the footer (regardless of whether this is the standard or sliding footer) the developers' chosen social platforms are displayed using appropriate icons.
 
-- **Suggestions Form** - As well as the social media icons, there is also a form feature, allowing users to submit their suggestions or comments to the developer. The form uses an appropriate icon for consistency. On form submission, both the developer and the user will get an email, confirming the message has been sent.
+- **Suggestions Form** - As well as the social media icons, there is also a form feature, allowing users to submit their suggestions or comments to the developer. The form uses an appropriate icon for consistency. On form submission, both the developer and the user will receive an email, confirming the message has been sent.
 
-- **Answer Feedback** - The answer buttons provide users with both visual and aural feedback, displaying whether they are correct in their choice.
+- **Answer Feedback** - The answer buttons provide users with both visual and aural feedback, displaying whether they are correct in their answer choice.
 
-- **Score Counter** - Incrementing by 1 each time the correct answer is selected, the counter provides real-time information as to the players score. It is represented by an icon on page load as a visual cue of what will be there as they begin to play/. This is then displayed at game end. The score is then compared to the session High Score for competitiveness purposes.
+- **Score Counter** - Incrementing by 1 each time the correct answer is selected, the counter provides real-time information as to the players score. It is represented by a star icon on page-load as a visual cue of what will be there during play. This is then displayed at game end. The score is then compared to the session High Score for competitiveness purposes.
 
 - **Time Counter** - A time counter, displaying the time elapsed since page load, gives users feedback on how long they have been playing, in minutes and seconds. This is then displayed at game end.
 
@@ -339,10 +343,10 @@ Each page of the game features a consistent responsive and intuitive navigationa
 - There are two categories that the developer would like to implement in future releases:
      - **Beat The Clock**
           - Allowing users to race against the clock in their chosen category. 
-          - The developer did try to implement this feature in the current release but it created a bug that was, unfortunately, beyond their skill level. After further learning, the developer hopes to tackle this.
+          - The developer did try to implement this feature in the current release but it created a bug that was, unfortunately, beyond their skill level. After further learning, the developer hopes to apply this to future releases.
      - **Random Round**
-          - A category that would call in a random question from the provide arrays to create a completely random set of questions for players.
-          - The developer held off on this feature in the current release in order to further develop their skills to be able to implement the feature properly. Although a simplified version could have been implemented, the developer believed that it would not do the name justice.
+          - A category that would call in questions from all categories, in no particular order, creating a completely random set of questions for players.
+          - The developer held off on this feature in the current release in order to further develop their skills to be able to implement the feature properly. Although a simplified version could have been implemented, the developer believed that this would not do the name justice.
 - An online leadership board, allowing players to see the High Scores of other players.
      - This would require the use of a database in order to implement.
 - Branching out into other versions of the game, for example:
@@ -356,9 +360,9 @@ Each page of the game features a consistent responsive and intuitive navigationa
           - Action
           - Family
           - Random
-     - Although this was the original plan for the game, the developer scaled the scope, choosing to focus on one version; Music.
+     - Although this was the original plan for the game, the developer scaled the scope down, choosing to focus on one version; Music.
 - Creating a timer delay for players to choose when the clock starts
-     - Although the developer did research and try to implement this in this release, it was not to be. As each answer was called into an array and is conditional (checking whether the answer is correct), there was a problem with with click event, where it would not register the click, and start the timer, if the answer was wrong. They tried to design a landing page for each category in order to create a button the player could press to enter the game and, thus, start the timer. This felt counter-intuitive as it was unnecessary creating steps for the user. The developer hopes to gain more knowledge and, hopefully, implement this feature in the future.
+     - Although the developer did research and try to implement this in the current release, it was not to be. As each answer is called into an array, and is conditional (checking whether the answer is correct), there was a problem with using a click event, where it would not register the click of a wrong answer, therefore the timer would not start. They tried to design a landing page for each category in order to create a button the player could press to enter the game and, thus, start the timer. This felt counter-intuitive as it was unnecessarily creating steps for the user. The developer hopes to gain more knowledge and, hopefully, implement this feature in the future.
 
 [Back to top ⇧](#table-of-contents)
 
@@ -367,21 +371,17 @@ The developer ran into a number of issues during the development of the websites
 
 **Sliding Footer Bug** - A bug was detected in the sliding footer feature when being implemented. As the developer sourced and edited the code from [JSFiddle](http://jsfiddle.net/nathanbweb/JHu7j/), the problem lay in integrating that code with the original. The sourced code was overriding the html within the code and, as such, created problems with the graphics that were to be used. In order to fix this, the developer instead toggled the necessary classes and elements. In their research, the developer found a similar problem on [Stack Overflow](https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle/15345885) where they then implemented this into their code, with success.
 
-**Welcome Modal Bug** - On page load, the welcome modal appears allowing users to enter a username of choice. The problem with the modal was that, by default, clicking outside the modal area would close the modal and, as the modal was full-screen, it was possible for the user to click anywhere on the modal to close it. With this, the player could bypass the username entry, rendering it null. In order to fix this, the developer researched a method to disable this default, finding a solution on [Stack Overflow](https://stackoverflow.com/questions/22207377/disable-click-outside-of-bootstrap-modal-area-to-close-modal), whereby the modal would only close on click of the submit button (after filling out the required field). 
-
-As well as this, there was an issue with the modal, whereby the modal would continue to refresh as the user entered their username. The reason for this was a conflict issue between the `data-dismiss` attribute and `localStorage`, where it would not register the name as a username, but dismiss the modal anyway. To rectify this, and to learn for future reference, the developer turned to [Slack](https://slack.com/intl/en-ie/) to get examples of previous methods. With this new knowledge, the developer was able to tackle the problem. They would like to extend their deepest gratitude to those fellow students.
-
 **Game Play Categories issues** - The original plan for the game was to use one page and iterate an array depending on the category button that the user clicked. This method created an overlapping issue within the JavaScript `script.js` file and the page would not function as designed. In order to save the functionality of the game, the developer decided to divide the categories into their own pages (both `.html` and `.js`), with each page executing their own functions during game-play.
 
 **Game Ending Page issues** - In the original design, there was to be a separate page that players would be redirected to after answering all questions, thus completing the quiz. The page content would change, depending on which of the two probable outcomes of game play (*high score* or *no high score*) the user had. Straight away, the developer faced a similar problem to the **Game Play Categories** issue, where there became an overwhelming overlap in the `script.js` file. To over come this, the developer removed the ending page entirely, and directly applied the end of the game to each specific category. This allowed for a high score in each category as well as an accurate pointing system that was not possible with one page.
 
-**Mute Button Bug** - One of the biggest challenges the developer met in the developmental process was the *mute button* feature. The feature allows users to manage the audio setting of the game, toggling the sound effects on and off. In implementing it, the developer's knowledge was challenged to the fullest in ensuring that the preference the user set on one page would carry through to the next page. In their learning, the developer was able to create the necessary functions and conditions that allowed the feature to work, storing the preference for the next page. Although it tested their knowledge, the reward of successfully implementing it was worth it. 
+**Mute Button Bug** - One of the biggest challenges the developer met in the developmental process was the *mute button* feature. The feature allows users to manage the audio setting of the game, toggling the sound effects on and off. In implementing this feature, the developer's knowledge was challenged to the fullest in ensuring that the preference the user set on one page would carry through to the next page. In their learning, the developer was able to create the necessary functions and conditions that allowed the feature to work, storing the preference for the next page. Although it tested their knowledge, the reward of successfully implementation was worth it. 
 
-**Email Validation Issue** - For the **Suggestions Form** the design was to create a modal form that could only be submitted once all areas were complete and, on submission, the user would receive a success message, providing them with the necessary feedback. The problem with this was that, by default, the modal button would override this validation, closing the modal regardless of whether the user had actually inputted any information. In order to rectify this, the developer used the [jQuery Validation](https://jqueryvalidation.org/ "Link to jQuery Validation page") plugin that would allow for jQuery to validate the form, which could then allow for a conditional response, when the form was validated.
+**Email Validation Issue** - For the **Suggestions Form** the design was to create a modal form that could only be submitted once all areas were complete and, on submission, the user would receive a success message, providing them with the necessary feedback. The problem with this was that, by default, the modal button would override this validation, closing the modal regardless of whether the user had actually inputted any information or not. In order to rectify this, the developer used the [jQuery Validation](https://jqueryvalidation.org/ "Link to jQuery Validation page") plugin that would allow for jQuery to validate the form, which could then allow for a conditional response, when the form was validated.
 
-**Background image bug** - The is a background image rendered for both the **welcome modal** and **homepage**. With the known issue regarding `background-size: cover` and ios devices, the developer had to create a work around to be able to call on the background image conditional to the current theme set. In order to do this, the images had to be rendered in JavaScript, as opposed to CSS.
+**Background image bug** - There is a background image rendered for both the **welcome menu** and **homepage**. With the known issue regarding `background-size: cover` and ios devices, the developer had to create a work-around to be able to call on the background image conditional to the current  set theme. In order to do this, the images had to be rendered in JavaScript, as opposed to CSS.
 
-**Common variables in JavaScript Issue** - The JavaScript was divided into five files, one for each game category (for functionality), and one for common variables and functions, e.g. form validation. The problem with this was that some variables needed be called in both the category file and script file. This overlap lead to errors in testing as to separately declare the variables in each page would throw an `already declared` error, but to declare them in only one would cause validation errors. In order to fix this, the developer changed each of the internal js file types to `type="module"` and used `import` and `export` as needed. This avoided the validation issue while maintaining functionality. 
+**Common variables in JavaScript Issue** - The JavaScript was divided into five files, one for each game category (for functionality), and one for common variables and functions, e.g. form validation. The problem with this was that some variables needed to be called in both the **category** file and **script** file. This overlap lead to errors in testing as to separately declare the variables in each page would throw an `already declared` error, but to declare them in only one would cause validation errors. In order to fix this, the developer changed each of the internal js file types to `type="module"` and used `import` and `export` as needed. This avoided the validation issue while maintaining functionality. 
 
 
 [Back to top ⇧](#table-of-contents)
@@ -396,23 +396,23 @@ As well as this, there was an issue with the modal, whereby the modal would cont
 - [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/ "Link to Bootstrap page")
      - Bootstrap was used to implement the responsiveness of the site, using bootstrap classes.
 - [jQuery](https://jquery.com/ "Link to jQuery page")
-     - jQuery was used to simplify the JavaSCript code used
+     - jQuery was used to simplify the JavaScript code used.
 - [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
     - Google fonts was used to import the fonts "Shaodows Into Light Two" and "Roboto" into the style.css file. These fonts were used throughout the project.
 - [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
-     - Font Awesome was used on all pages throughout the website to import icons (e.g. social icons) for UX purposes.
+     - Font Awesome was used on all pages throughout the website to import icons for UX purposes.
 - [Git](https://git-scm.com/ "Link to Git homepage")
      - Git was used for version control by utilizing the GitPod terminal to commit to Git and push to GitHub.
 - [GitHub](https://github.com/ "Link to GitHub")
-     - GitHub was used to store the project after pushing
+     - GitHub was used to store the project after pushing.
 - [jQuery Validation](https://jqueryvalidation.org/ "Link to jQuery Validation page")
-     - jQuery Validation was used to simplify form validation for the **Suggestions Form**
+     - jQuery Validation was used to simplify form validation for the **Suggestions Form**.
 - [SweetAlert2](https://sweetalert2.github.io/ "Link to Sweet Alert 2 page")
-     - SweetAlert2 was used to customise the **Suggestions Form** success message for UX purposes
+     - SweetAlert2 was used to customise the **Suggestions Form** success message for UX purposes.
 - [Figma](https://www.figma.com/ "Link to Figma homepage")
      - Figma was used to create the wireframes during the design phase of the project.
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
-     - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
+     - Am I Responsive was used in order to validate the responsiveness of the design throughout the process, and to generate mockup imagery to be used.
 
 [Back to top ⇧](#table-of-contents)
 
@@ -437,11 +437,11 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 8. At the time of submitting this Milestone project the Development Branch and Master Branch are identical.
 
 ### Forking the Repository
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
 
 1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
 2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/WhatTheBlank "Link to GitHub Repo").
-3. At the top of the repository, on the right side of the page, select "Fork"
+3. At the top of the repository, on the right side of the page, select "Fork".
 4. You should now have a copy of the original repository in your GitHub account.
 
 ### Creating a Clone
@@ -479,7 +479,7 @@ The sound effects and song lyrics that are used in this website are for educatio
 Music and sound effect credits can be found in a separate [file](CREDITS.md "Link to credits file")
 
 ### Code 
-The developer consulted multiple sites in order to better understand the code they were trying to implement. For code that was copied and edited, the developer made sure to reference this with the code. The following sites were used on a more regular basis:
+The developer consulted multiple sites in order to better understand the code they were trying to implement. For code that was copied and edited, the developer made sure to reference this within the code. The following sites were used on a more regular basis:
 - [Stack Overflow](https://stackoverflow.com/ "Link to Stack Overflow page")
 - [W3Schools](https://www.w3schools.com/ "Link to W3Schools page")
 - [Bootstrap](https://getbootstrap.com/ "Link to BootStrap page")
@@ -491,7 +491,7 @@ For the basic functionality of the game play mode of the site, the developer sou
 
 ## Acknowledgements
 - I would like to thank my mentor Seun for her unwavering encouragement and guidance throughout.
-- I would like to thank my friends and family for their never-ending encouragement and valued opinions during the entire process of development.
+- I would like to thank my family and friends for their never-ending encouragement and valued opinions during the entire process of development.
 
 [Back to top ⇧](#table-of-contents)
 
