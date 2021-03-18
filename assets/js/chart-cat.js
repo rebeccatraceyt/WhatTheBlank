@@ -35,7 +35,6 @@ fetch("assets/js/questions/chart-questions.json")
 
 
 function startGame () {
-    scoreNumber.innerText = '00';
     questionCounter = 0;
     chartScore = 0;
     availableQuestions = [...chartQuestions];
@@ -150,11 +149,11 @@ function checkHighScore() {
 const incrementScore = num => {
     // Add to score Counter
     chartScore += num;
-    if (chartScore < 10){
-		scoreNumber.innerText = "0" + chartScore;
-	} else {
-    	scoreNumber.innerText = chartScore;
-	}
+    if ((chartScore < 10) && (chartScore > 0)) {
+      scoreNumber.innerText = "0" + chartScore;
+    } else {
+      scoreNumber.innerText = chartScore;
+    }
 };
 
 // Game timer

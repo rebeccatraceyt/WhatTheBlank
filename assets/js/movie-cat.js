@@ -35,7 +35,6 @@ fetch("assets/js/questions/movies-questions.json")
 
 
 function startGame () {
-    scoreNumber.innerText = '00';
     questionCounter = 0;
     movieScore = 0;
     availableQuestions = [...movieQuestions];
@@ -150,7 +149,7 @@ function checkHighScore() {
 const incrementScore = num => {
     // Add to score Counter
     movieScore += num;
-    if (movieScore < 10){
+    if ((movieScore < 10) && (movieScore > 0)){
 		scoreNumber.innerText = "0" + movieScore;
 	} else {
     	scoreNumber.innerText = movieScore;

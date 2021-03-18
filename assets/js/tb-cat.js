@@ -35,7 +35,6 @@ fetch("assets/js/questions/throwback-questions.json")
 
 
 function startGame () {
-    scoreNumber.innerText = '00';
     questionCounter = 0;
     tbScore = 0;
     availableQuestions = [...tbQuestions];
@@ -150,11 +149,11 @@ function checkHighScore() {
 const incrementScore = num => {
     // Add to score Counter
     tbScore += num;
-    if (tbScore < 10){
-		scoreNumber.innerText = "0" + tbScore;
-	} else {
-    	scoreNumber.innerText = tbScore;
-	}
+    if ((tbScore < 10) && (tbScore > 0)) {
+      scoreNumber.innerText = "0" + tbScore;
+    } else {
+      scoreNumber.innerText = tbScore;
+    }
 };
 
 // Game timer

@@ -288,7 +288,7 @@ Each page of the game features a consistent responsive and intuitive navigationa
                               <strong>Heads Up Display</strong> - Conveniently placed in the players eye-line, the heads up display provides gaming functions such as:
                                    <ul>
                                         <li>
-                                             <strong>Score Counter</strong> - Incremented by 1 each time the player gets the answer correct, the score counter provides visual feedback for user to know how they are doing
+                                             <strong>Score Counter</strong> - Starting of, the score counter is represented by a star icon to represent a score and, as the player starts playing, it is replaced and incremented by 1 each time the player gets the answer correct, the score counter provides visual feedback for user to know how they are doing.
                                         </li>
                                         <li>
                                              <strong>Time Keeper</strong> - The time keeper function provides realtime time elapse of how long the player has been playing that particular round for. This is then displayed at the end.
@@ -325,7 +325,7 @@ Each page of the game features a consistent responsive and intuitive navigationa
 
 - **Answer Feedback** - The answer buttons provide users with both visual and aural feedback, displaying whether they are correct in their choice.
 
-- **Score Counter** - Incrementing by 1 each time the correct answer is selected, the counter provides real-time information as to the players score. This is then displayed at game end. The score is then compared to the session High Score for competitiveness purposes.
+- **Score Counter** - Incrementing by 1 each time the correct answer is selected, the counter provides real-time information as to the players score. It is represented by an icon on page load as a visual cue of what will be there as they begin to play/. This is then displayed at game end. The score is then compared to the session High Score for competitiveness purposes.
 
 - **Time Counter** - A time counter, displaying the time elapsed since page load, gives users feedback on how long they have been playing, in minutes and seconds. This is then displayed at game end.
 

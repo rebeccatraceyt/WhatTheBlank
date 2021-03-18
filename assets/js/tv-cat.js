@@ -34,7 +34,6 @@ fetch("assets/js/questions/tv-questions.json")
     });
 
 function startGame () {
-    scoreNumber.innerText = '00';
     questionCounter = 0;
     tvScore = 0;
     availableQuestions = [...tvQuestions];
@@ -147,7 +146,7 @@ function checkHighScore() {
 // Add to score Counter
 const incrementScore = num => {
     tvScore += num;
-	if (tvScore < 10){
+	if ((tvScore < 10) && (tvScore > 0)) {
 		scoreNumber.innerText = "0" + tvScore;
 	} else {
     	scoreNumber.innerText = tvScore;
