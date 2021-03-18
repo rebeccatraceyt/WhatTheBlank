@@ -529,6 +529,12 @@ input:checked + .toggle-slide .toggle-ball {
     background-color: var(--blue);
     color: var(--white);
 }
+.error {
+    /* Default class with JQuery Form Validator plugin */
+    color: var(--yellow);
+    font-weight: 500;
+}
+
 /*------------------------------------------------------- Media Queries */
 
 /* Breakpoint to maintain structural integrity on a Tablet device */
