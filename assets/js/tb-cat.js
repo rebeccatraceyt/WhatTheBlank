@@ -1,4 +1,6 @@
 // The foundation of the game play function was sourced and edited from https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript
+// Comments were made as the developer learned the process and were kept in for future developers
+
 // Game Function Variables
 const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answer-text'));
@@ -34,7 +36,6 @@ fetch("assets/js/questions/throwback-questions.json")
     .catch(err => {
         console.error(err);
     });
-
 
 function startGame () {
     questionCounter = 0;
