@@ -216,6 +216,10 @@ Finished Page:
 
      - As the theme of the game is music related, the colour scheme mirrors the atmospheric setting of a music venue.
 
+     - A General palette was created, with this atmosphere in mind, and was used in designing graphics and complimentary text colour:
+
+          ![Light (Day Mode)](assets/readme-files/gen-palette.png "General Colour Palette")
+
      - Drawing from research conducted on stage lights, and using the color contrast tool available at [Material.io](https://material.io/ "Link to material.io Homepage"), two colour palettes were created for a day-to-night feature toggle:
 
           - Light (Day Mode):
@@ -326,6 +330,9 @@ Each page of the game features a consistently responsive and intuitive navigatio
 - **Social Icons** - On each page, in the footer (regardless of whether this is the standard or sliding footer) the developers' chosen social platforms are displayed using appropriate icons.
 
 - **Suggestions Form** - As well as the social media icons, there is also a form feature, allowing users to submit their suggestions or comments to the developer. The form uses an appropriate icon for consistency. On form submission, both the developer and the user will receive an email, confirming the message has been sent.
+<div align="center">
+     <img src="assets/readme-files/email-test.png" alt="Automated Suggestions Email">
+</div>
 
 - **Answer Feedback** - The answer buttons provide users with both visual and aural feedback, displaying whether they are correct in their answer choice.
 
