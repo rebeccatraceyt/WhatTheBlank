@@ -19,7 +19,6 @@ Blank! is web-based interactive fill-in-the-blank game, with a musical twist. Wi
     1. [Project Goals](#Project-Goals)
     2. [User Stories](#User-Stories)
     3. [Development Planes](#Development-Planes)
-    4. [Design](#Design)
 2. [Features](#Features)
     1. [Design Features](#Design-Features) 
     2. [Existing Features](#Existing-Features)
@@ -27,15 +26,14 @@ Blank! is web-based interactive fill-in-the-blank game, with a musical twist. Wi
 3. [Issues and Bugs](#Issues-and-Bugs)
 4. [Technologies Used](#Technologies-Used)
      1. [Main Languages Used](#Main-Languages-Used)
-     2. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
-5. [Testing](#Testing)
-     1. [Testing.md](TESTING.md)
+     2. [Frameworks, Libraries & Programs Used](#Frameworks-Libraries-&-Programs-Used)
+5. [Testing](#Testing) ☞ **[Testing.md](TESTING.md)**
 6. [Deployment](#Deployment)
      1. [Deploying on GitHub Pages](#Deploying-on-GitHub-Pages)
      2. [Forking the Repository](#Forking-the-Repository)
      3. [Creating a Clone](#Creating-a-Clone)
 7. [Credits](#Credits)
-     1. [Audio](#Audio)
+     1. [Audio](#Audio) ☞ **[Credits.md](CREDITS.md)**
      2. [Code](#Code)
 8. [Acknowledgements](#Acknowledgements)
 ***
