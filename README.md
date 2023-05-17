@@ -1,9 +1,9 @@
 <h1 align="center">
-     <a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/D8q3jqy/logo.png" alt="Blank! logo"/></a>
+     <a href="https://github.com/rebeccatraceyt/WhatTheBlank" target="_blank"><img src="https://i.ibb.co/D8q3jqy/logo.png" alt="Blank! logo"/></a>
 </h1>
 
 <h2 align="center">
-     <a href="https://github.com/rebeccatraceyt/WhatsThatBlank" target="_blank"><img src="https://i.ibb.co/7Kh1vfw/tagline.png" alt="Think you know your lyrics?"></a>
+     <a href="https://github.com/rebeccatraceyt/WhatTheBlank" target="_blank"><img src="https://i.ibb.co/7Kh1vfw/tagline.png" alt="Think you know your lyrics?"></a>
 </h2>
 
 <div align="center">
